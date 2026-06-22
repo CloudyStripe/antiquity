@@ -42,6 +42,8 @@
   import CircleX from '@lucide/svelte/icons/circle-x';
   import Lightbulb from '@lucide/svelte/icons/lightbulb';
   import House from '@lucide/svelte/icons/house';
+  import Play from '@lucide/svelte/icons/play';
+  import Target from '@lucide/svelte/icons/target';
   import type { Component } from 'svelte';
 
   export const ICONS: Record<string, Component> = {
@@ -88,6 +90,8 @@
     'circle-x': CircleX,
     lightbulb: Lightbulb,
     house: House,
+    play: Play,
+    target: Target,
   };
 </script>
 

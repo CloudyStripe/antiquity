@@ -17,6 +17,7 @@ export interface UnitProgress {
   bestScore: number; // 0..1, best inline-quiz fraction
   lastScreen: number;
   completedAt: string | null;
+  lastTouchedAt?: string | null; // ISO of the most recent visit (for "Continue")
 }
 
 export interface QuestionStat {

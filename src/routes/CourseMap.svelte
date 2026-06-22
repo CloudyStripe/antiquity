@@ -1,11 +1,12 @@
 <script lang="ts">
   import AppHeader from '$components/AppHeader.svelte';
   import BottomNav from '$components/BottomNav.svelte';
+  import ContinueHero from '$components/ContinueHero.svelte';
   import UnitCard from '$components/UnitCard.svelte';
   import Icon from '$components/ui/Icon.svelte';
   import ProgressBar from '$components/ui/ProgressBar.svelte';
   import { erasInOrder, coreUnitsOfEra, deepDivesOf } from '$lib/content/load';
-  import { unitStates } from '$lib/stores/derived';
+  import { unitStates, continueUnitId } from '$lib/stores/derived';
   import { progress } from '$lib/stores/persist';
   import { toPrimer } from '$lib/stores/router';
 
@@ -37,10 +38,14 @@
 <AppHeader />
 
 <main class="app-main with-bottomnav">
-  <p class="intro">
-    Short, rigorous modules on the ancient world, built around <strong>how we know</strong>.
-    Find a spare five minutes and pick up where you left off.
-  </p>
+  {#if $continueUnitId}
+    <ContinueHero unitId={$continueUnitId} />
+  {:else}
+    <p class="intro">
+      Short, rigorous modules on the ancient world, built around <strong>how we know</strong>.
+      Find a spare five minutes and pick up where you left off.
+    </p>
+  {/if}
 
   {#each erasInOrder as era}
     {@const tracks = coreTracks(era.id)}

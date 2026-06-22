@@ -36,6 +36,7 @@ const blankUnit = (): UnitProgress => ({
   bestScore: 0,
   lastScreen: 0,
   completedAt: null,
+  lastTouchedAt: null,
 });
 
 /** Result of completing a unit, surfaced to the celebration screen. */
@@ -68,7 +69,7 @@ function recordQuestionStat(qId: string, correct: boolean): void {
 export function setLastScreen(unitId: string, index: number): void {
   progress.update((m) => {
     const prev = m[unitId] ?? blankUnit();
-    return { ...m, [unitId]: { ...prev, lastScreen: index } };
+    return { ...m, [unitId]: { ...prev, lastScreen: index, lastTouchedAt: nowIso() } };
   });
 }
 
@@ -119,6 +120,7 @@ export function completeUnit(unitId: string, score: number): CompletionResult {
         bestScore: Math.max(prev.bestScore, score),
         lastScreen: lastIndex,
         completedAt: alreadyComplete ? prev.completedAt : nowIso(),
+        lastTouchedAt: nowIso(),
       },
     };
   });
