@@ -59,7 +59,7 @@
       {#if complete}
         <Icon name="check" size={18} strokeWidth={3} />
       {:else}
-        {done}<span class="ring__goal">/{goal}</span>
+        <span class="ring__num">{done}<span class="ring__goal">/{goal}</span></span>
       {/if}
     </span>
   </div>
@@ -123,6 +123,12 @@
   }
   .ring.complete .ring__label {
     color: var(--success-ink);
+  }
+  .ring__num {
+    display: inline-flex;
+    align-items: baseline;
+    line-height: 1;
+    letter-spacing: -0.02em;
   }
   .ring__goal {
     color: var(--ink-faint);
