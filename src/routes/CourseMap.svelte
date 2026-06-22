@@ -1,6 +1,7 @@
 <script lang="ts">
   import AppHeader from '$components/AppHeader.svelte';
   import BottomNav from '$components/BottomNav.svelte';
+  import TodayStrip from '$components/TodayStrip.svelte';
   import ContinueHero from '$components/ContinueHero.svelte';
   import UnitCard from '$components/UnitCard.svelte';
   import Icon from '$components/ui/Icon.svelte';
@@ -53,6 +54,8 @@
 <AppHeader />
 
 <main class="app-main with-bottomnav">
+  <TodayStrip />
+
   {#if $continueUnitId}
     <ContinueHero unitId={$continueUnitId} />
   {:else}

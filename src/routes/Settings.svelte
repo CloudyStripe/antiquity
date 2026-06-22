@@ -24,6 +24,8 @@
     { value: 1.15, label: 'A', size: 19 },
     { value: 1.3, label: 'A', size: 22 },
   ];
+
+  const goals = [1, 2, 3, 5];
 </script>
 
 <SubHeader title="Settings" />
@@ -59,6 +61,20 @@
       />
     </div>
   </section>
+
+  <h2 class="section">Daily goal</h2>
+  <div class="seg" role="group" aria-label="Daily lesson goal">
+    {#each goals as g}
+      <button
+        class="seg__btn"
+        class:on={$settings.goal === g}
+        onclick={() => updateSetting('goal', g)}
+      >
+        {g}
+      </button>
+    {/each}
+  </div>
+  <p class="note">Lessons to finish each day. Hit it to keep your streak going.</p>
 
   <h2 class="section">Theme</h2>
   <div class="seg" role="group" aria-label="Theme">

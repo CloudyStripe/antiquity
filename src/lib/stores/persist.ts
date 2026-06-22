@@ -39,6 +39,7 @@ export interface SettingsState {
   reducedMotion: MotionSetting;
   textScale: number;
   primerSeen: boolean;
+  goal: number; // daily lesson goal
 }
 
 export interface PersistState {
@@ -66,6 +67,7 @@ export function defaultState(): PersistState {
       reducedMotion: 'system',
       textScale: 1,
       primerSeen: false,
+      goal: 2,
     },
   };
 }

@@ -1,28 +1,16 @@
 <script lang="ts">
   import Icon from '$components/ui/Icon.svelte';
-  import { statsSummary } from '$lib/stores/derived';
   import { toSettings } from '$lib/stores/router';
 </script>
 
 <header class="hdr">
-  <div class="hdr__top">
-    <a class="brand" href="#/" aria-label="Antiquity home">
-      <span class="brand__mark">A</span>
-      <span class="brand__name">Antiquity</span>
-    </a>
-    <button class="gear" aria-label="Settings" onclick={toSettings}>
-      <Icon name="settings" size={20} />
-    </button>
-  </div>
-
-  <div class="stats" aria-label="Your progress">
-    <span class="stat"><Icon name="star" size={16} /> {$statsSummary.xp} XP</span>
-    <span class="stat"><Icon name="graduation-cap" size={16} /> {$statsSummary.unitsCompleted} done</span>
-    <span class="stat" class:hot={$statsSummary.streakCurrent > 0}>
-      <Icon name="flame" size={16} />
-      {$statsSummary.streakCurrent}-day streak
-    </span>
-  </div>
+  <a class="brand" href="#/" aria-label="Antiquity home">
+    <span class="brand__mark">A</span>
+    <span class="brand__name">Antiquity</span>
+  </a>
+  <button class="gear" aria-label="Settings" onclick={toSettings}>
+    <Icon name="settings" size={20} />
+  </button>
 </header>
 
 <style>
@@ -30,16 +18,14 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-    padding: var(--sp-3) var(--sp-4);
-  }
-  .hdr__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--sp-3);
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: var(--sp-3) var(--sp-4);
   }
   .brand {
     display: inline-flex;
@@ -81,22 +67,5 @@
   .gear:hover {
     background: var(--surface-2);
     color: var(--accent-ink);
-  }
-  .stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--sp-2) var(--sp-4);
-    margin-top: var(--sp-3);
-  }
-  .stat {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: var(--fs-sm);
-    font-weight: 600;
-    color: var(--ink-soft);
-  }
-  .stat.hot {
-    color: var(--chip-contested-ink);
   }
 </style>
