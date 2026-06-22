@@ -1,5 +1,6 @@
 <script lang="ts">
   import SubHeader from '$components/SubHeader.svelte';
+  import BottomNav from '$components/BottomNav.svelte';
   import Icon from '$components/ui/Icon.svelte';
   import Button from '$components/ui/Button.svelte';
   import { statsSummary } from '$lib/stores/derived';
@@ -44,7 +45,7 @@
 
 <SubHeader title="Your progress" />
 
-<main class="app-main">
+<main class="app-main with-bottomnav">
   <div class="tiles">
     {#each tiles as t}
       <div class="tile">
@@ -87,6 +88,8 @@
   </div>
   {#if importMsg}<p class="import-msg">{importMsg}</p>{/if}
 </main>
+
+<BottomNav />
 
 <style>
   .tiles {

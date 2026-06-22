@@ -1,5 +1,6 @@
 <script lang="ts">
   import AppHeader from '$components/AppHeader.svelte';
+  import BottomNav from '$components/BottomNav.svelte';
   import UnitCard from '$components/UnitCard.svelte';
   import Icon from '$components/ui/Icon.svelte';
   import ProgressBar from '$components/ui/ProgressBar.svelte';
@@ -35,7 +36,7 @@
 
 <AppHeader />
 
-<main class="app-main">
+<main class="app-main with-bottomnav">
   <p class="intro">
     Short, rigorous modules on the ancient world, built around <strong>how we know</strong>.
     Find a spare five minutes and pick up where you left off.
@@ -115,6 +116,8 @@
     </button>
   </footer>
 </main>
+
+<BottomNav />
 
 <style>
   .intro {

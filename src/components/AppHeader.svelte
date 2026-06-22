@@ -1,14 +1,7 @@
 <script lang="ts">
   import Icon from '$components/ui/Icon.svelte';
   import { statsSummary } from '$lib/stores/derived';
-  import { toChallenge, toGlossary, toStats, toSettings } from '$lib/stores/router';
-
-  const nav = [
-    { label: 'Challenge', icon: 'trophy', go: toChallenge },
-    { label: 'Glossary', icon: 'book-open', go: toGlossary },
-    { label: 'Stats', icon: 'chart', go: toStats },
-    { label: 'Settings', icon: 'settings', go: toSettings },
-  ];
+  import { toSettings } from '$lib/stores/router';
 </script>
 
 <header class="hdr">
@@ -17,13 +10,9 @@
       <span class="brand__mark">A</span>
       <span class="brand__name">Antiquity</span>
     </a>
-    <nav class="hdr__nav" aria-label="Main">
-      {#each nav as item}
-        <button class="navbtn" aria-label={item.label} onclick={item.go}>
-          <Icon name={item.icon} size={20} />
-        </button>
-      {/each}
-    </nav>
+    <button class="gear" aria-label="Settings" onclick={toSettings}>
+      <Icon name="settings" size={20} />
+    </button>
   </div>
 
   <div class="stats" aria-label="Your progress">
@@ -77,11 +66,7 @@
     font-size: var(--fs-xl);
     font-weight: 600;
   }
-  .hdr__nav {
-    display: flex;
-    gap: var(--sp-1);
-  }
-  .navbtn {
+  .gear {
     display: grid;
     place-items: center;
     width: var(--tap);
@@ -93,7 +78,7 @@
     cursor: pointer;
     transition: background var(--dur-fast) var(--ease-standard), color var(--dur-fast);
   }
-  .navbtn:hover {
+  .gear:hover {
     background: var(--surface-2);
     color: var(--accent-ink);
   }
