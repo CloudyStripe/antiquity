@@ -1,0 +1,1409 @@
+{
+  "meta": {
+    "title": "Antiquity",
+    "version": "0.1.0",
+    "datingConventionNote": "Dates use BCE/CE. 'c.' (circa) means approximate. Years BCE count down toward the year 1, and there is no year zero."
+  },
+  "eras": [
+    {
+      "id": "foundations",
+      "title": "Foundations",
+      "subtitle": "How to think about ancient history",
+      "order": 1
+    },
+    {
+      "id": "before-cities",
+      "title": "Before Cities",
+      "subtitle": "The deep past & first monuments",
+      "order": 2
+    },
+    {
+      "id": "bronze-age",
+      "title": "The Bronze Age World",
+      "subtitle": "First cities, kings, and palaces",
+      "order": 3
+    },
+    {
+      "id": "iron-age",
+      "title": "The Iron Age & First Empires",
+      "subtitle": "Iron, the alphabet, and empires of millions",
+      "order": 4
+    },
+    {
+      "id": "classical",
+      "title": "Classical Worlds",
+      "subtitle": "World empires and the Americas at full height",
+      "order": 5
+    }
+  ],
+  "units": [
+    {
+      "id": "intro-01-what-is-ancient-history",
+      "eraId": "foundations",
+      "order": 1,
+      "title": "What Counts as 'Ancient History'?",
+      "subtitle": "Prehistory, history, and the deep-time problem",
+      "estMinutes": 7,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "epistemics",
+        "terminology"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "How deep is the past?",
+          "body": [
+            "Ancient history is usually the stretch from the first writing (a little after 3300 BCE) to about 500 CE. But to make sense of it, you first have to feel how *deep* the human past really goes.",
+            "Anatomically modern humans are roughly **300,000** years old. Farming is about **12,000**. Writing is about **5,000**. Everything we will call 'ancient history' sits in that thin sliver at the very end."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-deep-time",
+          "intent": "Show how recent 'ancient history' is on the human timescale.",
+          "spec": "A single horizontal bar spanning 300,000 years of modern humans (oldest at left). The leftmost ~95 percent is shaded and labeled 'foragers, no writing'. Near the right end mark three ticks: 'Farming ~12,000 yrs ago', 'Writing ~5,000 yrs ago', and a small bracket at the far right labeled 'Ancient history'. Clean, one bar, theme-aware colors, legible on a phone.",
+          "caption": "Almost the entire human story is prehistory. 'Ancient history' is the sliver at the end.",
+          "alt": "A 300,000-year timeline bar; farming, writing, and ancient history all appear only at the far right end."
+        },
+        {
+          "type": "text",
+          "heading": "Prehistory vs. history",
+          "body": [
+            "Historians draw the line at **writing**. 'History' is literally the part of the past we can read in written records. Everything before writing — known only from physical remains like bones, tools, seeds, and rubbish heaps — is **prehistory**.",
+            "It is a useful line, but a fuzzy one. Writing appears at different times in different places, so the *same century* can be 'history' in Iraq and 'prehistory' in Britain. And societies that never adopted writing are not 'pre' anything — they simply leave a different kind of evidence."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Prehistory",
+          "definition": "The human past before written records, reconstructed only from material remains — tools, bones, buildings, seeds, and the layers they are buried in.",
+          "pronunciation": "pree-HISS-tuh-ree",
+          "etymology": "From Latin *prae* ('before') + 'history'. A related term, *protohistory*, covers peoples who left no writing of their own but appear in their neighbors' records."
+        },
+        {
+          "type": "text",
+          "heading": "Reading ancient dates: BCE, CE, and 'c.'",
+          "body": [
+            "**BCE** ('Before Common Era') and **CE** ('Common Era') count exactly the same years as the older BC/AD, just without the religious framing: 500 BCE = 500 BC. Years BCE count *down* toward the year 1 — and there is no year zero.",
+            "You will constantly see **c.** (Latin *circa*, 'around'), as in 'c. 3000 BCE'. It is an honest flag that a date is approximate. Ancient dates almost always carry some uncertainty — a central theme of this course is *how much*, and *why*."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "A loaded word: 'civilization'",
+          "body": [
+            "We will use 'civilization' for societies with cities, dense populations, and usually writing or monumental building. But keep a critical eye on it: the word has often been used to *rank* cultures — treating one kind of society as 'advanced' and others as not.",
+            "Caral, in Peru, raised monumental pyramids with **no pottery and no writing**. Was it a 'civilization'? Questions like that are useful: they remind us our categories are tools we made, not facts of nature."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How we know — and how sure",
+          "body": [
+            "Every notable claim in this course comes with an evidence note like this one and a confidence label: **established**, **contested**, or **open**.",
+            "The point is not to memorize verdicts. It is to always know *how* we know something, and how firmly — so you can weigh new claims yourself."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-intro01-line",
+              "stem": "What single development conventionally marks the boundary between prehistory and history?",
+              "type": "single",
+              "choices": [
+                "Farming",
+                "Cities",
+                "Writing",
+                "Bronze tools"
+              ],
+              "answer": 2,
+              "explanation": "By convention, 'history' is the part of the past we can read in written records — so writing is the dividing line. It is a useful convention, not a law of nature.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-intro01-circa",
+              "stem": "In 'c. 3000 BCE', what does the 'c.' tell you?",
+              "type": "single",
+              "choices": [
+                "The date is exact",
+                "The date is approximate",
+                "It is a king's regnal year",
+                "It means Common Era"
+              ],
+              "answer": 1,
+              "explanation": "'c.' is *circa*, Latin for 'around' — an honest flag that the date is approximate.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-intro01-deeptime",
+              "stem": "True or false: writing has existed for most of the time modern humans have.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 1,
+              "explanation": "False. Modern humans are ~300,000 years old; writing is only ~5,000. Almost all of the human story is prehistory.",
+              "difficulty": "easy"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can place 'ancient history' on the deep-time scale and read dates like 'c. 3000 BCE' critically.",
+        "teaser": "Next: the filing system everyone uses — Stone, Bronze, Iron."
+      }
+    },
+    {
+      "id": "intro-02-three-age-system",
+      "eraId": "foundations",
+      "order": 2,
+      "title": "The Three-Age System: Stone, Bronze, Iron",
+      "subtitle": "A framework invented in a museum — and where it breaks",
+      "estMinutes": 7,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "terminology",
+        "historiography"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "A museum with a problem",
+          "body": [
+            "In the early 1800s, Christian Jurgensen Thomsen took charge of a jumble of undated antiquities at the National Museum of Denmark. With no dates attached, how do you even arrange them?",
+            "His move was simple and brilliant: sort by **material**, and watch which objects keep company. He noticed that the styles of tools and ornaments found *with* stone tools differed from those found with bronze, which differed again from those with iron. In 1836 he published the scheme as **Stone, Bronze, and Iron** ages."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Why it actually worked",
+          "body": [
+            "Thomsen's order was a hunch from patterns in a collection. It was *tested* a few years later by Jens Worsaae, who dug carefully and found the materials stacked in the predicted order in the ground — stone-bearing layers beneath bronze, bronze beneath iron.",
+            "Notice what the system is: a **relative sequence** (this technology before that one), not a set of calendar dates. It tells you order, not years."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-three-age",
+          "intent": "Show the three ages as a technological sequence with examples and fuzzy, region-varying boundaries.",
+          "spec": "Three soft vertical bands left to right: STONE (icon: a chipped hand-axe), BRONZE (a cast axe/sword), IRON (an iron blade). Boundaries drawn as blurred gradients, not hard lines, with a small note 'boundaries fall at different dates in different regions'. Theme-aware, phone-legible.",
+          "caption": "Stone, Bronze, and Iron as a sequence of tool technologies — with deliberately blurry boundaries.",
+          "alt": "Three bands labeled Stone, Bronze, Iron, each with a tool icon, separated by blurred boundaries."
+        },
+        {
+          "type": "evidence",
+          "heading": "How we know the order is real",
+          "body": [
+            "Worsaae's excavations confirmed Thomsen's hunch *stratigraphically*: in undisturbed ground, bronze-age material genuinely lay below iron-age material, and stone below bronze.",
+            "That is why the Three-Age System is still used for Europe and the Near East — its core sequence was checked against the dirt, not just the display case."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "text",
+          "heading": "A framework, not a law of nature",
+          "body": [
+            "The ages are defined by **technology**, so they arrive at different times in different places — and some places skip a step entirely. Much of sub-Saharan Africa goes essentially from stone tools to iron with no local Bronze Age at all.",
+            "And the scheme fits the **Americas** so poorly that archaeologists there don't really use it — a whole optional deep dive explains why. The lesson: the Three-Age System is a handy filing cabinet, not a ladder every society must climb."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Three-Age System",
+          "definition": "The division of prehistory into Stone, Bronze, and Iron ages, based on dominant tool-making material. A *relative* framework (sequence, not calendar dates), devised by C. J. Thomsen and published in 1836.",
+          "etymology": "It was the first widely successful attempt to bring order to prehistoric artifacts, and it launched modern archaeological classification."
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-intro02-origin",
+              "stem": "How did Thomsen arrive at the Three-Age System?",
+              "type": "single",
+              "choices": [
+                "By radiocarbon-dating tools",
+                "By sorting a museum collection by material and noting which objects co-occur",
+                "By reading ancient Greek texts",
+                "By guessing"
+              ],
+              "answer": 1,
+              "explanation": "He organized the National Museum of Denmark's undated antiquities by material and noticed consistent groupings — later confirmed by excavation.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro02-relative",
+              "stem": "The Three-Age System primarily gives you…",
+              "type": "single",
+              "choices": [
+                "Exact calendar dates",
+                "A relative order of technologies",
+                "The population of a city",
+                "A king's name"
+              ],
+              "answer": 1,
+              "explanation": "It is a relative sequence — Stone before Bronze before Iron — not a set of absolute dates.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro02-everywhere",
+              "stem": "True or false: every society on Earth passed through a distinct Bronze Age.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 1,
+              "explanation": "False. Many regions (much of sub-Saharan Africa, and the Americas) don't fit the scheme — it's a framework, not a universal law.",
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You know where the Stone/Bronze/Iron scheme came from, why it holds for Eurasia, and why it's a framework rather than a universal ladder.",
+        "teaser": "Next: zooming inside the Stone Age — Paleo, Meso, Neolithic."
+      }
+    },
+    {
+      "id": "intro-03-paleo-meso-neolithic",
+      "eraId": "foundations",
+      "order": 3,
+      "title": "Stone Age Lifeways: Paleo / Meso / Neolithic",
+      "subtitle": "Not just older stone — different ways of living",
+      "estMinutes": 8,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "terminology",
+        "prehistory"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "Splitting a very long age",
+          "body": [
+            "The Stone Age covers over 99 percent of the human story, so it gets split into three: **Palaeolithic** (old stone), **Mesolithic** (middle stone), and **Neolithic** (new stone).",
+            "The terms are young. John Lubbock coined *Palaeolithic* and *Neolithic* in his 1865 book *Pre-historic Times*; Hodder Westropp added *Mesolithic* for the in-between in 1866."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "What actually changed",
+          "body": [
+            "These are not just 'older vs. newer rocks'. They mark **ways of life**. Palaeolithic people *chipped* (knapped) stone and lived by hunting and gathering. Neolithic people *ground and polished* stone, and — far more importantly — **farmed**, made pottery, and lived in settled villages.",
+            "The Mesolithic is the flexible in-between: the period after the last Ice Age when foragers adapted to a warming world, just before (or alongside) the spread of farming."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-paleo-meso-neo",
+          "intent": "Compare the three Stone Age stages across a few dimensions.",
+          "spec": "A three-column table-style graphic. Columns: PALAEOLITHIC, MESOLITHIC, NEOLITHIC. Rows with simple icons: Stone working (chipped / fine small blades 'microliths' / ground & polished); Food (hunt-gather / broad-spectrum foraging / farming); Living (mobile bands / mobile camps / settled villages). Theme-aware, phone-legible.",
+          "caption": "The Stone Age stages differ less in date than in how people made tools, found food, and lived.",
+          "alt": "Three columns comparing Palaeolithic, Mesolithic, and Neolithic by tool-working, food, and settlement."
+        },
+        {
+          "type": "term",
+          "term": "Neolithic Revolution",
+          "definition": "The transition from foraging to farming and settled village life — domesticating plants and animals. Named by archaeologist V. Gordon Childe in 1936.",
+          "etymology": "Childe called it a 'revolution' for its sweeping consequences: food surpluses, population growth, property, and eventually cities — even though it actually unfolded over centuries."
+        },
+        {
+          "type": "text",
+          "heading": "The catch: it happened at different times",
+          "body": [
+            "Farming was not invented once and spread from one place. It arose **independently** in several regions, at different dates: the Fertile Crescent around 10,000 BCE, China somewhat later, highland New Guinea around 8,000 BCE, Mesoamerica, the Andes, and more.",
+            "So 'Neolithic' is a **stage**, not a date. A region can be fully Neolithic while its neighbor is still Mesolithic. Calendar time and cultural stage are two different rulers — don't confuse them."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How we know farming was independent",
+          "body": [
+            "The founder species differ by region: wheat and barley in the Near East; rice and millet in China; maize, beans, and squash in Mesoamerica; potatoes and quinoa in the Andes.",
+            "The genetics of those domesticated plants and animals trace back to *local* wild ancestors in each region — strong evidence that farming was invented several separate times, not copied from a single source."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-intro03-change",
+              "stem": "The biggest difference between Palaeolithic and Neolithic life is best described as…",
+              "type": "single",
+              "choices": [
+                "Chipped tools vs. a shift to farming and settled villages",
+                "The color of the stone used",
+                "Bronze vs. iron weapons",
+                "Writing vs. no writing"
+              ],
+              "answer": 0,
+              "explanation": "The defining change is the way of life: foraging with chipped stone (Palaeolithic) vs. farming, pottery, ground stone, and villages (Neolithic).",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro03-childe",
+              "stem": "Who named the 'Neolithic Revolution'?",
+              "type": "single",
+              "choices": [
+                "John Lubbock",
+                "V. Gordon Childe",
+                "C. J. Thomsen",
+                "Willard Libby"
+              ],
+              "answer": 1,
+              "explanation": "V. Gordon Childe coined the term in 1936 (in *Man Makes Himself*). Lubbock coined Palaeolithic/Neolithic; Thomsen devised the Three-Age System.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro03-diachronous",
+              "stem": "True or false: a region can be 'Neolithic' while a neighboring region is still 'Mesolithic' at the same calendar date.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 0,
+              "explanation": "True. The Stone Age stages are ways of life that arrived at different times in different places — they are not fixed to a single calendar date.",
+              "difficulty": "hard"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can explain that Paleo/Meso/Neolithic mark ways of life (above all, farming), and that the Neolithic happened at different times in different places.",
+        "teaser": "Next: the first of our 'how we know' tools — reading time in the dirt."
+      }
+    },
+    {
+      "id": "intro-04-stratigraphy",
+      "eraId": "foundations",
+      "order": 4,
+      "title": "How We Know I — Stratigraphy & Relative Dating",
+      "subtitle": "Reading time in the dirt, before any lab",
+      "estMinutes": 7,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "methods",
+        "dating"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "Dating without a clock",
+          "body": [
+            "Long before any laboratory method existed, archaeologists could still put events in order. The trick is not the object itself — it is *where in the ground* the object sits.",
+            "Sites build up in **layers** (strata): floors, rubbish, collapse, wind-blown dust, new building. Each layer is a slice of time, stacked in sequence."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "The law of superposition",
+          "body": [
+            "The founding rule, borrowed from geology (Nicolas Steno, 1669): in an **undisturbed** deposit, lower layers were laid down *before* higher ones — so lower is older.",
+            "That little phrase 'undisturbed' is everything. Pits, graves, burrowing animals, and later builders all cut through older layers, mixing things up. Half of an excavator's skill is spotting where the neat stack has been disturbed."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-strata",
+          "intent": "Teach superposition and the importance of context/disturbance.",
+          "spec": "A cut-away of stratified earth: 4-5 horizontal layers, oldest at the bottom labeled 'older', youngest at top labeled 'younger', each a slightly different tone, with small finds drawn in (potsherd, bone, coin). Show one vertical 'pit' cutting down from an upper layer through lower ones, labeled 'later intrusion — mixes the record'. Theme-aware, phone-legible.",
+          "caption": "In undisturbed ground, deeper means older — until a pit or grave cuts through and scrambles the sequence.",
+          "alt": "A cross-section of earth layers, oldest at bottom, with a later pit cutting down through several layers."
+        },
+        {
+          "type": "text",
+          "heading": "Context is (almost) everything",
+          "body": [
+            "An artifact's value comes from its **context** — the layer it sat in and what it was found *with* (its association). A coin sealed in a floor can date that floor. The *same* coin loose in a drawer, with no record of where it came from, is nearly mute.",
+            "This is why looting is so destructive: digging an object out for sale doesn't just steal an object, it erases the context that made it evidence."
+          ]
+        },
+        {
+          "type": "term",
+          "term": "Seriation",
+          "definition": "Ordering artifacts into a sequence by how their styles gradually change (for example, pottery shapes). It gives a relative order, not calendar dates.",
+          "pronunciation": "seer-ee-AY-shun",
+          "etymology": "Flinders Petrie pioneered 'sequence dating' in the 1890s to order Egyptian graves that had no written dates, purely by the evolving styles of their pottery."
+        },
+        {
+          "type": "evidence",
+          "heading": "Relative vs. absolute",
+          "body": [
+            "Stratigraphy and seriation are **relative** methods: they tell you *this before that*, not *how many years ago*.",
+            "To pin a real calendar date on a layer, you need an **absolute** method — and the most famous one is next."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-intro04-superposition",
+              "stem": "In an undisturbed archaeological deposit, which layer is generally oldest?",
+              "type": "single",
+              "choices": [
+                "The top layer",
+                "The bottom layer",
+                "The thickest layer",
+                "You can't tell from position"
+              ],
+              "answer": 1,
+              "explanation": "By the law of superposition, lower layers were deposited first — so in undisturbed ground the bottom layer is oldest.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-intro04-context",
+              "stem": "Why do archaeologists say an artifact ripped from its context is 'nearly mute'?",
+              "type": "single",
+              "choices": [
+                "Old objects can't be cleaned",
+                "Its meaning comes from the layer and associations it was found in, which are then lost",
+                "It can't be radiocarbon dated",
+                "Museums won't display it"
+              ],
+              "answer": 1,
+              "explanation": "Context — the layer and what an object was found with — is what turns an object into evidence. Remove it and most of the information is gone.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro04-relative",
+              "stem": "Stratigraphy and seriation give you which kind of dating?",
+              "type": "single",
+              "choices": [
+                "Absolute (calendar years)",
+                "Relative (order only)",
+                "Neither",
+                "Both exactly"
+              ],
+              "answer": 1,
+              "explanation": "They establish relative order — this before that — not absolute calendar years.",
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You understand superposition, why context matters more than the object, and the difference between relative and absolute dating.",
+        "teaser": "Next: the carbon clock — and why a raw date isn't a calendar date."
+      }
+    },
+    {
+      "id": "intro-05-radiocarbon",
+      "eraId": "foundations",
+      "order": 5,
+      "title": "How We Know II — Radiocarbon & Absolute Dating",
+      "subtitle": "A clock made of carbon — with an asterisk",
+      "estMinutes": 8,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "methods",
+        "dating"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "A clock made of carbon",
+          "body": [
+            "Living things constantly take in carbon, including a tiny amount of a radioactive form, **carbon-14**. When an organism dies, intake stops and its carbon-14 slowly decays at a steady, known rate.",
+            "So the amount of carbon-14 left in a once-living sample is a clock: less carbon-14 means more time has passed since death. Willard Libby developed the method in the late 1940s and won the 1960 Nobel Prize for it."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Half-life, and what you can date",
+          "body": [
+            "Carbon-14's **half-life** — the time for half of it to decay — is about **5,730 years**. (By convention, labs still calculate 'conventional' ages with Libby's slightly-off original figure of 5,568, so old and new results stay comparable.)",
+            "Two limits matter. It only works on things that were **once alive** and contain carbon — charcoal, wood, bone, seeds, shell. And after about **50,000 years** so little carbon-14 remains that the clock runs out."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-c14-decay",
+          "intent": "Show radioactive decay via half-lives.",
+          "spec": "A smooth exponential decay curve: x-axis 'years since death' (0 to ~17,000), y-axis 'carbon-14 remaining' (100 percent to 0). Mark dashed lines at one half-life (~5,730 yrs, 50 percent) and two half-lives (~11,460 yrs, 25 percent). Clean, theme-aware, phone-legible.",
+          "caption": "Each half-life (~5,730 years) halves the carbon-14 that's left — a steady, measurable clock.",
+          "alt": "An exponential decay curve showing carbon-14 dropping to 50 percent at one half-life and 25 percent at two."
+        },
+        {
+          "type": "text",
+          "heading": "Radiocarbon years are NOT calendar years",
+          "body": [
+            "Here is the asterisk. The method assumes a steady amount of carbon-14 in the atmosphere — but that amount has **wobbled** over the millennia, driven by changes in the sun, Earth's magnetic field, and the oceans.",
+            "So a raw 'radiocarbon age' is slightly off from true calendar years, and must be **calibrated** to be turned into a real date."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How we calibrate: tree rings",
+          "body": [
+            "Calibration curves (the current standard is **IntCal20**) are built by measuring carbon-14 in samples whose true age we already know — above all, **tree rings**, which can be counted one year at a time back roughly 14,000 years, and extended further with other records to about 55,000.",
+            "You feed a raw radiocarbon measurement into the curve and read out a **calendar range** with a stated probability — not a single magic number."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "text",
+          "heading": "So a good date is a range",
+          "body": [
+            "That's why careful reports look like '1450-1410 cal BCE (95 percent confidence)' rather than a flat '1430 BCE'. The error bars are **honesty**, not weakness.",
+            "Whenever this course gives a date, ask the three questions a specialist asks: *what was dated, by what method, and with what uncertainty?*"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-intro05-what",
+              "stem": "Radiocarbon dating can be used directly on…",
+              "type": "single",
+              "choices": [
+                "Stone tools",
+                "Gold coins",
+                "Once-living material like charcoal, wood, and bone",
+                "Pure glass"
+              ],
+              "answer": 2,
+              "explanation": "Carbon-14 dating works only on things that were once alive and contain carbon — charcoal, wood, bone, seeds, shell. It can't date stone or metal directly.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-intro05-calibration",
+              "stem": "Why must a raw radiocarbon age be calibrated?",
+              "type": "single",
+              "choices": [
+                "Labs make frequent mistakes",
+                "Atmospheric carbon-14 has varied over time, so radiocarbon years drift from calendar years",
+                "Carbon-14 doesn't really decay",
+                "To convert BC to BCE"
+              ],
+              "answer": 1,
+              "explanation": "Atmospheric carbon-14 has fluctuated, so a raw radiocarbon age isn't a calendar date until it's calibrated.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro05-treerings",
+              "stem": "What independent record is the backbone of calibration?",
+              "type": "single",
+              "choices": [
+                "Ice cores only",
+                "Tree rings (dendrochronology)",
+                "Written king-lists",
+                "The Moon's craters"
+              ],
+              "answer": 1,
+              "explanation": "Tree rings, counted one year at a time, anchor the calibration curve for roughly the last 14,000 years.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro05-limit",
+              "stem": "Roughly how far back can radiocarbon dating reach?",
+              "type": "single",
+              "choices": [
+                "About 500 years",
+                "About 5,000 years",
+                "About 50,000 years",
+                "About 5 million years"
+              ],
+              "answer": 2,
+              "explanation": "After ~50,000 years too little carbon-14 remains to measure reliably, so that's the practical limit.",
+              "difficulty": "hard"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can explain how carbon-14 dating works, what it can and can't date, and why a real date is a calibrated range — not a single number.",
+        "teaser": "Next: the most important skill of all — what to do when the experts don't agree."
+      }
+    },
+    {
+      "id": "intro-06-when-experts-disagree",
+      "eraId": "foundations",
+      "order": 6,
+      "title": "How We Know III — When Experts Disagree",
+      "subtitle": "Open questions, minority views, and fringe — told apart",
+      "estMinutes": 8,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "epistemics",
+        "methods",
+        "mystery"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "Not all disagreements are equal",
+          "body": [
+            "Real inquiry is full of disagreement — but disagreements come in very different weights, and lumping them together is how people get fooled (in either direction).",
+            "Three useful categories: an **open question** is genuinely unsettled, with specialists divided. A **minority view** is a position a few qualified people hold against a strong consensus. A **fringe claim** is one most specialists reject for evidential reasons. All three can be discussed honestly — but they don't carry equal weight, and pretending they do is its own kind of error."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "What makes a claim strong",
+          "body": [
+            "Lean on a few tests. Is the claim **testable** — could any evidence show it wrong? Does it **fit independent lines of evidence**, or only one? Has it made **successful predictions**? Has it survived **expert scrutiny**, or only friendly audiences?",
+            "The single best question to keep in your pocket, for *any* claim including the mainstream one: **what evidence would change this view?** If the answer is 'nothing could', you've left history and entered faith."
+          ]
+        },
+        {
+          "type": "debate",
+          "heading": "Worked example: how old is the Great Sphinx?",
+          "intro": "A quick taste of reasoning it through (the full Case File is an optional deep dive). Most Egyptologists date the Sphinx to the pharaoh Khafre, c. 2500 BCE. A minority argue its weathering implies a much older core.",
+          "positions": [
+            {
+              "name": "Mainstream: carved under Khafre (c. 2500 BCE)",
+              "claim": "The Sphinx was carved as part of Khafre's pyramid complex around 2500 BCE.",
+              "support": [
+                "It sits inside Khafre's complex; causeway and temples align with his pyramid",
+                "A workers' settlement and tools of that era have been found nearby",
+                "Its soft, layered limestone is known to weather quickly"
+              ],
+              "weaknesses": [
+                "The unusual weathering profile is real and needs a solid explanation"
+              ]
+            },
+            {
+              "name": "Minority: an older core (water-erosion idea)",
+              "claim": "The deep, rounded weathering in the Sphinx enclosure was cut by heavy rainfall, implying a core carved well before ~3000 BCE.",
+              "support": [
+                "Geologist Robert Schoch reads the vertical, rounded enclosure weathering as rainfall-driven",
+                "Argues wind-and-sand erosion would look different"
+              ],
+              "weaknesses": [
+                "No independent trace of a society at Giza able to carve it that early — no tools, pottery, or settlements of that age",
+                "Soft layered limestone and salt-crystal weathering can mimic 'rain' erosion",
+                "Rains in Egypt actually continued until ~2200 BCE"
+              ]
+            }
+          ],
+          "whereItStands": "A strong Egyptological consensus favors Khafre; the older-core idea is a credentialed minority view, not an even split. Its deepest problem is the 'missing culture': a monument that size implies an organized society we'd expect to see in other evidence. It's a genuine geology-vs-archaeology clash worth reasoning through — which is exactly why it makes a good teaching case.",
+          "confidence": "contested"
+        },
+        {
+          "type": "evidence",
+          "heading": "Open-minded does not mean 'anything goes'",
+          "body": [
+            "Being open-minded means following the evidence wherever it leads — including saying 'we don't know' when that's the honest answer. It does *not* mean treating every claim as equally likely.",
+            "Skepticism and curiosity are partners, not opposites. Stay curious about bold ideas; stay strict about evidence. This course will keep doing both."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-intro06-categories",
+              "stem": "A position held by a few qualified specialists against a strong consensus is best called…",
+              "type": "single",
+              "choices": [
+                "An open question",
+                "A minority view",
+                "A fringe claim",
+                "An established fact"
+              ],
+              "answer": 1,
+              "explanation": "That's a minority view. An open question is genuinely unsettled among specialists; a fringe claim is one most reject on the evidence.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro06-keyq",
+              "stem": "Which question best tests *any* claim, including the mainstream one?",
+              "type": "single",
+              "choices": [
+                "Who is the most famous person who believes it?",
+                "What evidence would change this view?",
+                "Does it appear in a textbook?",
+                "Is it on the internet?"
+              ],
+              "answer": 1,
+              "explanation": "'What evidence would change this view?' tests whether a claim is falsifiable and evidence-based — the heart of careful reasoning.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-intro06-sphinx",
+              "stem": "In the Sphinx debate, the mainstream view dates the monument to…",
+              "type": "single",
+              "choices": [
+                "c. 10,500 BCE",
+                "the pharaoh Khafre, c. 2500 BCE",
+                "the Roman period",
+                "c. 7000 BCE"
+              ],
+              "answer": 1,
+              "explanation": "The Egyptological consensus attributes the Sphinx to Khafre, around 2500 BCE. The older-core idea is a minority position.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-intro06-evenhanded",
+              "stem": "True or false: 'open-minded' means treating every theory as equally likely to be true.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 1,
+              "explanation": "False. Open-mindedness means following the evidence — which includes recognizing that some claims are far better supported than others.",
+              "difficulty": "hard"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can tell open questions, minority views, and fringe claims apart — and weigh any of them by asking what evidence would change your mind.",
+        "teaser": "Optional deep dives unlock now: the full Sphinx case file, the tree-ring clock, and why the Three-Age System fails in the Americas."
+      }
+    },
+    {
+      "id": "dd-three-age-americas",
+      "eraId": "foundations",
+      "order": 1,
+      "title": "Why the Three-Age System Breaks Down in the Americas",
+      "subtitle": "A European filing system that travels badly",
+      "estMinutes": 6,
+      "status": "available",
+      "kind": "deepdive",
+      "extends": "intro-02-three-age-system",
+      "track": "The Americas",
+      "tags": [
+        "americas",
+        "historiography"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "A scheme built from Scandinavian closets",
+          "body": [
+            "Remember where Stone/Bronze/Iron came from: Thomsen sorting Danish antiquities. It captured something real about Eurasia — but it was never meant to be a law for the whole planet.",
+            "Carry it across the Atlantic and it simply stops describing what you find."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "There is no 'Bronze Age' here",
+          "body": [
+            "Indigenous American societies were superb metalworkers — gold, silver, and copper, and genuine bronze in the Andes in later periods. But bronze *tools* never became the backbone of society the way they did in the Near East. Great cities and monuments were built with stone, wood, and human muscle.",
+            "So the tidy ladder Stone -> Bronze -> Iron has no rung that fits. Forcing it on the Americas hides more than it reveals."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Caral breaks the mold",
+          "body": [
+            "Norte Chico, on the Peruvian coast, raised monumental platform mounds and sunken plazas around 3000-1800 BCE — at the same time as Egypt's pyramids — with **no pottery** and (as far as we can tell) **no writing**.",
+            "By an Old-World checklist, a complex society 'should' have those things. Caral didn't, and was complex anyway. The checklist is the problem, not Caral."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How archaeologists periodize the Americas instead",
+          "body": [
+            "Rather than the three metal ages, specialists use **local frameworks** built on regional developments: in Mesoamerica, the Preclassic / Classic / Postclassic; in the Andes, alternating 'Horizons' and 'Intermediate Periods'.",
+            "These schemes are organized around things like shared art styles, city growth, and political integration — not which metal people happened to use."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-dd-americas-bronze",
+              "stem": "Why doesn't the 'Bronze Age' label fit much of the Americas?",
+              "type": "single",
+              "choices": [
+                "Americans never worked any metal",
+                "Bronze tools never became the basis of society there, even where metallurgy existed",
+                "They used iron first",
+                "Bronze hadn't been invented yet anywhere"
+              ],
+              "answer": 1,
+              "explanation": "Indigenous Americans worked metals (including Andean bronze later), but bronze tools never anchored society as in Eurasia — so the 'age' doesn't apply.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-dd-americas-caral",
+              "stem": "What makes Caral / Norte Chico challenge Old-World checklists for 'civilization'?",
+              "type": "single",
+              "choices": [
+                "It had no people",
+                "It built monuments without pottery or writing",
+                "It used iron tools",
+                "It was purely mythical"
+              ],
+              "answer": 1,
+              "explanation": "Caral raised monumental architecture around 3000-1800 BCE without pottery or writing — complexity that the standard checklist doesn't predict.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-dd-americas-periodization",
+              "stem": "True or false: archaeologists periodize the Americas using local schemes (like Preclassic/Classic/Postclassic) rather than Stone/Bronze/Iron.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 0,
+              "explanation": "True. Regional frameworks based on local developments fit far better than the metal-based three ages.",
+              "difficulty": "easy"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can explain why Stone/Bronze/Iron fails for the Americas and what archaeologists use instead.",
+        "teaser": "Back to the toolkit whenever you're ready."
+      }
+    },
+    {
+      "id": "dd-tree-ring-clock",
+      "eraId": "foundations",
+      "order": 2,
+      "title": "The Tree-Ring Clock: How Calibration Works",
+      "subtitle": "Turning radiocarbon years into calendar years",
+      "estMinutes": 6,
+      "status": "available",
+      "kind": "deepdive",
+      "extends": "intro-05-radiocarbon",
+      "track": null,
+      "tags": [
+        "methods",
+        "dating"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "Why we need a second clock",
+          "body": [
+            "Radiocarbon gives 'radiocarbon years', which drift from true calendar years because atmospheric carbon-14 has wobbled. To correct that drift, we need an **independent** record that counts real years one at a time.",
+            "Trees keep exactly that record."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Dendrochronology",
+          "body": [
+            "Most trees add **one growth ring per year**. In a given region, good and bad years make a distinctive pattern of wide and narrow rings — a barcode shared by all the trees living through it.",
+            "Match the barcode in a living tree to the outer rings of an older beam, then that beam to a still-older log, and you can chain backwards, overlapping pattern on pattern, into a continuous year-by-year **master chronology** thousands of years long."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-dendro-overlap",
+          "intent": "Show how overlapping ring patterns build a long master chronology.",
+          "spec": "Three horizontal bands of vertical ring-lines, staggered and overlapping like roof tiles: top 'living tree (today)', middle 'old beam', bottom 'ancient log'. Highlight the matching overlap zones between them, with an arrow 'chain backwards in time'. Theme-aware, phone-legible.",
+          "caption": "Overlapping ring patterns from living trees, old beams, and ancient logs chain together into one long calendar.",
+          "alt": "Three overlapping bands of tree-ring patterns linked at their matching zones, extending a calendar back in time."
+        },
+        {
+          "type": "text",
+          "heading": "Building the calibration curve",
+          "body": [
+            "Now the payoff. Take wood whose calendar age you *know* from ring-counting, and measure its radiocarbon. Do this for thousands of samples and you map exactly how radiocarbon years relate to calendar years. That map is the **calibration curve** (IntCal).",
+            "Feed a raw radiocarbon measurement in; read a calendar **range** out. Because the curve wiggles, one radiocarbon value sometimes matches a couple of calendar windows — which is why calibrated dates can have an odd shape."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "What this buys us",
+          "body": [
+            "It's why a modern radiocarbon date is reported as a calibrated range (e.g., '1450-1410 cal BCE'), and why a date published in the 1960s may shift when recalibrated with today's curve.",
+            "Same raw measurement, better translation. The tree-ring clock is what makes radiocarbon trustworthy as *calendar* history."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-dd-tree-perring",
+              "stem": "Dendrochronology works because most trees add…",
+              "type": "single",
+              "choices": [
+                "One ring per decade",
+                "One ring per year",
+                "A ring only in drought",
+                "Rings at random"
+              ],
+              "answer": 1,
+              "explanation": "One ring per year, with year-to-year width patterns that can be matched between trees.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-dd-tree-purpose",
+              "stem": "What is the tree-ring record used for in radiocarbon dating?",
+              "type": "single",
+              "choices": [
+                "Replacing radiocarbon entirely",
+                "Calibrating radiocarbon years into calendar years",
+                "Dating stone tools",
+                "Measuring rainfall only"
+              ],
+              "answer": 1,
+              "explanation": "Tree rings of known age anchor the calibration curve that converts radiocarbon years into calendar dates.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-dd-tree-range",
+              "stem": "True or false: because the calibration curve wiggles, a single radiocarbon result can map to a calendar *range* rather than one exact year.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 0,
+              "explanation": "True. The wiggles mean calibrated results are ranges (sometimes more than one), reported with a probability.",
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You understand how tree rings build a year-by-year calendar and how that calibrates radiocarbon into real dates.",
+        "teaser": "Back to the toolkit whenever you're ready."
+      }
+    },
+    {
+      "id": "dd-sphinx-case-file",
+      "eraId": "foundations",
+      "order": 3,
+      "title": "Case File: The Age of the Sphinx",
+      "subtitle": "A real cross-disciplinary debate, weighed in full",
+      "estMinutes": 9,
+      "status": "available",
+      "kind": "deepdive",
+      "extends": "intro-06-when-experts-disagree",
+      "track": null,
+      "tags": [
+        "egypt",
+        "mystery",
+        "methods"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "The monument and the question",
+          "body": [
+            "The Great Sphinx at Giza — a lion's body with a human head, carved directly from the limestone bedrock. The mainstream date is the reign of pharaoh **Khafre**, around **2500 BCE** (Egypt's 4th Dynasty).",
+            "The question this case file weighs: is it possible the **core body** is significantly older than that?"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "The water-erosion hypothesis",
+          "body": [
+            "In the late 1970s the author John Anthony West publicized an older-Sphinx idea. To test it he brought in geologist **Robert Schoch**, who argued that the deep, rounded, vertical weathering in the walls of the Sphinx *enclosure* looks like erosion from prolonged **rainfall**.",
+            "Since heavy rains faded from the Giza region long before the pharaohs, Schoch reasoned the core carving could date to roughly **5000-7000+ BCE** — older than Dynastic Egypt, though notably he did *not* claim the far older dates some popularizers prefer."
+          ]
+        },
+        {
+          "type": "debate",
+          "heading": "Two readings of the same stone",
+          "intro": "The whole disagreement turns on what *caused* the weathering. Lay the two readings side by side.",
+          "positions": [
+            {
+              "name": "Mainstream (Khafre, c. 2500 BCE)",
+              "claim": "The Sphinx was carved in the 4th Dynasty as part of Khafre's complex; the weathering has ordinary explanations.",
+              "support": [
+                "Archaeological context: it lies within Khafre's pyramid complex, aligned with his causeway and temples",
+                "A workers' town, bakeries, and tools of that era sit nearby",
+                "The body is poor-quality, layered limestone that weathers fast",
+                "Geologists (e.g., James Harrell) attribute the profile to salt-crystal weathering and the rock's soft layers",
+                "Geoarchaeology suggests heavy rains continued in Egypt until ~2200 BCE"
+              ],
+              "weaknesses": [
+                "The enclosure weathering really is striking, and mainstream accounts must do the geological work to explain it"
+              ]
+            },
+            {
+              "name": "Older-core / water-erosion (minority)",
+              "claim": "The enclosure walls were shaped by rainfall over a long time, so the core predates Dynastic Egypt.",
+              "support": [
+                "Schoch's field reading of rounded, vertical 'rain' weathering",
+                "The argument that wind-blown sand would leave a different signature",
+                "A seismic study Schoch cites for deeper subsurface weathering"
+              ],
+              "weaknesses": [
+                "No independent evidence of a society at Giza able to carve it that early — no tools, pottery, settlements, or other monuments of that age",
+                "Soft layered limestone plus salt weathering can mimic rainfall erosion",
+                "Requires a millennia-long gap with no supporting culture, then silence"
+              ]
+            }
+          ],
+          "whereItStands": "The Egyptological community and most geologists who've weighed in strongly favor the Khafre date. The older-core view is a real position argued by credentialed people, so the debate is live — but it is *not* an even split. Its biggest unresolved problem is the 'missing culture': a monument on that scale implies an organized society, and we have no other trace of one at Giza thousands of years before the pharaohs.",
+          "confidence": "contested"
+        },
+        {
+          "type": "evidence",
+          "heading": "How you'd actually settle it",
+          "body": [
+            "What would move the needle: a reliable **direct date** on the original carved surface, or the discovery of an associated **early culture** (tools, dwellings, other monuments) of the proposed age.",
+            "Absent that, both sides are really arguing about the *best explanation* of the same weathering — which is precisely the reasoning skill from the parent unit, applied to a hard real case."
+          ],
+          "confidence": "contested"
+        },
+        {
+          "type": "text",
+          "heading": "Why we cover this — and how",
+          "body": [
+            "Not to debunk, and not to hype. We cover it because it's a genuine clash between two disciplines reading the same evidence, and it shows how to **hold a question open without lowering the bar for evidence**.",
+            "Our honest summary: the weight of evidence favors Khafre; the older-core idea is an interesting minority challenge with one very large hole in it. You're now equipped to say exactly *why* — which is the whole point."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-dd-sphinx-date",
+              "stem": "What is the mainstream date for the Great Sphinx?",
+              "type": "single",
+              "choices": [
+                "c. 10,500 BCE",
+                "the reign of Khafre, c. 2500 BCE",
+                "the Roman era",
+                "c. 7000 BCE"
+              ],
+              "answer": 1,
+              "explanation": "Egyptologists date it to Khafre's reign, around 2500 BCE.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-dd-sphinx-argument",
+              "stem": "The water-erosion hypothesis rests mainly on…",
+              "type": "single",
+              "choices": [
+                "Ancient texts naming an older builder",
+                "The claim that enclosure weathering was caused by long rainfall",
+                "Carbon dating of the stone",
+                "Satellite photos"
+              ],
+              "answer": 1,
+              "explanation": "Schoch argues the rounded, vertical enclosure weathering was rainfall-driven, implying an older core. (Note: stone itself can't be radiocarbon dated.)",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-dd-sphinx-objection",
+              "stem": "What is the single strongest objection to the older-core view?",
+              "type": "single",
+              "choices": [
+                "The Sphinx is too small",
+                "There's no evidence of a culture at Giza capable of carving it that early",
+                "Limestone can't weather",
+                "Khafre never existed"
+              ],
+              "answer": 1,
+              "explanation": "The 'missing culture' problem: a monument that size implies an organized society, yet there's no other trace of one at Giza millennia before the pharaohs.",
+              "difficulty": "hard"
+            },
+            {
+              "id": "q-dd-sphinx-split",
+              "stem": "True or false: scholars are evenly split on the Sphinx's age.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 1,
+              "explanation": "False. It's a strong mainstream consensus (Khafre) with a credentialed minority challenge — not an even split.",
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can lay out the Sphinx age debate fairly — both readings, their evidence, and the decisive 'missing culture' problem — without either debunking or hype.",
+        "teaser": "Back to the toolkit whenever you're ready."
+      }
+    },
+    {
+      "id": "dd-radiocarbon-misleads",
+      "eraId": "foundations",
+      "order": 4,
+      "title": "When Radiocarbon Misleads",
+      "subtitle": "Old-wood, contamination, and reservoir effects",
+      "estMinutes": 7,
+      "status": "planned",
+      "kind": "deepdive",
+      "extends": "intro-05-radiocarbon",
+      "track": null,
+      "tags": [
+        "methods",
+        "dating"
+      ],
+      "screens": []
+    },
+    {
+      "id": "dd-sacsayhuaman-case-file",
+      "eraId": "foundations",
+      "order": 5,
+      "title": "Case File: The Stones of Sacsayhuaman",
+      "subtitle": "Wonder, demonstrated method, and where fringe claims fall short",
+      "estMinutes": 9,
+      "status": "planned",
+      "kind": "deepdive",
+      "extends": "intro-06-when-experts-disagree",
+      "track": "The Americas",
+      "tags": [
+        "americas",
+        "mystery"
+      ],
+      "screens": []
+    },
+    {
+      "id": "e1-out-of-africa",
+      "eraId": "before-cities",
+      "order": 1,
+      "title": "Out of Africa",
+      "subtitle": "Tracing the human journey with tools and ancient DNA",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e1-gobekli-tepe",
+      "eraId": "before-cities",
+      "order": 2,
+      "title": "Gobekli Tepe",
+      "subtitle": "Monuments before farming?",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e1-peopling-americas",
+      "eraId": "before-cities",
+      "order": 3,
+      "title": "Peopling of the Americas",
+      "subtitle": "How 'Clovis-first' was overturned",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "The Americas",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e2-meso-uruk",
+      "eraId": "bronze-age",
+      "order": 1,
+      "title": "Mesopotamia: Uruk & the First Writing",
+      "subtitle": "The world's first cities and cuneiform",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Mesopotamia",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e2-egypt-unification",
+      "eraId": "bronze-age",
+      "order": 2,
+      "title": "Egypt: Unification of the Two Lands",
+      "subtitle": "The Predynastic Nile to Narmer",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Egypt",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e2-caral-rise",
+      "eraId": "bronze-age",
+      "order": 3,
+      "title": "Caral: A City as Old as the Pyramids",
+      "subtitle": "Monumental Peru without pottery or writing",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "The Americas",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e2-egypt-pyramids",
+      "eraId": "bronze-age",
+      "order": 4,
+      "title": "Egypt: The Pyramid Age",
+      "subtitle": "The Old Kingdom at its height",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Egypt",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e2-minoan-prepalatial",
+      "eraId": "bronze-age",
+      "order": 5,
+      "title": "Minoan Crete: Before the Palaces",
+      "subtitle": "Early Minoan roots of an Aegean world",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Minoan Crete",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e2-bronze-collapse",
+      "eraId": "bronze-age",
+      "order": 6,
+      "title": "The Bronze Age Collapse",
+      "subtitle": "Why an interconnected world fell at once",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e3-assyria",
+      "eraId": "iron-age",
+      "order": 1,
+      "title": "The Neo-Assyrian Empire",
+      "subtitle": "The first machine of empire",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Assyria",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e3-phoenicians",
+      "eraId": "iron-age",
+      "order": 2,
+      "title": "The Phoenicians & the Alphabet",
+      "subtitle": "The technology that spread literacy",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Phoenicia",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e3-olmec",
+      "eraId": "iron-age",
+      "order": 3,
+      "title": "The Olmec",
+      "subtitle": "Mesoamerica's 'mother culture'?",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "The Americas",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e4-persia",
+      "eraId": "classical",
+      "order": 1,
+      "title": "Achaemenid Persia",
+      "subtitle": "The first world empire",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Persia",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e4-greece",
+      "eraId": "classical",
+      "order": 2,
+      "title": "Classical Greece",
+      "subtitle": "Polis, democracy, and its limits",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Greece",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e4-maya",
+      "eraId": "classical",
+      "order": 3,
+      "title": "The Maya",
+      "subtitle": "A script we can read, and the 'collapse' reconsidered",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "The Americas",
+      "tags": [],
+      "screens": []
+    },
+    {
+      "id": "e4-rome",
+      "eraId": "classical",
+      "order": 4,
+      "title": "Rome: Republic to Empire",
+      "subtitle": "The best-documented ancient state",
+      "estMinutes": 8,
+      "status": "planned",
+      "kind": "core",
+      "extends": null,
+      "track": "Rome",
+      "tags": [],
+      "screens": []
+    }
+  ]
+}
