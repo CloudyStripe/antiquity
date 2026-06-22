@@ -1,5 +1,6 @@
 <script lang="ts">
   import SubHeader from '$components/SubHeader.svelte';
+  import BottomNav from '$components/BottomNav.svelte';
   import Icon from '$components/ui/Icon.svelte';
   import TermBlock from '$components/blocks/TermBlock.svelte';
   import { allTermBlocks } from '$lib/content/load';
@@ -22,7 +23,7 @@
 
 <SubHeader title="Glossary" />
 
-<main class="app-main">
+<main class="app-main with-bottomnav">
   <div class="search">
     <Icon name="search" size={18} />
     <input
@@ -46,6 +47,8 @@
     </div>
   {/if}
 </main>
+
+<BottomNav />
 
 <style>
   .search {

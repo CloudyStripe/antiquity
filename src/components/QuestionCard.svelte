@@ -11,8 +11,10 @@
     /** Called once, the first time this question is answered. */
     onAnswered?: (correct: boolean, choiceIndex: number) => void;
     prompt?: string;
+    /** e.g. "Question 2 of 3" — shown only on multi-question quiz screens. */
+    position?: string;
   }
-  let { question, onAnswered, prompt }: Props = $props();
+  let { question, onAnswered, prompt, position }: Props = $props();
 
   let selected = $state<number | null>(null);
   let answered = $derived(selected !== null);
@@ -50,7 +52,12 @@
 </script>
 
 <div class="qcard">
-  {#if prompt}<p class="prompt">{prompt}</p>{/if}
+  {#if position || prompt}
+    <div class="qhead">
+      {#if position}<span class="qpos">{position}</span>{/if}
+      {#if prompt}<span class="prompt">{prompt}</span>{/if}
+    </div>
+  {/if}
   <fieldset>
     <legend class="stem"><MarkdownText text={question.stem} /></legend>
     <div class="options" role="group">
@@ -85,6 +92,20 @@
     display: flex;
     flex-direction: column;
     gap: var(--sp-3);
+  }
+  .qhead {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+  .qpos {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    color: var(--accent-ink);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    padding: 2px 10px;
+    border-radius: var(--r-pill);
   }
   .prompt {
     margin: 0;

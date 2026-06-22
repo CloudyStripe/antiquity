@@ -8,10 +8,24 @@ import { progress, xp, streak, badges, questionStats } from './persist';
 import { allUnits, erasInOrder, questionsForUnit } from '../content/load';
 import type { Question } from '../content/types';
 import { computeUnitStates } from '../engine/unlock';
+import { pickContinue, lessonsCompletedOn } from '../engine/insights';
+import { dayString } from '../engine/gamification';
 
 /** Map of unitId → lifecycle state, recomputed when progress changes. */
 export const unitStates = derived(progress, ($progress) =>
   computeUnitStates(allUnits(), erasInOrder, $progress),
+);
+
+/** Number of units completed today (local day) — drives the daily-goal ring. */
+export const lessonsToday = derived(progress, ($progress) =>
+  lessonsCompletedOn($progress, dayString(new Date())),
+);
+
+/** The unit to surface in the "Continue learning" hero, or null to hide it. */
+export const continueUnitId = derived(
+  [progress, unitStates],
+  ([$progress, $states]): string | null =>
+    pickContinue(allUnits(), $progress, (id) => $states.get(id) ?? 'locked'),
 );
 
 /** The cumulative Challenge pool: deduped questions from completed units only. */

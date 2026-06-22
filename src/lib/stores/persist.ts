@@ -17,6 +17,7 @@ export interface UnitProgress {
   bestScore: number; // 0..1, best inline-quiz fraction
   lastScreen: number;
   completedAt: string | null;
+  lastTouchedAt?: string | null; // ISO of the most recent visit (for "Continue")
 }
 
 export interface QuestionStat {
@@ -38,6 +39,7 @@ export interface SettingsState {
   reducedMotion: MotionSetting;
   textScale: number;
   primerSeen: boolean;
+  goal: number; // daily lesson goal
 }
 
 export interface PersistState {
@@ -65,6 +67,7 @@ export function defaultState(): PersistState {
       reducedMotion: 'system',
       textScale: 1,
       primerSeen: false,
+      goal: 2,
     },
   };
 }

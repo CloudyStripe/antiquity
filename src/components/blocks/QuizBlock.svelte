@@ -18,6 +18,9 @@
 
   let answered = $state(new Set<string>());
   let combo = $state(0);
+  let correctCount = $state(0);
+
+  const multi = $derived(block.questions.length > 1);
 
   // Tell the player the gate starts closed.
   $effect(() => {
@@ -26,6 +29,7 @@
 
   function handle(qId: string, correct: boolean): void {
     if (correct) {
+      correctCount += 1;
       combo += 1;
       if (combo >= 2) {
         sfx.combo(combo);
@@ -42,6 +46,7 @@
   <div class="quiz__top">
     <span class="quiz__count">
       {answered.size} / {block.questions.length} answered
+      {#if answered.size > 0}<span class="quiz__tally">· {correctCount} correct</span>{/if}
     </span>
     <ComboMeter count={combo} />
   </div>
@@ -50,6 +55,7 @@
     <QuestionCard
       question={q}
       prompt={i === 0 ? block.prompt : undefined}
+      position={multi ? `Question ${i + 1} of ${block.questions.length}` : undefined}
       onAnswered={(correct) => {
         answerInline(unitId, q, correct);
         handle(q.id, correct);
@@ -76,5 +82,8 @@
     font-size: var(--fs-sm);
     color: var(--ink-faint);
     font-weight: 600;
+  }
+  .quiz__tally {
+    color: var(--success-ink);
   }
 </style>
