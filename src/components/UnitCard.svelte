@@ -10,8 +10,10 @@
     state: UnitState;
     score?: number | null;
     optional?: boolean;
+    /** Rendered inside the course-map timeline (a node carries the state instead of a pill). */
+    timeline?: boolean;
   }
-  let { unit, state, score = null, optional = false }: Props = $props();
+  let { unit, state, score = null, optional = false, timeline = false }: Props = $props();
 
   const clickable = $derived(state !== 'locked');
   const planned = $derived(unit.status === 'planned');
@@ -29,6 +31,7 @@
   class="card {state}"
   class:optional
   class:clickable
+  class:tl={timeline}
   disabled={!clickable}
   onclick={open}
   aria-label="{unit.title}, {planned && state === 'locked' ? 'coming soon' : state}"
@@ -48,19 +51,21 @@
     </div>
   </div>
 
-  <div class="card__state" aria-hidden="true">
-    {#if state === 'completed'}
-      <span class="pill done"><Icon name="check" size={18} /></span>
-    {:else if state === 'in-progress'}
-      <span class="pill prog"><Icon name="arrow-right" size={18} /></span>
-    {:else if state === 'available'}
-      <span class="pill go"><Icon name="arrow-right" size={18} /></span>
-    {:else if planned}
-      <span class="pill soon">Soon</span>
-    {:else}
-      <span class="pill locked"><Icon name="lock" size={16} /></span>
-    {/if}
-  </div>
+  {#if !timeline}
+    <div class="card__state" aria-hidden="true">
+      {#if state === 'completed'}
+        <span class="pill done"><Icon name="check" size={18} /></span>
+      {:else if state === 'in-progress'}
+        <span class="pill prog"><Icon name="arrow-right" size={18} /></span>
+      {:else if state === 'available'}
+        <span class="pill go"><Icon name="arrow-right" size={18} /></span>
+      {:else if planned}
+        <span class="pill soon">Soon</span>
+      {:else}
+        <span class="pill locked"><Icon name="lock" size={16} /></span>
+      {/if}
+    </div>
+  {/if}
 </button>
 
 <style>
@@ -105,6 +110,26 @@
     opacity: 0.7;
     cursor: not-allowed;
     box-shadow: none;
+  }
+
+  /* ---- Timeline context: the spine node carries the state, so the card sheds
+     its left-accent pill and only the current (in-progress) card is emphasised. */
+  .card.tl {
+    box-shadow: none;
+  }
+  .card.tl.completed,
+  .card.tl.available {
+    border-left: 1px solid var(--border);
+  }
+  .card.tl.locked {
+    border: 1px dashed var(--border-strong);
+  }
+  .card.tl.in-progress {
+    border: 2px solid var(--accent);
+    box-shadow: var(--shadow-md);
+  }
+  .card.tl.clickable:hover {
+    box-shadow: var(--shadow-sm);
   }
 
   .card__main {
