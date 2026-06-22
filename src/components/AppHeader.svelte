@@ -1,0 +1,117 @@
+<script lang="ts">
+  import Icon from '$components/ui/Icon.svelte';
+  import { statsSummary } from '$lib/stores/derived';
+  import { toChallenge, toGlossary, toStats, toSettings } from '$lib/stores/router';
+
+  const nav = [
+    { label: 'Challenge', icon: 'trophy', go: toChallenge },
+    { label: 'Glossary', icon: 'book-open', go: toGlossary },
+    { label: 'Stats', icon: 'chart', go: toStats },
+    { label: 'Settings', icon: 'settings', go: toSettings },
+  ];
+</script>
+
+<header class="hdr">
+  <div class="hdr__top">
+    <a class="brand" href="#/" aria-label="Antiquity home">
+      <span class="brand__mark">A</span>
+      <span class="brand__name">Antiquity</span>
+    </a>
+    <nav class="hdr__nav" aria-label="Main">
+      {#each nav as item}
+        <button class="navbtn" aria-label={item.label} onclick={item.go}>
+          <Icon name={item.icon} size={20} />
+        </button>
+      {/each}
+    </nav>
+  </div>
+
+  <div class="stats" aria-label="Your progress">
+    <span class="stat"><Icon name="star" size={16} /> {$statsSummary.xp} XP</span>
+    <span class="stat"><Icon name="graduation-cap" size={16} /> {$statsSummary.unitsCompleted} done</span>
+    <span class="stat" class:hot={$statsSummary.streakCurrent > 0}>
+      <Icon name="flame" size={16} />
+      {$statsSummary.streakCurrent}-day streak
+    </span>
+  </div>
+</header>
+
+<style>
+  .hdr {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: var(--sp-3) var(--sp-4);
+  }
+  .hdr__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-3);
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .brand__mark {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    color: var(--accent-ink);
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.3rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .brand__name {
+    font-family: var(--font-serif);
+    font-size: var(--fs-xl);
+    font-weight: 600;
+  }
+  .hdr__nav {
+    display: flex;
+    gap: var(--sp-1);
+  }
+  .navbtn {
+    display: grid;
+    place-items: center;
+    width: var(--tap);
+    height: var(--tap);
+    border: none;
+    background: transparent;
+    color: var(--ink-soft);
+    border-radius: var(--r-md);
+    cursor: pointer;
+    transition: background var(--dur-fast) var(--ease-standard), color var(--dur-fast);
+  }
+  .navbtn:hover {
+    background: var(--surface-2);
+    color: var(--accent-ink);
+  }
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-4);
+    margin-top: var(--sp-3);
+  }
+  .stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+  .stat.hot {
+    color: var(--chip-contested-ink);
+  }
+</style>
