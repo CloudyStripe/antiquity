@@ -4,7 +4,7 @@
 </script>
 
 <svg
-  viewBox="0 0 360 230"
+  viewBox="0 0 384 230"
   class={klass}
   role="presentation"
   xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@
   <g class="ax">
     <!-- younger (top) -->
     <text
-      x="328"
+      x="320"
       y="44"
       fill="var(--ink-soft)"
       font-family="var(--font-sans)"
@@ -142,7 +142,7 @@
     >younger</text>
     <!-- older (bottom) -->
     <text
-      x="328"
+      x="320"
       y="165"
       fill="var(--ink-soft)"
       font-family="var(--font-sans)"
@@ -176,7 +176,7 @@
       font-size="12"
       font-weight="600"
       text-anchor="start"
-    >later intrusion &#8212; mixes the record</text>
+    >later intrusion: mixes the record</text>
   </g>
 
   <style>
