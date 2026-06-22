@@ -9,7 +9,7 @@
   let { block }: Props = $props();
 </script>
 
-<aside class="evidence" aria-label="How we know — evidence panel">
+<aside class="evidence" aria-label="How we know: evidence panel">
   <div class="evidence__head">
     <span class="evidence__brand">
       <span class="evidence__glass"><Icon name="microscope" size={18} strokeWidth={2.2} /></span>

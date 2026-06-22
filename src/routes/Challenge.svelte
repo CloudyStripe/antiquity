@@ -110,7 +110,7 @@
         <h2>Cumulative Challenge</h2>
         <p>
           {Math.min(ROUND_SIZE, poolSize)} questions, drawn from the
-          {poolSize} you’ve unlocked across completed units. No timer — just a satisfying
+          {poolSize} you’ve unlocked across completed units. No timer, just a satisfying
           round of review.
         </p>
         <Button variant="primary" size="lg" onclick={startRound}>
@@ -168,7 +168,7 @@
           {/each}
         </section>
       {:else}
-        <p class="clean"><Icon name="sparkles" size={16} /> Flawless round — nothing missed!</p>
+        <p class="clean"><Icon name="sparkles" size={16} /> Flawless round, nothing missed!</p>
       {/if}
 
       <div class="result__actions">

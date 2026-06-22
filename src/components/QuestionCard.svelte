@@ -74,7 +74,7 @@
 
   {#if answered}
     <div class="explain" class:good={isCorrect(selected ?? -1)}>
-      <strong>{isCorrect(selected ?? -1) ? 'Correct!' : 'Close — here’s why'}</strong>
+      <strong>{isCorrect(selected ?? -1) ? 'Correct!' : 'Close, here’s why'}</strong>
       <p><MarkdownText text={question.explanation} /></p>
     </div>
   {/if}

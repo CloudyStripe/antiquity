@@ -26,12 +26,12 @@
     {
       icon: 'telescope',
       title: '“c.” means circa',
-      body: '“c. 3000 BCE” means around 3000 BCE — an honest flag that a date is approximate.',
+      body: '“c. 3000 BCE” means around 3000 BCE, an honest flag that a date is approximate.',
     },
     {
       icon: 'scale',
       title: 'Relative vs. absolute',
-      body: 'A relative date says this came before that. An absolute date pins a calendar year — usually with an error range, not a single number.',
+      body: 'A relative date says this came before that. An absolute date pins a calendar year, usually with an error range, not a single number.',
     },
   ];
 </script>
@@ -55,7 +55,7 @@
     </ul>
 
     <Button variant="primary" size="lg" full onclick={dismiss}>
-      {firstRun ? 'Got it — start learning' : 'Back to map'}
+      {firstRun ? 'Got it, start learning' : 'Back to map'}
       <Icon name="arrow-right" size={18} />
     </Button>
   </div>

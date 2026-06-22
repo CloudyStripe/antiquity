@@ -31,7 +31,7 @@
   class:clickable
   disabled={!clickable}
   onclick={open}
-  aria-label="{unit.title} — {planned && state === 'locked' ? 'coming soon' : state}"
+  aria-label="{unit.title}, {planned && state === 'locked' ? 'coming soon' : state}"
 >
   <div class="card__main">
     <div class="card__badges">

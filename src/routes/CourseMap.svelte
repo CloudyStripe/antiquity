@@ -37,7 +37,7 @@
 
 <main class="app-main">
   <p class="intro">
-    Short, rigorous modules on the ancient world — built around <strong>how we know</strong>.
+    Short, rigorous modules on the ancient world, built around <strong>how we know</strong>.
     Find a spare five minutes and pick up where you left off.
   </p>
 
