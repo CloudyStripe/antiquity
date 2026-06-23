@@ -234,11 +234,16 @@
     overflow-y: auto;
     overflow-x: hidden;
     touch-action: pan-y;
+    /* Center a short screen (e.g. a single image) in the available height.
+       Taller screens overflow and scroll from the top, since the auto margins
+       collapse to 0 when there is no free space. */
+    display: flex;
+    flex-direction: column;
   }
   .screen {
     width: 100%;
     max-width: 760px;
-    margin: 0 auto;
+    margin: auto;
     padding: var(--sp-5) var(--sp-4) var(--sp-7);
   }
   .player__controls {
