@@ -32,7 +32,7 @@ The toolkit. You can't judge a date or a mystery without knowing how dates and c
 
 ---
 
-## ERA 1 — Before Cities: The Deep Past & First Monuments  *(planned)*
+## ERA 1 — Before Cities: The Deep Past & First Monuments  ✅ PLAYABLE (7 units)
 
 The shared backstory of every civilization that follows (developments, not yet civilizations).
 
@@ -46,11 +46,11 @@ The shared backstory of every civilization that follows (developments, not yet c
 
 ---
 
-## ERA 2 — The Bronze Age World  *(planned · ~3500–1150 BCE)*
+## ERA 2 — The Bronze Age World  *(Round 1 ✅ playable · rest planned · ~3500–1150 BCE)*
 
 *Opens with a parallel timeline. Taught in interleaved rounds — you hop between civilizations as they rise, peak, and fall, so you always feel what's happening elsewhere at the same moment. Each civ is still followed to its end (marked **arc complete**).*
 
-**Round 1 — The Dawn of Cities (~3500–2900 BCE)**
+**Round 1 — The Dawn of Cities (~3500–2900 BCE)** ✅ playable
 - **Mesopotamia** — Ubaid & Uruk: the first cities and the first writing (cuneiform).
 - **Egypt** — the Predynastic Nile → unification under Narmer.
 - ✦ **Norte Chico / Caral** — monumental cities rising on the Peruvian coast, as old as anything in the Old World.
@@ -154,6 +154,6 @@ The shared backstory of every civilization that follows (developments, not yet c
 ---
 
 ### What's playable now vs. planned
-- **Playable in v0.1:** the 6 Foundations core units + 3 deep-dive modules (fully authored in `content/curriculum.json`).
-- **On the map as teasers:** all of Eras 1–4 (shown locked / "coming soon").
-- **Suggested next content batch:** Era 1, then **Bronze Age Round 1 (Mesopotamia + Egypt + Caral)** — so your very first "real civilization" round already hops between three of them, the Americas included.
+- **Playable now (19 units · 69 quiz questions):** the **Foundations** era (6 core + 3 deep-dive modules), **all of Era 1 — Before Cities** (7 units), and **Bronze Age Round 1** (Mesopotamia, Egypt, Caral) — all fully authored in `content/curriculum.json`.
+- **On the map as teasers:** the rest of Eras 2–4 (shown locked / "coming soon").
+- **Suggested next content batch:** **Bronze Age Round 2** — the Pyramid Age and the Sphinx (Egypt), the mature Indus cities, and the first Minoan palaces — continuing the interleave.

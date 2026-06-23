@@ -1,65 +1,37 @@
-# Antiquity
+# Antiquity — Build Handoff Package
 
-A mobile-first, installable **Progressive Web App** for learning ancient history in short, rigorous, swipeable modules. Works fully offline, installs to the home screen, and is built around a signature **"How We Know"** evidence panel — every notable claim shows *how* we know it and how settled it is.
+This folder is everything **Claude Code** needs to build *Antiquity*, an installable, offline-capable ancient-history learning app (a PWA) for your Android phone. You don't build anything by hand — you hand this folder to Claude Code and it does the work, including setting up GitHub and deploying.
 
-Built with **Svelte 5 + Vite + TypeScript**, `vite-plugin-pwa`, the Web Audio API (synthesized sound, no audio files), and self-hosted fonts. No backend, no accounts, no trackers — progress lives in `localStorage` and can be exported/imported as a file.
+## What's in here
 
-> The curriculum is **content-driven**: the whole app renders from [`content/curriculum.json`](content/curriculum.json). Adding a unit = adding data, no code changes. The build spec is in [`PROMPT_FOR_CLAUDE_CODE.md`](PROMPT_FOR_CLAUDE_CODE.md); the curriculum blueprint is in [`COURSE_MAP.md`](COURSE_MAP.md).
+| File | What it is |
+|---|---|
+| `PROMPT_FOR_CLAUDE_CODE.md` | **The master build spec.** Tech stack, the content model, every screen, the quiz + cumulative "Challenge" mode, the gamification/"juice", accessibility, and the full Git + GitHub Pages workflow. This is what you give Claude Code. |
+| `COURSE_MAP.md` | **The human-readable curriculum blueprint** — the whole planned course (all eras, interleaved civilization rounds, the Americas, the mysteries). Read/steer this; it's your map, not code. |
+| `content/curriculum.json` | **The actual lesson content as data.** v0.1 has the 6 Foundations units + 3 deep-dive modules fully written, plus the rest of the course as locked "coming soon" teasers. The app renders entirely from this file. |
 
-## What's here (v0.1)
+## How to use it with Claude Code
 
-- The **Foundations** era — 6 core units + 3 optional deep-dive modules, fully playable (30 quiz questions).
-- Eras 1–4 appear on the map as locked "Coming soon" teasers.
-- Inline quizzes, a cumulative **Challenge** mode (drawn only from completed units), XP, daily streaks, badges, a glossary, stats, and export/import.
-- Light / dark / system themes, reduced-motion support, adjustable text size, and tasteful "juice" (button feel, correct-answer celebrations, completion confetti — all muteable and motion-respecting).
+1. Copy this whole `ancient-history-app/` folder somewhere on your computer (e.g. your projects directory).
+2. Open a terminal in that folder and start **Claude Code**.
+3. Tell it: **"Read `PROMPT_FOR_CLAUDE_CODE.md` and build the app exactly as specified, using `content/curriculum.json` as the content. Then set up Git and deploy to GitHub Pages per section 12."**
+4. Follow its prompts. It will pause where *you* must act — mainly GitHub sign-in (browser auth) and one click to turn on Pages (Repo → Settings → Pages → Source: "GitHub Actions"). It prints exact steps.
+5. When it finishes it prints your live URL (`https://<you>.github.io/<repo>/`). Open it in Chrome on your phone → menu → **Install app** / **Add to Home screen**.
 
-## Develop
+Decisions already locked in (so Claude Code doesn't have to ask): **installable PWA**, **public repo on GitHub** with the **gh CLI set up for you**, **GitHub Pages** hosting, and a strong emphasis on **delightful UX** (satisfying taps, correct-answer and completion celebrations).
 
-Requires **Node.js ≥ 20**.
+## What's in v0.1 (19 playable units · 69 quiz questions)
 
-```bash
-npm install
-npm run dev          # http://localhost:5173/antiquity/
-```
+Fully authored and playable in `content/curriculum.json`:
 
-Other scripts:
+- **Foundations** (6 core + 3 deep-dive modules): *What Counts as Ancient History · The Three-Age System · Paleo/Meso/Neolithic · Stratigraphy · Radiocarbon · When Experts Disagree*, plus deep dives *Why the Three-Age System Breaks Down in the Americas · The Tree-Ring Clock · Case File: The Age of the Sphinx*.
+- **Era 1 — Before Cities** (7 units): *Out of Africa · The Symbolic Mind (cave art) · Göbekli Tepe · The First Towns · Megaliths/Stonehenge · The Younger Dryas & the Impact Hypothesis · Peopling of the Americas*.
+- **Bronze Age Round 1** (3 interleaved units): *Mesopotamia: Uruk & the First Writing · Egypt: Unification of the Two Lands · Caral: A City as Old as the Pyramids*.
 
-```bash
-npm run build        # validate content, generate icons, then production build → dist/
-npm run preview      # serve the production build locally
-npm run check        # svelte-check (type-check)
-npm test             # vitest unit tests (schema, challenge pool, streak, unlock, markdown)
-npm run gen-icons    # regenerate PWA icons from the brand SVG (scripts/gen-icons.mjs)
-```
+The rest of Eras 2–4 show on the map as locked teasers, so you can see and reshape the full arc before we write it.
 
-The app is served under the base path `/antiquity/` (see `REPO` in [`vite.config.ts`](vite.config.ts)) so it works on GitHub Pages. The PWA manifest `start_url`/`scope` and the service-worker scope all match that path.
+## Growing the curriculum later
 
-## Deploy (GitHub Pages)
+Adding content = editing `content/curriculum.json` only (no code changes). Each unit is `core` or an optional `deepdive` (which `extends` a core unit). In the civilization eras, units carry a `track` (e.g. "Mesopotamia", "Egypt") and are ordered in **interleaved rounds**, so you hop between civilizations as they rise and fall rather than bingeing one. The full schema is documented in `PROMPT_FOR_CLAUDE_CODE.md` §5.
 
-Pushing to `main` triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds and publishes `dist/` to GitHub Pages. One-time setup: in the repo, go to **Settings → Pages → Source → "GitHub Actions."**
-
-Live URL: `https://<user>.github.io/antiquity/`
-
-To change the repo name, update the single `REPO` constant in `vite.config.ts` (it drives the base path, manifest, and SW scope).
-
-## Install on Android
-
-Open the live URL in Chrome → menu (⋮) → **Install app** / **Add to Home screen**. After the first load it runs fully offline.
-
-## Project layout
-
-```
-content/curriculum.json     # single source of truth (the curriculum data)
-src/lib/content/            # zod schema, typed loader, inline-markdown parser
-src/lib/stores/             # persistence, settings, router, derived selectors
-src/lib/engine/             # pure logic: quiz/SR, gamification, unlock rules
-src/lib/fx/                 # motion tokens, Web Audio SFX, haptics, confetti
-src/components/             # UI primitives, block renderers, the 6 figure SVGs
-src/routes/                 # Course Map, Unit Player, Challenge, Stats, etc.
-scripts/                    # icon generation + content validation
-tests/                      # vitest suites
-```
-
-## License
-
-[MIT](LICENSE). Fonts (EB Garamond, Inter) are SIL Open Font License, bundled via Fontsource.
+**Suggested next batch:** Bronze Age Round 2 — the Pyramid Age and the Sphinx (Egypt), the mature Indus cities, and the first Minoan palaces — continuing the interleave.

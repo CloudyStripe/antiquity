@@ -73,14 +73,14 @@
           "type": "text",
           "heading": "Prehistory vs. history",
           "body": [
-            "Historians draw the line at **writing**. 'History' is literally the part of the past we can read in written records. Everything before writing (known only from physical remains like bones, tools, seeds, and rubbish heaps) is **prehistory**.",
-            "It is a useful line, but a fuzzy one. Writing appears at different times in different places, so the *same century* can be 'history' in Iraq and 'prehistory' in Britain. And societies that never adopted writing are not 'pre' anything; they simply leave a different kind of evidence."
+            "Historians draw the line at **writing**. 'History' is literally the part of the past we can read in written records. Everything before writing — known only from physical remains like bones, tools, seeds, and rubbish heaps — is **prehistory**.",
+            "It is a useful line, but a fuzzy one. Writing appears at different times in different places, so the *same century* can be 'history' in Iraq and 'prehistory' in Britain. And societies that never adopted writing are not 'pre' anything — they simply leave a different kind of evidence."
           ]
         },
         {
           "type": "term",
           "term": "Prehistory",
-          "definition": "The human past before written records, reconstructed only from material remains: tools, bones, buildings, seeds, and the layers they are buried in.",
+          "definition": "The human past before written records, reconstructed only from material remains — tools, bones, buildings, seeds, and the layers they are buried in.",
           "pronunciation": "pree-HISS-tuh-ree",
           "etymology": "From Latin *prae* ('before') + 'history'. A related term, *protohistory*, covers peoples who left no writing of their own but appear in their neighbors' records."
         },
@@ -88,24 +88,24 @@
           "type": "text",
           "heading": "Reading ancient dates: BCE, CE, and 'c.'",
           "body": [
-            "**BCE** ('Before Common Era') and **CE** ('Common Era') count exactly the same years as the older BC/AD, just without the religious framing: 500 BCE = 500 BC. Years BCE count *down* toward the year 1, and there is no year zero.",
-            "You will constantly see **c.** (Latin *circa*, 'around'), as in 'c. 3000 BCE'. It is an honest flag that a date is approximate. Ancient dates almost always carry some uncertainty; a central theme of this course is *how much*, and *why*."
+            "**BCE** ('Before Common Era') and **CE** ('Common Era') count exactly the same years as the older BC/AD, just without the religious framing: 500 BCE = 500 BC. Years BCE count *down* toward the year 1 — and there is no year zero.",
+            "You will constantly see **c.** (Latin *circa*, 'around'), as in 'c. 3000 BCE'. It is an honest flag that a date is approximate. Ancient dates almost always carry some uncertainty — a central theme of this course is *how much*, and *why*."
           ]
         },
         {
           "type": "text",
           "heading": "A loaded word: 'civilization'",
           "body": [
-            "We will use 'civilization' for societies with cities, dense populations, and usually writing or monumental building. But keep a critical eye on it: the word has often been used to *rank* cultures, treating one kind of society as 'advanced' and others as not.",
+            "We will use 'civilization' for societies with cities, dense populations, and usually writing or monumental building. But keep a critical eye on it: the word has often been used to *rank* cultures — treating one kind of society as 'advanced' and others as not.",
             "Caral, in Peru, raised monumental pyramids with **no pottery and no writing**. Was it a 'civilization'? Questions like that are useful: they remind us our categories are tools we made, not facts of nature."
           ]
         },
         {
           "type": "evidence",
-          "heading": "How we know, and how sure",
+          "heading": "How we know — and how sure",
           "body": [
             "Every notable claim in this course comes with an evidence note like this one and a confidence label: **established**, **contested**, or **open**.",
-            "The point is not to memorize verdicts. It is to always know *how* we know something, and how firmly, so you can weigh new claims yourself."
+            "The point is not to memorize verdicts. It is to always know *how* we know something, and how firmly — so you can weigh new claims yourself."
           ],
           "confidence": "established"
         },
@@ -124,7 +124,7 @@
                 "Bronze tools"
               ],
               "answer": 2,
-              "explanation": "By convention, 'history' is the part of the past we can read in written records, so writing is the dividing line. It is a useful convention, not a law of nature.",
+              "explanation": "By convention, 'history' is the part of the past we can read in written records — so writing is the dividing line. It is a useful convention, not a law of nature.",
               "difficulty": "easy"
             },
             {
@@ -138,7 +138,7 @@
                 "It means Common Era"
               ],
               "answer": 1,
-              "explanation": "'c.' is *circa*, Latin for 'around': an honest flag that the date is approximate.",
+              "explanation": "'c.' is *circa*, Latin for 'around' — an honest flag that the date is approximate.",
               "difficulty": "easy"
             },
             {
@@ -158,7 +158,7 @@
       ],
       "completion": {
         "takeaway": "You can place 'ancient history' on the deep-time scale and read dates like 'c. 3000 BCE' critically.",
-        "teaser": "Next: the filing system everyone uses: Stone, Bronze, Iron."
+        "teaser": "Next: the filing system everyone uses — Stone, Bronze, Iron."
       }
     },
     {
@@ -166,7 +166,7 @@
       "eraId": "foundations",
       "order": 2,
       "title": "The Three-Age System: Stone, Bronze, Iron",
-      "subtitle": "A framework invented in a museum, and where it breaks",
+      "subtitle": "A framework invented in a museum — and where it breaks",
       "estMinutes": 7,
       "status": "available",
       "kind": "core",
@@ -189,7 +189,7 @@
           "type": "text",
           "heading": "Why it actually worked",
           "body": [
-            "Thomsen's order was a hunch from patterns in a collection. It was *tested* a few years later by Jens Worsaae, who dug carefully and found the materials stacked in the predicted order in the ground: stone-bearing layers beneath bronze, bronze beneath iron.",
+            "Thomsen's order was a hunch from patterns in a collection. It was *tested* a few years later by Jens Worsaae, who dug carefully and found the materials stacked in the predicted order in the ground — stone-bearing layers beneath bronze, bronze beneath iron.",
             "Notice what the system is: a **relative sequence** (this technology before that one), not a set of calendar dates. It tells you order, not years."
           ]
         },
@@ -198,7 +198,7 @@
           "id": "fig-three-age",
           "intent": "Show the three ages as a technological sequence with examples and fuzzy, region-varying boundaries.",
           "spec": "Three soft vertical bands left to right: STONE (icon: a chipped hand-axe), BRONZE (a cast axe/sword), IRON (an iron blade). Boundaries drawn as blurred gradients, not hard lines, with a small note 'boundaries fall at different dates in different regions'. Theme-aware, phone-legible.",
-          "caption": "Stone, Bronze, and Iron as a sequence of tool technologies, with deliberately blurry boundaries.",
+          "caption": "Stone, Bronze, and Iron as a sequence of tool technologies — with deliberately blurry boundaries.",
           "alt": "Three bands labeled Stone, Bronze, Iron, each with a tool icon, separated by blurred boundaries."
         },
         {
@@ -206,7 +206,7 @@
           "heading": "How we know the order is real",
           "body": [
             "Worsaae's excavations confirmed Thomsen's hunch *stratigraphically*: in undisturbed ground, bronze-age material genuinely lay below iron-age material, and stone below bronze.",
-            "That is why the Three-Age System is still used for Europe and the Near East; its core sequence was checked against the dirt, not just the display case."
+            "That is why the Three-Age System is still used for Europe and the Near East — its core sequence was checked against the dirt, not just the display case."
           ],
           "confidence": "established"
         },
@@ -214,8 +214,8 @@
           "type": "text",
           "heading": "A framework, not a law of nature",
           "body": [
-            "The ages are defined by **technology**, so they arrive at different times in different places, and some places skip a step entirely. Much of sub-Saharan Africa goes essentially from stone tools to iron with no local Bronze Age at all.",
-            "And the scheme fits the **Americas** so poorly that archaeologists there don't really use it; a whole optional deep dive explains why. The lesson: the Three-Age System is a handy filing cabinet, not a ladder every society must climb."
+            "The ages are defined by **technology**, so they arrive at different times in different places — and some places skip a step entirely. Much of sub-Saharan Africa goes essentially from stone tools to iron with no local Bronze Age at all.",
+            "And the scheme fits the **Americas** so poorly that archaeologists there don't really use it — a whole optional deep dive explains why. The lesson: the Three-Age System is a handy filing cabinet, not a ladder every society must climb."
           ]
         },
         {
@@ -239,7 +239,7 @@
                 "By guessing"
               ],
               "answer": 1,
-              "explanation": "He organized the National Museum of Denmark's undated antiquities by material and noticed consistent groupings, later confirmed by excavation.",
+              "explanation": "He organized the National Museum of Denmark's undated antiquities by material and noticed consistent groupings — later confirmed by excavation.",
               "difficulty": "medium"
             },
             {
@@ -253,7 +253,7 @@
                 "A king's name"
               ],
               "answer": 1,
-              "explanation": "It is a relative sequence (Stone before Bronze before Iron), not a set of absolute dates.",
+              "explanation": "It is a relative sequence — Stone before Bronze before Iron — not a set of absolute dates.",
               "difficulty": "medium"
             },
             {
@@ -265,7 +265,7 @@
                 "False"
               ],
               "answer": 1,
-              "explanation": "False. Many regions (much of sub-Saharan Africa, and the Americas) don't fit the scheme; it's a framework, not a universal law.",
+              "explanation": "False. Many regions (much of sub-Saharan Africa, and the Americas) don't fit the scheme — it's a framework, not a universal law.",
               "difficulty": "medium"
             }
           ]
@@ -273,7 +273,7 @@
       ],
       "completion": {
         "takeaway": "You know where the Stone/Bronze/Iron scheme came from, why it holds for Eurasia, and why it's a framework rather than a universal ladder.",
-        "teaser": "Next: zooming inside the Stone Age: Paleo, Meso, Neolithic."
+        "teaser": "Next: zooming inside the Stone Age — Paleo, Meso, Neolithic."
       }
     },
     {
@@ -281,7 +281,7 @@
       "eraId": "foundations",
       "order": 3,
       "title": "Stone Age Lifeways: Paleo / Meso / Neolithic",
-      "subtitle": "Not just older stone, but different ways of living",
+      "subtitle": "Not just older stone — different ways of living",
       "estMinutes": 8,
       "status": "available",
       "kind": "core",
@@ -304,7 +304,7 @@
           "type": "text",
           "heading": "What actually changed",
           "body": [
-            "These are not just 'older vs. newer rocks'. They mark **ways of life**. Palaeolithic people *chipped* (knapped) stone and lived by hunting and gathering. Neolithic people *ground and polished* stone, and, far more importantly, **farmed**, made pottery, and lived in settled villages.",
+            "These are not just 'older vs. newer rocks'. They mark **ways of life**. Palaeolithic people *chipped* (knapped) stone and lived by hunting and gathering. Neolithic people *ground and polished* stone, and — far more importantly — **farmed**, made pottery, and lived in settled villages.",
             "The Mesolithic is the flexible in-between: the period after the last Ice Age when foragers adapted to a warming world, just before (or alongside) the spread of farming."
           ]
         },
@@ -319,15 +319,15 @@
         {
           "type": "term",
           "term": "Neolithic Revolution",
-          "definition": "The transition from foraging to farming and settled village life: domesticating plants and animals. Named by archaeologist V. Gordon Childe in 1936.",
-          "etymology": "Childe called it a 'revolution' for its sweeping consequences: food surpluses, population growth, property, and eventually cities, even though it actually unfolded over centuries."
+          "definition": "The transition from foraging to farming and settled village life — domesticating plants and animals. Named by archaeologist V. Gordon Childe in 1936.",
+          "etymology": "Childe called it a 'revolution' for its sweeping consequences: food surpluses, population growth, property, and eventually cities — even though it actually unfolded over centuries."
         },
         {
           "type": "text",
           "heading": "The catch: it happened at different times",
           "body": [
             "Farming was not invented once and spread from one place. It arose **independently** in several regions, at different dates: the Fertile Crescent around 10,000 BCE, China somewhat later, highland New Guinea around 8,000 BCE, Mesoamerica, the Andes, and more.",
-            "So 'Neolithic' is a **stage**, not a date. A region can be fully Neolithic while its neighbor is still Mesolithic. Calendar time and cultural stage are two different rulers; don't confuse them."
+            "So 'Neolithic' is a **stage**, not a date. A region can be fully Neolithic while its neighbor is still Mesolithic. Calendar time and cultural stage are two different rulers — don't confuse them."
           ]
         },
         {
@@ -335,7 +335,7 @@
           "heading": "How we know farming was independent",
           "body": [
             "The founder species differ by region: wheat and barley in the Near East; rice and millet in China; maize, beans, and squash in Mesoamerica; potatoes and quinoa in the Andes.",
-            "The genetics of those domesticated plants and animals trace back to *local* wild ancestors in each region: strong evidence that farming was invented several separate times, not copied from a single source."
+            "The genetics of those domesticated plants and animals trace back to *local* wild ancestors in each region — strong evidence that farming was invented several separate times, not copied from a single source."
           ],
           "confidence": "established"
         },
@@ -380,7 +380,7 @@
                 "False"
               ],
               "answer": 0,
-              "explanation": "True. The Stone Age stages are ways of life that arrived at different times in different places; they are not fixed to a single calendar date.",
+              "explanation": "True. The Stone Age stages are ways of life that arrived at different times in different places — they are not fixed to a single calendar date.",
               "difficulty": "hard"
             }
           ]
@@ -388,14 +388,14 @@
       ],
       "completion": {
         "takeaway": "You can explain that Paleo/Meso/Neolithic mark ways of life (above all, farming), and that the Neolithic happened at different times in different places.",
-        "teaser": "Next: the first of our 'how we know' tools: reading time in the dirt."
+        "teaser": "Next: the first of our 'how we know' tools — reading time in the dirt."
       }
     },
     {
       "id": "intro-04-stratigraphy",
       "eraId": "foundations",
       "order": 4,
-      "title": "How We Know I: Stratigraphy & Relative Dating",
+      "title": "How We Know I — Stratigraphy & Relative Dating",
       "subtitle": "Reading time in the dirt, before any lab",
       "estMinutes": 7,
       "status": "available",
@@ -411,7 +411,7 @@
           "type": "text",
           "heading": "Dating without a clock",
           "body": [
-            "Long before any laboratory method existed, archaeologists could still put events in order. The trick is not the object itself; it is *where in the ground* the object sits.",
+            "Long before any laboratory method existed, archaeologists could still put events in order. The trick is not the object itself — it is *where in the ground* the object sits.",
             "Sites build up in **layers** (strata): floors, rubbish, collapse, wind-blown dust, new building. Each layer is a slice of time, stacked in sequence."
           ]
         },
@@ -419,7 +419,7 @@
           "type": "text",
           "heading": "The law of superposition",
           "body": [
-            "The founding rule, borrowed from geology (Nicolas Steno, 1669): in an **undisturbed** deposit, lower layers were laid down *before* higher ones, so lower is older.",
+            "The founding rule, borrowed from geology (Nicolas Steno, 1669): in an **undisturbed** deposit, lower layers were laid down *before* higher ones — so lower is older.",
             "That little phrase 'undisturbed' is everything. Pits, graves, burrowing animals, and later builders all cut through older layers, mixing things up. Half of an excavator's skill is spotting where the neat stack has been disturbed."
           ]
         },
@@ -427,15 +427,15 @@
           "type": "figure",
           "id": "fig-strata",
           "intent": "Teach superposition and the importance of context/disturbance.",
-          "spec": "A cut-away of stratified earth: 4-5 horizontal layers, oldest at the bottom labeled 'older', youngest at top labeled 'younger', each a slightly different tone, with small finds drawn in (potsherd, bone, coin). Show one vertical 'pit' cutting down from an upper layer through lower ones, labeled 'later intrusion: mixes the record'. Theme-aware, phone-legible.",
-          "caption": "In undisturbed ground, deeper means older, until a pit or grave cuts through and scrambles the sequence.",
+          "spec": "A cut-away of stratified earth: 4-5 horizontal layers, oldest at the bottom labeled 'older', youngest at top labeled 'younger', each a slightly different tone, with small finds drawn in (potsherd, bone, coin). Show one vertical 'pit' cutting down from an upper layer through lower ones, labeled 'later intrusion — mixes the record'. Theme-aware, phone-legible.",
+          "caption": "In undisturbed ground, deeper means older — until a pit or grave cuts through and scrambles the sequence.",
           "alt": "A cross-section of earth layers, oldest at bottom, with a later pit cutting down through several layers."
         },
         {
           "type": "text",
           "heading": "Context is (almost) everything",
           "body": [
-            "An artifact's value comes from its **context**: the layer it sat in and what it was found *with* (its association). A coin sealed in a floor can date that floor. The *same* coin loose in a drawer, with no record of where it came from, is nearly mute.",
+            "An artifact's value comes from its **context** — the layer it sat in and what it was found *with* (its association). A coin sealed in a floor can date that floor. The *same* coin loose in a drawer, with no record of where it came from, is nearly mute.",
             "This is why looting is so destructive: digging an object out for sale doesn't just steal an object, it erases the context that made it evidence."
           ]
         },
@@ -451,7 +451,7 @@
           "heading": "Relative vs. absolute",
           "body": [
             "Stratigraphy and seriation are **relative** methods: they tell you *this before that*, not *how many years ago*.",
-            "To pin a real calendar date on a layer, you need an **absolute** method, and the most famous one is next."
+            "To pin a real calendar date on a layer, you need an **absolute** method — and the most famous one is next."
           ],
           "confidence": "established"
         },
@@ -470,7 +470,7 @@
                 "You can't tell from position"
               ],
               "answer": 1,
-              "explanation": "By the law of superposition, lower layers were deposited first, so in undisturbed ground the bottom layer is oldest.",
+              "explanation": "By the law of superposition, lower layers were deposited first — so in undisturbed ground the bottom layer is oldest.",
               "difficulty": "easy"
             },
             {
@@ -484,7 +484,7 @@
                 "Museums won't display it"
               ],
               "answer": 1,
-              "explanation": "Context (the layer and what an object was found with) is what turns an object into evidence. Remove it and most of the information is gone.",
+              "explanation": "Context — the layer and what an object was found with — is what turns an object into evidence. Remove it and most of the information is gone.",
               "difficulty": "medium"
             },
             {
@@ -498,7 +498,7 @@
                 "Both exactly"
               ],
               "answer": 1,
-              "explanation": "They establish relative order (this before that), not absolute calendar years.",
+              "explanation": "They establish relative order — this before that — not absolute calendar years.",
               "difficulty": "medium"
             }
           ]
@@ -506,15 +506,15 @@
       ],
       "completion": {
         "takeaway": "You understand superposition, why context matters more than the object, and the difference between relative and absolute dating.",
-        "teaser": "Next: the carbon clock, and why a raw date isn't a calendar date."
+        "teaser": "Next: the carbon clock — and why a raw date isn't a calendar date."
       }
     },
     {
       "id": "intro-05-radiocarbon",
       "eraId": "foundations",
       "order": 5,
-      "title": "How We Know II: Radiocarbon & Absolute Dating",
-      "subtitle": "A clock made of carbon, with an asterisk",
+      "title": "How We Know II — Radiocarbon & Absolute Dating",
+      "subtitle": "A clock made of carbon — with an asterisk",
       "estMinutes": 8,
       "status": "available",
       "kind": "core",
@@ -537,8 +537,8 @@
           "type": "text",
           "heading": "Half-life, and what you can date",
           "body": [
-            "Carbon-14's **half-life** (the time for half of it to decay) is about **5,730 years**. (By convention, labs still calculate 'conventional' ages with Libby's slightly-off original figure of 5,568, so old and new results stay comparable.)",
-            "Two limits matter. It only works on things that were **once alive** and contain carbon: charcoal, wood, bone, seeds, shell. And after about **50,000 years** so little carbon-14 remains that the clock runs out."
+            "Carbon-14's **half-life** — the time for half of it to decay — is about **5,730 years**. (By convention, labs still calculate 'conventional' ages with Libby's slightly-off original figure of 5,568, so old and new results stay comparable.)",
+            "Two limits matter. It only works on things that were **once alive** and contain carbon — charcoal, wood, bone, seeds, shell. And after about **50,000 years** so little carbon-14 remains that the clock runs out."
           ]
         },
         {
@@ -546,14 +546,14 @@
           "id": "fig-c14-decay",
           "intent": "Show radioactive decay via half-lives.",
           "spec": "A smooth exponential decay curve: x-axis 'years since death' (0 to ~17,000), y-axis 'carbon-14 remaining' (100 percent to 0). Mark dashed lines at one half-life (~5,730 yrs, 50 percent) and two half-lives (~11,460 yrs, 25 percent). Clean, theme-aware, phone-legible.",
-          "caption": "Each half-life (~5,730 years) halves the carbon-14 that's left: a steady, measurable clock.",
+          "caption": "Each half-life (~5,730 years) halves the carbon-14 that's left — a steady, measurable clock.",
           "alt": "An exponential decay curve showing carbon-14 dropping to 50 percent at one half-life and 25 percent at two."
         },
         {
           "type": "text",
           "heading": "Radiocarbon years are NOT calendar years",
           "body": [
-            "Here is the asterisk. The method assumes a steady amount of carbon-14 in the atmosphere, but that amount has **wobbled** over the millennia, driven by changes in the sun, Earth's magnetic field, and the oceans.",
+            "Here is the asterisk. The method assumes a steady amount of carbon-14 in the atmosphere — but that amount has **wobbled** over the millennia, driven by changes in the sun, Earth's magnetic field, and the oceans.",
             "So a raw 'radiocarbon age' is slightly off from true calendar years, and must be **calibrated** to be turned into a real date."
           ]
         },
@@ -561,8 +561,8 @@
           "type": "evidence",
           "heading": "How we calibrate: tree rings",
           "body": [
-            "Calibration curves (the current standard is **IntCal20**) are built by measuring carbon-14 in samples whose true age we already know, above all, **tree rings**, which can be counted one year at a time back roughly 14,000 years, and extended further with other records to about 55,000.",
-            "You feed a raw radiocarbon measurement into the curve and read out a **calendar range** with a stated probability, not a single magic number."
+            "Calibration curves (the current standard is **IntCal20**) are built by measuring carbon-14 in samples whose true age we already know — above all, **tree rings**, which can be counted one year at a time back roughly 14,000 years, and extended further with other records to about 55,000.",
+            "You feed a raw radiocarbon measurement into the curve and read out a **calendar range** with a stated probability — not a single magic number."
           ],
           "confidence": "established"
         },
@@ -589,7 +589,7 @@
                 "Pure glass"
               ],
               "answer": 2,
-              "explanation": "Carbon-14 dating works only on things that were once alive and contain carbon: charcoal, wood, bone, seeds, shell. It can't date stone or metal directly.",
+              "explanation": "Carbon-14 dating works only on things that were once alive and contain carbon — charcoal, wood, bone, seeds, shell. It can't date stone or metal directly.",
               "difficulty": "easy"
             },
             {
@@ -638,16 +638,16 @@
         }
       ],
       "completion": {
-        "takeaway": "You can explain how carbon-14 dating works, what it can and can't date, and why a real date is a calibrated range, not a single number.",
-        "teaser": "Next: the most important skill of all: what to do when the experts don't agree."
+        "takeaway": "You can explain how carbon-14 dating works, what it can and can't date, and why a real date is a calibrated range — not a single number.",
+        "teaser": "Next: the most important skill of all — what to do when the experts don't agree."
       }
     },
     {
       "id": "intro-06-when-experts-disagree",
       "eraId": "foundations",
       "order": 6,
-      "title": "How We Know III: When Experts Disagree",
-      "subtitle": "Open questions, minority views, and fringe, told apart",
+      "title": "How We Know III — When Experts Disagree",
+      "subtitle": "Open questions, minority views, and fringe — told apart",
       "estMinutes": 8,
       "status": "available",
       "kind": "core",
@@ -663,15 +663,15 @@
           "type": "text",
           "heading": "Not all disagreements are equal",
           "body": [
-            "Real inquiry is full of disagreement, but disagreements come in very different weights, and lumping them together is how people get fooled (in either direction).",
-            "Three useful categories: an **open question** is genuinely unsettled, with specialists divided. A **minority view** is a position a few qualified people hold against a strong consensus. A **fringe claim** is one most specialists reject for evidential reasons. All three can be discussed honestly, but they don't carry equal weight, and pretending they do is its own kind of error."
+            "Real inquiry is full of disagreement — but disagreements come in very different weights, and lumping them together is how people get fooled (in either direction).",
+            "Three useful categories: an **open question** is genuinely unsettled, with specialists divided. A **minority view** is a position a few qualified people hold against a strong consensus. A **fringe claim** is one most specialists reject for evidential reasons. All three can be discussed honestly — but they don't carry equal weight, and pretending they do is its own kind of error."
           ]
         },
         {
           "type": "text",
           "heading": "What makes a claim strong",
           "body": [
-            "Lean on a few tests. Is the claim **testable**: could any evidence show it wrong? Does it **fit independent lines of evidence**, or only one? Has it made **successful predictions**? Has it survived **expert scrutiny**, or only friendly audiences?",
+            "Lean on a few tests. Is the claim **testable** — could any evidence show it wrong? Does it **fit independent lines of evidence**, or only one? Has it made **successful predictions**? Has it survived **expert scrutiny**, or only friendly audiences?",
             "The single best question to keep in your pocket, for *any* claim including the mainstream one: **what evidence would change this view?** If the answer is 'nothing could', you've left history and entered faith."
           ]
         },
@@ -700,20 +700,20 @@
                 "Argues wind-and-sand erosion would look different"
               ],
               "weaknesses": [
-                "No independent trace of a society at Giza able to carve it that early: no tools, pottery, or settlements of that age",
+                "No independent trace of a society at Giza able to carve it that early — no tools, pottery, or settlements of that age",
                 "Soft layered limestone and salt-crystal weathering can mimic 'rain' erosion",
                 "Rains in Egypt actually continued until ~2200 BCE"
               ]
             }
           ],
-          "whereItStands": "A strong Egyptological consensus favors Khafre; the older-core idea is a credentialed minority view, not an even split. Its deepest problem is the 'missing culture': a monument that size implies an organized society we'd expect to see in other evidence. It's a genuine geology-vs-archaeology clash worth reasoning through, which is exactly why it makes a good teaching case.",
+          "whereItStands": "A strong Egyptological consensus favors Khafre; the older-core idea is a credentialed minority view, not an even split. Its deepest problem is the 'missing culture': a monument that size implies an organized society we'd expect to see in other evidence. It's a genuine geology-vs-archaeology clash worth reasoning through — which is exactly why it makes a good teaching case.",
           "confidence": "contested"
         },
         {
           "type": "evidence",
           "heading": "Open-minded does not mean 'anything goes'",
           "body": [
-            "Being open-minded means following the evidence wherever it leads, including saying 'we don't know' when that's the honest answer. It does *not* mean treating every claim as equally likely.",
+            "Being open-minded means following the evidence wherever it leads — including saying 'we don't know' when that's the honest answer. It does *not* mean treating every claim as equally likely.",
             "Skepticism and curiosity are partners, not opposites. Stay curious about bold ideas; stay strict about evidence. This course will keep doing both."
           ],
           "confidence": "established"
@@ -747,7 +747,7 @@
                 "Is it on the internet?"
               ],
               "answer": 1,
-              "explanation": "'What evidence would change this view?' tests whether a claim is falsifiable and evidence-based: the heart of careful reasoning.",
+              "explanation": "'What evidence would change this view?' tests whether a claim is falsifiable and evidence-based — the heart of careful reasoning.",
               "difficulty": "medium"
             },
             {
@@ -773,14 +773,14 @@
                 "False"
               ],
               "answer": 1,
-              "explanation": "False. Open-mindedness means following the evidence, which includes recognizing that some claims are far better supported than others.",
+              "explanation": "False. Open-mindedness means following the evidence — which includes recognizing that some claims are far better supported than others.",
               "difficulty": "hard"
             }
           ]
         }
       ],
       "completion": {
-        "takeaway": "You can tell open questions, minority views, and fringe claims apart, and weigh any of them by asking what evidence would change your mind.",
+        "takeaway": "You can tell open questions, minority views, and fringe claims apart — and weigh any of them by asking what evidence would change your mind.",
         "teaser": "Optional deep dives unlock now: the full Sphinx case file, the tree-ring clock, and why the Three-Age System fails in the Americas."
       }
     },
@@ -804,7 +804,7 @@
           "type": "text",
           "heading": "A scheme built from Scandinavian closets",
           "body": [
-            "Remember where Stone/Bronze/Iron came from: Thomsen sorting Danish antiquities. It captured something real about Eurasia, but it was never meant to be a law for the whole planet.",
+            "Remember where Stone/Bronze/Iron came from: Thomsen sorting Danish antiquities. It captured something real about Eurasia — but it was never meant to be a law for the whole planet.",
             "Carry it across the Atlantic and it simply stops describing what you find."
           ]
         },
@@ -812,7 +812,7 @@
           "type": "text",
           "heading": "There is no 'Bronze Age' here",
           "body": [
-            "Indigenous American societies were superb metalworkers: gold, silver, and copper, and genuine bronze in the Andes in later periods. But bronze *tools* never became the backbone of society the way they did in the Near East. Great cities and monuments were built with stone, wood, and human muscle.",
+            "Indigenous American societies were superb metalworkers — gold, silver, and copper, and genuine bronze in the Andes in later periods. But bronze *tools* never became the backbone of society the way they did in the Near East. Great cities and monuments were built with stone, wood, and human muscle.",
             "So the tidy ladder Stone -> Bronze -> Iron has no rung that fits. Forcing it on the Americas hides more than it reveals."
           ]
         },
@@ -820,7 +820,7 @@
           "type": "text",
           "heading": "Caral breaks the mold",
           "body": [
-            "Norte Chico, on the Peruvian coast, raised monumental platform mounds and sunken plazas around 3000-1800 BCE (at the same time as Egypt's pyramids) with **no pottery** and (as far as we can tell) **no writing**.",
+            "Norte Chico, on the Peruvian coast, raised monumental platform mounds and sunken plazas around 3000-1800 BCE — at the same time as Egypt's pyramids — with **no pottery** and (as far as we can tell) **no writing**.",
             "By an Old-World checklist, a complex society 'should' have those things. Caral didn't, and was complex anyway. The checklist is the problem, not Caral."
           ]
         },
@@ -829,7 +829,7 @@
           "heading": "How archaeologists periodize the Americas instead",
           "body": [
             "Rather than the three metal ages, specialists use **local frameworks** built on regional developments: in Mesoamerica, the Preclassic / Classic / Postclassic; in the Andes, alternating 'Horizons' and 'Intermediate Periods'.",
-            "These schemes are organized around things like shared art styles, city growth, and political integration, not which metal people happened to use."
+            "These schemes are organized around things like shared art styles, city growth, and political integration — not which metal people happened to use."
           ],
           "confidence": "established"
         },
@@ -848,7 +848,7 @@
                 "Bronze hadn't been invented yet anywhere"
               ],
               "answer": 1,
-              "explanation": "Indigenous Americans worked metals (including Andean bronze later), but bronze tools never anchored society as in Eurasia, so the 'age' doesn't apply.",
+              "explanation": "Indigenous Americans worked metals (including Andean bronze later), but bronze tools never anchored society as in Eurasia — so the 'age' doesn't apply.",
               "difficulty": "medium"
             },
             {
@@ -862,7 +862,7 @@
                 "It was purely mythical"
               ],
               "answer": 1,
-              "explanation": "Caral raised monumental architecture around 3000-1800 BCE without pottery or writing: complexity that the standard checklist doesn't predict.",
+              "explanation": "Caral raised monumental architecture around 3000-1800 BCE without pottery or writing — complexity that the standard checklist doesn't predict.",
               "difficulty": "medium"
             },
             {
@@ -913,7 +913,7 @@
           "type": "text",
           "heading": "Dendrochronology",
           "body": [
-            "Most trees add **one growth ring per year**. In a given region, good and bad years make a distinctive pattern of wide and narrow rings: a barcode shared by all the trees living through it.",
+            "Most trees add **one growth ring per year**. In a given region, good and bad years make a distinctive pattern of wide and narrow rings — a barcode shared by all the trees living through it.",
             "Match the barcode in a living tree to the outer rings of an older beam, then that beam to a still-older log, and you can chain backwards, overlapping pattern on pattern, into a continuous year-by-year **master chronology** thousands of years long."
           ]
         },
@@ -930,7 +930,7 @@
           "heading": "Building the calibration curve",
           "body": [
             "Now the payoff. Take wood whose calendar age you *know* from ring-counting, and measure its radiocarbon. Do this for thousands of samples and you map exactly how radiocarbon years relate to calendar years. That map is the **calibration curve** (IntCal).",
-            "Feed a raw radiocarbon measurement in; read a calendar **range** out. Because the curve wiggles, one radiocarbon value sometimes matches a couple of calendar windows, which is why calibrated dates can have an odd shape."
+            "Feed a raw radiocarbon measurement in; read a calendar **range** out. Because the curve wiggles, one radiocarbon value sometimes matches a couple of calendar windows — which is why calibrated dates can have an odd shape."
           ]
         },
         {
@@ -1015,7 +1015,7 @@
           "type": "text",
           "heading": "The monument and the question",
           "body": [
-            "The Great Sphinx at Giza: a lion's body with a human head, carved directly from the limestone bedrock. The mainstream date is the reign of pharaoh **Khafre**, around **2500 BCE** (Egypt's 4th Dynasty).",
+            "The Great Sphinx at Giza — a lion's body with a human head, carved directly from the limestone bedrock. The mainstream date is the reign of pharaoh **Khafre**, around **2500 BCE** (Egypt's 4th Dynasty).",
             "The question this case file weighs: is it possible the **core body** is significantly older than that?"
           ]
         },
@@ -1024,7 +1024,7 @@
           "heading": "The water-erosion hypothesis",
           "body": [
             "In the late 1970s the author John Anthony West publicized an older-Sphinx idea. To test it he brought in geologist **Robert Schoch**, who argued that the deep, rounded, vertical weathering in the walls of the Sphinx *enclosure* looks like erosion from prolonged **rainfall**.",
-            "Since heavy rains faded from the Giza region long before the pharaohs, Schoch reasoned the core carving could date to roughly **5000-7000+ BCE**, older than Dynastic Egypt, though notably he did *not* claim the far older dates some popularizers prefer."
+            "Since heavy rains faded from the Giza region long before the pharaohs, Schoch reasoned the core carving could date to roughly **5000-7000+ BCE** — older than Dynastic Egypt, though notably he did *not* claim the far older dates some popularizers prefer."
           ]
         },
         {
@@ -1055,13 +1055,13 @@
                 "A seismic study Schoch cites for deeper subsurface weathering"
               ],
               "weaknesses": [
-                "No independent evidence of a society at Giza able to carve it that early: no tools, pottery, settlements, or other monuments of that age",
+                "No independent evidence of a society at Giza able to carve it that early — no tools, pottery, settlements, or other monuments of that age",
                 "Soft layered limestone plus salt weathering can mimic rainfall erosion",
                 "Requires a millennia-long gap with no supporting culture, then silence"
               ]
             }
           ],
-          "whereItStands": "The Egyptological community and most geologists who've weighed in strongly favor the Khafre date. The older-core view is a real position argued by credentialed people, so the debate is live, but it is *not* an even split. Its biggest unresolved problem is the 'missing culture': a monument on that scale implies an organized society, and we have no other trace of one at Giza thousands of years before the pharaohs.",
+          "whereItStands": "The Egyptological community and most geologists who've weighed in strongly favor the Khafre date. The older-core view is a real position argued by credentialed people, so the debate is live — but it is *not* an even split. Its biggest unresolved problem is the 'missing culture': a monument on that scale implies an organized society, and we have no other trace of one at Giza thousands of years before the pharaohs.",
           "confidence": "contested"
         },
         {
@@ -1069,16 +1069,16 @@
           "heading": "How you'd actually settle it",
           "body": [
             "What would move the needle: a reliable **direct date** on the original carved surface, or the discovery of an associated **early culture** (tools, dwellings, other monuments) of the proposed age.",
-            "Absent that, both sides are really arguing about the *best explanation* of the same weathering, which is precisely the reasoning skill from the parent unit, applied to a hard real case."
+            "Absent that, both sides are really arguing about the *best explanation* of the same weathering — which is precisely the reasoning skill from the parent unit, applied to a hard real case."
           ],
           "confidence": "contested"
         },
         {
           "type": "text",
-          "heading": "Why we cover this, and how",
+          "heading": "Why we cover this — and how",
           "body": [
             "Not to debunk, and not to hype. We cover it because it's a genuine clash between two disciplines reading the same evidence, and it shows how to **hold a question open without lowering the bar for evidence**.",
-            "Our honest summary: the weight of evidence favors Khafre; the older-core idea is an interesting minority challenge with one very large hole in it. You're now equipped to say exactly *why*, which is the whole point."
+            "Our honest summary: the weight of evidence favors Khafre; the older-core idea is an interesting minority challenge with one very large hole in it. You're now equipped to say exactly *why* — which is the whole point."
           ]
         },
         {
@@ -1136,14 +1136,14 @@
                 "False"
               ],
               "answer": 1,
-              "explanation": "False. It's a strong mainstream consensus (Khafre) with a credentialed minority challenge, not an even split.",
+              "explanation": "False. It's a strong mainstream consensus (Khafre) with a credentialed minority challenge — not an even split.",
               "difficulty": "medium"
             }
           ]
         }
       ],
       "completion": {
-        "takeaway": "You can lay out the Sphinx age debate fairly (both readings, their evidence, and the decisive 'missing culture' problem) without either debunking or hype.",
+        "takeaway": "You can lay out the Sphinx age debate fairly — both readings, their evidence, and the decisive 'missing culture' problem — without either debunking or hype.",
         "teaser": "Back to the toolkit whenever you're ready."
       }
     },
@@ -1179,90 +1179,6 @@
         "americas",
         "mystery"
       ],
-      "screens": []
-    },
-    {
-      "id": "e1-out-of-africa",
-      "eraId": "before-cities",
-      "order": 1,
-      "title": "Out of Africa",
-      "subtitle": "Tracing the human journey with tools and ancient DNA",
-      "estMinutes": 8,
-      "status": "planned",
-      "kind": "core",
-      "extends": null,
-      "track": null,
-      "tags": [],
-      "screens": []
-    },
-    {
-      "id": "e1-gobekli-tepe",
-      "eraId": "before-cities",
-      "order": 2,
-      "title": "Gobekli Tepe",
-      "subtitle": "Monuments before farming?",
-      "estMinutes": 8,
-      "status": "planned",
-      "kind": "core",
-      "extends": null,
-      "track": null,
-      "tags": [],
-      "screens": []
-    },
-    {
-      "id": "e1-peopling-americas",
-      "eraId": "before-cities",
-      "order": 3,
-      "title": "Peopling of the Americas",
-      "subtitle": "How 'Clovis-first' was overturned",
-      "estMinutes": 8,
-      "status": "planned",
-      "kind": "core",
-      "extends": null,
-      "track": "The Americas",
-      "tags": [],
-      "screens": []
-    },
-    {
-      "id": "e2-meso-uruk",
-      "eraId": "bronze-age",
-      "order": 1,
-      "title": "Mesopotamia: Uruk & the First Writing",
-      "subtitle": "The world's first cities and cuneiform",
-      "estMinutes": 8,
-      "status": "planned",
-      "kind": "core",
-      "extends": null,
-      "track": "Mesopotamia",
-      "tags": [],
-      "screens": []
-    },
-    {
-      "id": "e2-egypt-unification",
-      "eraId": "bronze-age",
-      "order": 2,
-      "title": "Egypt: Unification of the Two Lands",
-      "subtitle": "The Predynastic Nile to Narmer",
-      "estMinutes": 8,
-      "status": "planned",
-      "kind": "core",
-      "extends": null,
-      "track": "Egypt",
-      "tags": [],
-      "screens": []
-    },
-    {
-      "id": "e2-caral-rise",
-      "eraId": "bronze-age",
-      "order": 3,
-      "title": "Caral: A City as Old as the Pyramids",
-      "subtitle": "Monumental Peru without pottery or writing",
-      "estMinutes": 8,
-      "status": "planned",
-      "kind": "core",
-      "extends": null,
-      "track": "The Americas",
-      "tags": [],
       "screens": []
     },
     {
@@ -1404,6 +1320,1343 @@
       "track": "Rome",
       "tags": [],
       "screens": []
+    },
+    {
+      "id": "e1-out-of-africa",
+      "eraId": "before-cities",
+      "order": 1,
+      "title": "Out of Africa",
+      "subtitle": "How we trace humanity's first journey",
+      "estMinutes": 7,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "human-origins",
+        "methods"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "We are an African species",
+          "body": [
+            "*Homo sapiens* evolved in Africa. The oldest fossils of our species come from **Jebel Irhoud** in Morocco, about **300,000 years old** — already with a recognizably modern face.",
+            "For roughly the first 95 percent of our existence, our species lived only in Africa. Everyone alive today descends from those African populations."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "The great dispersal",
+          "body": [
+            "Around **60,000-70,000 years ago**, one wave of humans left Africa (probably through the Near East) and went on to populate the rest of the world — Asia, Europe, Australia by ~50,000 years ago, and the Americas later still.",
+            "There were earlier excursions out of Africa (into the Levant over 100,000 years ago), but it was that later wave that 'took' and seeded the global population."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-out-of-africa",
+          "intent": "Map the African origin and the main dispersal.",
+          "spec": "A simple world map. A star over East/North Africa labeled 'Homo sapiens, ~300,000 yrs'. A bold arrow leaving Africa ~60-70k years ago, branching into Europe, across Asia to Australia (~50k), and a later faint branch into the Americas (last). Schematic, theme-aware, phone-legible.",
+          "caption": "Our species arose in Africa; a single later dispersal (~60-70k years ago) seeded the rest of the world.",
+          "alt": "A world map with an origin star in Africa and arrows showing the spread of humans across the continents."
+        },
+        {
+          "type": "evidence",
+          "heading": "How we know: bones, stones, and genes",
+          "body": [
+            "Three independent lines agree. **Fossils** show where and when modern skeletons appear. **Stone-tool** styles track the spread. And **genetics** is decisive: the DNA of living people and ancient remains shows all non-Africans descend largely from that single later dispersal, while Africa retains the deepest diversity.",
+            "When several unrelated methods point the same way, confidence is high — even though the fine details keep being refined."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "text",
+          "heading": "Not a tidy march",
+          "body": [
+            "It wasn't one neat line. Our ancestors met and **interbred** with Neanderthals and Denisovans — most living non-Africans still carry a few percent Neanderthal DNA.",
+            "And the story keeps being revised as new fossils and ancient DNA turn up. That isn't weakness; it's how an evidence-based field is supposed to work."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e1ooa-origin",
+              "stem": "Where did *Homo sapiens* originate?",
+              "type": "single",
+              "choices": [
+                "Europe",
+                "Africa",
+                "Central Asia",
+                "The Americas"
+              ],
+              "answer": 1,
+              "explanation": "Our species evolved in Africa; the oldest known fossils (Jebel Irhoud, Morocco) are ~300,000 years old.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e1ooa-when",
+              "stem": "Roughly when did the dispersal that populated the rest of the world leave Africa?",
+              "type": "single",
+              "choices": [
+                "~10,000 years ago",
+                "~60,000-70,000 years ago",
+                "~300,000 years ago",
+                "~1 million years ago"
+              ],
+              "answer": 1,
+              "explanation": "The main 'out of Africa' dispersal was ~60,000-70,000 years ago, though our species is far older.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1ooa-evidence",
+              "stem": "Which modern line of evidence most strongly ties all non-Africans to that single dispersal?",
+              "type": "single",
+              "choices": [
+                "Cave paintings",
+                "Genetics (ancient and living DNA)",
+                "Pottery styles",
+                "Written records"
+              ],
+              "answer": 1,
+              "explanation": "Genetics shows non-Africans descend largely from that later wave, with the deepest human diversity remaining in Africa.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1ooa-interbreed",
+              "stem": "True or false: early *Homo sapiens* interbred with Neanderthals.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 0,
+              "explanation": "True. Most living non-Africans carry a few percent Neanderthal DNA from those encounters.",
+              "difficulty": "easy"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can explain that our species arose in Africa ~300,000 years ago and spread worldwide from a dispersal ~60-70,000 years ago — and how fossils, tools, and DNA show it.",
+        "teaser": "Next: the minds behind the migration — Ice Age art."
+      }
+    },
+    {
+      "id": "e1-cave-art",
+      "eraId": "before-cities",
+      "order": 2,
+      "title": "The Symbolic Mind",
+      "subtitle": "Ice Age art, and how we date it",
+      "estMinutes": 7,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "prehistory",
+        "art",
+        "methods"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "Minds like ours",
+          "body": [
+            "By the Ice Age, humans were painting, carving, and adorning themselves. That matters: symbolic art is a window onto the same mental machinery we use for language, religion, and abstraction.",
+            "These weren't 'primitive' people fumbling toward thought — they had minds like ours, working with different tools."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Older than you'd think — and not only in Europe",
+          "body": [
+            "Europe's painted caves are famous: **Chauvet** in France is ~36,000 years old; **Lascaux** ~17,000. They once seemed to be the oldest art anywhere.",
+            "But figurative paintings in **Sulawesi, Indonesia** — including a warty pig — date to at least **~45,500 years**, with hand stencils possibly older. Art was a human-wide phenomenon, not a European invention."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How you date a painting",
+          "body": [
+            "Two main methods. **Radiocarbon** dates charcoal-based (black) pigment directly. **Uranium-thorium** dating measures the thin calcite films that slowly grow over (or under) the art, bracketing its age.",
+            "An honest caveat: the title of 'oldest art' keeps moving as more caves are dated and methods sharpen. Treat specific records as provisional — the *pattern* (very old, very widespread) is the solid part."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "figure",
+          "id": "fig-cave-art-timeline",
+          "intent": "Timeline of key dated cave art.",
+          "spec": "A simple horizontal timeline (older at left): mark 'Sulawesi pig ~45,500', 'El Castillo, Spain ~40,800', 'Chauvet ~36,000', 'Lascaux ~17,000'. Small icons. Theme-aware, phone-legible.",
+          "caption": "Dated cave art spans the globe and reaches back beyond 45,000 years.",
+          "alt": "A timeline of dated cave art from ~45,500 years (Sulawesi) to ~17,000 (Lascaux)."
+        },
+        {
+          "type": "text",
+          "heading": "What it means — and what we can't know",
+          "body": [
+            "We can date the art and describe it. But *why* people painted deep in dark caves — ritual, teaching, hunting magic, marking belonging — is **interpretation**, not fact.",
+            "Holding that line between solid evidence (the dates, the images) and informed guesswork (the meaning) is exactly the habit this course keeps practicing."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e1art-shows",
+              "stem": "Cave art is important mainly as evidence of…",
+              "type": "single",
+              "choices": [
+                "Early farming",
+                "Symbolic thought — minds like ours",
+                "Metalworking",
+                "Written language"
+              ],
+              "answer": 1,
+              "explanation": "Symbolic art reflects the same cognitive machinery behind language and religion — minds like ours.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e1art-where",
+              "stem": "Where is some of the oldest known figurative cave art?",
+              "type": "single",
+              "choices": [
+                "Only in France and Spain",
+                "Sulawesi, Indonesia",
+                "Antarctica",
+                "It doesn't survive anywhere"
+              ],
+              "answer": 1,
+              "explanation": "Figurative paintings in Sulawesi date to at least ~45,500 years — older than the famous European caves, showing art was worldwide.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1art-dating",
+              "stem": "Besides radiocarbon on pigment, what method helps date cave art?",
+              "type": "single",
+              "choices": [
+                "Tree rings",
+                "Uranium-thorium dating of calcite over the art",
+                "Counting the figures",
+                "DNA of the painters"
+              ],
+              "answer": 1,
+              "explanation": "Uranium-thorium dating of the calcite films that form over (or under) the paintings brackets their age.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1art-why",
+              "stem": "True or false: we can be certain *why* Ice Age people painted in caves.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 1,
+              "explanation": "False. We can date and describe the art, but its purpose is interpretation, not established fact.",
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You know Ice Age art is ancient and worldwide, how it's dated, and where evidence ends and interpretation begins.",
+        "teaser": "Next: a site that rewrote the order of events — Gobekli Tepe."
+      }
+    },
+    {
+      "id": "e1-gobekli-tepe",
+      "eraId": "before-cities",
+      "order": 3,
+      "title": "Gobekli Tepe",
+      "subtitle": "Monuments before farming?",
+      "estMinutes": 8,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "mystery",
+        "prehistory",
+        "methods"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "A hill full of giants",
+          "body": [
+            "In southeastern Turkey stands Gobekli Tepe: rings of massive **T-shaped limestone pillars**, many carved with foxes, snakes, vultures, and boars. The largest pillars weigh many tons.",
+            "Radiocarbon places the earliest building at about **9600 BCE** — roughly 6,000 years before Stonehenge or the Egyptian pyramids."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "The shock: who built it",
+          "body": [
+            "It was raised by **hunter-gatherers**, in the Pre-Pottery Neolithic — before pottery, before metal, and (it appears) before established farming here.",
+            "That upended a tidy textbook order: farming first, then food surplus, then settling down, and only *then* monuments. Gobekli Tepe suggested monuments could come early — maybe even helping to *drive* the other changes."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-gobekli",
+          "intent": "Show a carved T-pillar and the ring layout.",
+          "spec": "A tall T-shaped stone pillar with low-relief animals (a fox, a snake), beside a small human silhouette for scale, and an inset top-down view of a circular enclosure of pillars in concentric rings. Theme-aware, phone-legible.",
+          "caption": "Multi-ton T-shaped pillars, carved with animals, arranged in rings — built by foragers ~9600 BCE.",
+          "alt": "A carved T-shaped pillar with animal reliefs next to a human silhouette, with an inset of a circular pillar enclosure."
+        },
+        {
+          "type": "debate",
+          "heading": "Did monuments come before farms?",
+          "intro": "Gobekli Tepe's age and importance aren't in question. What it *means* is genuinely debated.",
+          "positions": [
+            {
+              "name": "Ritual-first (the original reading)",
+              "claim": "Large gatherings to build and use the site intensified the harvesting of wild grain, helping to spark farming — 'the temple before the farm'.",
+              "support": [
+                "The earliest phases showed monumental effort but little obvious farming or housing as first interpreted",
+                "Rich symbolic carving suggests major ceremonial significance"
+              ],
+              "weaknesses": [
+                "Later digging found signs of domestic life and water systems — maybe people lived there too",
+                "Calling it a pure 'temple' may be too narrow"
+              ]
+            },
+            {
+              "name": "Mixed settlement (revised reading)",
+              "claim": "It was a place where people also lived, processed wild grain, and harvested water — ritual and everyday life entwined, not a stand-alone temple.",
+              "support": [
+                "Newer work reports buildings, grinding tools, and cisterns",
+                "Fits a picture of foragers experimenting with settling down"
+              ],
+              "weaknesses": [
+                "The scale and iconography still point to powerful communal/ritual meaning"
+              ]
+            }
+          ],
+          "whereItStands": "The dating and significance are solid. The original 'pure temple, before any settled life' framing has softened as more is excavated — it now looks like ritual and early settled life were tangled together. Either way, Gobekli Tepe shows monument-building among foragers, which genuinely revised the old farming-first story.",
+          "confidence": "contested"
+        },
+        {
+          "type": "evidence",
+          "heading": "How we know its age",
+          "body": [
+            "Radiocarbon on organic material in the structures and fill places construction at roughly **9600-8200 BCE**.",
+            "Independently, the **absence of pottery** and the stone-tool kit fit the Pre-Pottery Neolithic — two lines agreeing on a pre-farming, pre-ceramic date."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "text",
+          "heading": "Astonishing, not spooky",
+          "body": [
+            "Gobekli Tepe is often used to argue for 'lost advanced civilizations'. But notice: it is excavated, dated, and studied. Its open questions are about **interpretation** — purpose, social organization — not about secret super-cultures.",
+            "It's a real frontier of knowledge, which is more interesting than any myth."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e1gt-when",
+              "stem": "Roughly when was Gobekli Tepe first built?",
+              "type": "single",
+              "choices": [
+                "~2500 BCE",
+                "~9600 BCE",
+                "~500 CE",
+                "~40,000 BCE"
+              ],
+              "answer": 1,
+              "explanation": "Radiocarbon dates the earliest construction to about 9600 BCE — millennia before Stonehenge or the pyramids.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e1gt-who",
+              "stem": "Who built it?",
+              "type": "single",
+              "choices": [
+                "Bronze Age kings",
+                "Hunter-gatherers, before established farming",
+                "Roman engineers",
+                "Egyptian priests"
+              ],
+              "answer": 1,
+              "explanation": "It was built by Pre-Pottery Neolithic hunter-gatherers — which is what made it so surprising.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1gt-debate",
+              "stem": "What is actually debated about Gobekli Tepe?",
+              "type": "single",
+              "choices": [
+                "Its age",
+                "Whether it exists",
+                "Its purpose and how to interpret it",
+                "Whether stone can be carved"
+              ],
+              "answer": 2,
+              "explanation": "Its date and importance are settled; the live debate is about its purpose and social meaning.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1gt-fringe",
+              "stem": "True or false: Gobekli Tepe's age requires a lost advanced civilization to explain it.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 1,
+              "explanation": "False. It shows foragers building monuments — remarkable, but explained by ordinary (if impressive) human cooperation, not lost super-cultures.",
+              "difficulty": "hard"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can explain why Gobekli Tepe challenged the farming-first story, how it's dated, and that the live debate is about meaning, not mystery.",
+        "teaser": "Next: when people did settle down — the first towns."
+      }
+    },
+    {
+      "id": "e1-neolithic-towns",
+      "eraId": "before-cities",
+      "order": 4,
+      "title": "The First Towns",
+      "subtitle": "Farming spreads and people settle down",
+      "estMinutes": 7,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "prehistory",
+        "neolithic"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "From wild grain to villages",
+          "body": [
+            "Recall the Neolithic Revolution from the Foundations: farming begins. In the Fertile Crescent, people domesticate wild wheat and barley, then sheep and goats, and settle into permanent villages.",
+            "More food in one place meant more people in one place — and a brand-new way of living."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Catalhoyuk: a town with no streets",
+          "body": [
+            "In central Turkey around **7100 BCE**, **Catalhoyuk** grew to thousands of people. Its houses were packed wall-to-wall with **no streets** at all — residents walked across the rooftops and climbed down into their homes through the roof.",
+            "They buried their dead beneath the floors and decorated walls with paintings and plaster reliefs. It's less a 'city' as we'd know it than a dense honeycomb of homes."
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "fig-catalhoyuk",
+          "intent": "Show the rooftop-entry, street-less town.",
+          "spec": "A cutaway of mud-brick houses packed directly against each other with no gaps, people walking and using ladders on the flat rooftops, entry holes in the roofs, and a burial beneath one floor. Theme-aware, phone-legible.",
+          "caption": "At Catalhoyuk, houses shared walls with no streets — people lived on and entered through the roofs.",
+          "alt": "A cutaway of tightly-packed flat-roofed houses with people on the rooftops entering through roof openings."
+        },
+        {
+          "type": "evidence",
+          "heading": "How we read a town with no writing",
+          "body": [
+            "There are no texts here, so everything comes from material remains: house sizes, hearths, animal bones, charred seeds, burials, and art.",
+            "That shapes what we can claim. Whether Catalhoyuk was relatively **equal** is a careful *inference* from things like similar house sizes and shared diet — a reasonable reading, not a documented fact."
+          ],
+          "confidence": "contested"
+        },
+        {
+          "type": "text",
+          "heading": "The bargain of settling down",
+          "body": [
+            "Farming fed more people, but it wasn't pure 'progress'. It often meant harder labor, narrower diets, new crowd diseases, and — over time — sharper inequalities.",
+            "Keep that in mind whenever a story treats history as a straight climb upward. The Neolithic was a trade-off, not a free lunch."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e1nt-feature",
+              "stem": "What was unusual about Catalhoyuk's layout?",
+              "type": "single",
+              "choices": [
+                "Wide paved avenues",
+                "No streets — houses entered through the roof",
+                "A central pyramid",
+                "Stone skyscrapers"
+              ],
+              "answer": 1,
+              "explanation": "Its houses were packed together with no streets; people moved across the rooftops and entered from above.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e1nt-howknow",
+              "stem": "With no writing, how do we infer Catalhoyuk's social life?",
+              "type": "single",
+              "choices": [
+                "From its newspapers",
+                "From material remains like house sizes, bones, and burials",
+                "From Roman accounts",
+                "We simply guess randomly"
+              ],
+              "answer": 1,
+              "explanation": "Material evidence — house sizes, diet, burials, art — supports careful inferences, though not the certainty texts would give.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1nt-tradeoff",
+              "stem": "True or false: adopting farming was pure progress with no downsides.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 1,
+              "explanation": "False. Farming supported more people but brought harder labor, narrower diets, disease, and later inequality — a trade-off.",
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can describe early town life at Catalhoyuk, how it's reconstructed without texts, and why farming was a trade-off rather than simple progress.",
+        "teaser": "Next: the giant stones of Stone Age Europe."
+      }
+    },
+    {
+      "id": "e1-megaliths",
+      "eraId": "before-cities",
+      "order": 5,
+      "title": "Megaliths of Stone-Age Europe",
+      "subtitle": "Stonehenge, and how you date a standing stone",
+      "estMinutes": 7,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "prehistory",
+        "methods"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "Big stones, deep questions",
+          "body": [
+            "Across Atlantic Europe, Neolithic communities raised **megaliths** — huge stones set up as tombs, rows, and circles. The most famous is **Stonehenge**, on Salisbury Plain in England.",
+            "These were enormous communal projects by farming societies — moved and raised without metal tools or the wheel as we know it."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Built in phases, not a day",
+          "body": [
+            "Stonehenge wasn't built all at once. Around **3000 BCE** came a circular ditch-and-bank earthwork with cremation burials. Around **2500 BCE** the giant **sarsen** stones and trilithons were raised, along with smaller **bluestones**. Rearrangements continued for centuries.",
+            "It's better understood as a monument that **evolved** over roughly 1,500 years than as a single design."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How you date a stone that has no carbon",
+          "body": [
+            "You don't date the rock — you date **organic material** caught up in its construction: red-deer **antler picks** left in the ditch, charcoal in postholes, and cremated bone, all by radiocarbon.",
+            "That's also how we trace the **bluestones** to the **Preseli Hills of Wales**, ~225 km away: charcoal at the quarries dates the extraction to ~3000 BCE."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "figure",
+          "id": "fig-stonehenge-phases",
+          "intent": "Show the phased build and the Welsh bluestone journey.",
+          "spec": "Left: a three-step mini-sequence — (1) ~3000 BCE ditch-and-bank ring, (2) ~2500 BCE sarsen circle with trilithons, (3) later rearrangement. Right: a small map of Britain with an arrow from the Preseli Hills (Wales) to Salisbury Plain labeled 'bluestones, ~225 km'. Theme-aware, phone-legible.",
+          "caption": "Stonehenge grew in phases over centuries; its bluestones were hauled ~225 km from Wales.",
+          "alt": "A three-stage build sequence of Stonehenge beside a map arrow showing bluestones moving from Wales to Salisbury Plain."
+        },
+        {
+          "type": "text",
+          "heading": "Known and unknown",
+          "body": [
+            "We know the **when** (well), much of the **how**, and the stones' **origins**. The **why** — a calendar, a temple, an ancestor shrine, a healing place? — is still argued from solar alignments and burials.",
+            "Solid evidence, honest uncertainty about meaning: the pattern you've now seen again and again."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e1meg-phases",
+              "stem": "Was Stonehenge built all at once?",
+              "type": "single",
+              "choices": [
+                "Yes, in a single year",
+                "No — in phases over roughly 1,500 years",
+                "No — it was built by Romans in a week",
+                "Yes, around 500 CE"
+              ],
+              "answer": 1,
+              "explanation": "It evolved in phases from ~3000 BCE (earthwork) to ~2500 BCE (sarsens) and beyond.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e1meg-dating",
+              "stem": "How is Stonehenge dated, since stone has no carbon?",
+              "type": "single",
+              "choices": [
+                "By weighing the stones",
+                "By radiocarbon-dating organic material like antler picks and charcoal",
+                "By counting the stones",
+                "It can't be dated"
+              ],
+              "answer": 1,
+              "explanation": "Archaeologists date organic material from construction — antler picks, charcoal, cremated bone — not the rock itself.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1meg-bluestones",
+              "stem": "Where did Stonehenge's bluestones come from?",
+              "type": "single",
+              "choices": [
+                "Local Salisbury Plain",
+                "The Preseli Hills of Wales, ~225 km away",
+                "Egypt",
+                "Scandinavia"
+              ],
+              "answer": 1,
+              "explanation": "The bluestones were quarried in the Preseli Hills of Wales and transported ~225 km — quarry charcoal dates this to ~3000 BCE.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1meg-purpose",
+              "stem": "True or false: archaeologists have settled exactly why Stonehenge was built.",
+              "type": "truefalse",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "answer": 1,
+              "explanation": "False. The construction is well understood; its precise purpose remains debated from alignments and burials.",
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can explain Stonehenge's phased construction, how stone monuments are dated via organic material, and that its purpose is still open.",
+        "teaser": "Next: a real climate shock — and a contested cause."
+      }
+    },
+    {
+      "id": "e1-younger-dryas",
+      "eraId": "before-cities",
+      "order": 6,
+      "title": "The Younger Dryas & the Impact Hypothesis",
+      "subtitle": "A real climate event, and a disputed cause",
+      "estMinutes": 8,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": null,
+      "tags": [
+        "mystery",
+        "methods",
+        "climate"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "A sudden cold snap",
+          "body": [
+            "Around **10,900 BCE**, the warming after the last Ice Age abruptly reversed. Across the Northern Hemisphere, temperatures plunged back toward glacial cold for over a thousand years. This is the **Younger Dryas**.",
+            "It is well established in ice cores and lake sediments. It struck just as humans were spreading widely and, soon after, beginning to farm — so it's a real character in the human story."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "What caused it?",
+          "body": [
+            "The **mainstream** explanation: a surge of meltwater from the melting North American ice sheet flooded into the North Atlantic and disrupted the ocean currents that carry heat north — cooling the region.",
+            "A bolder claim — the **Younger Dryas Impact Hypothesis** — argues a cosmic impact or airburst (~10,800 BCE) triggered the cooling, along with megafauna extinctions and the decline of the Clovis culture."
+          ]
+        },
+        {
+          "type": "debate",
+          "heading": "Meltwater, or a cosmic impact?",
+          "intro": "The cold event is not in question. Its *cause* is where the disagreement lives.",
+          "positions": [
+            {
+              "name": "Mainstream: meltwater & ocean circulation",
+              "claim": "Glacial meltwater disrupted Atlantic circulation and cooled the Northern Hemisphere — no impact required.",
+              "support": [
+                "Fits ocean-circulation models",
+                "Abundant evidence of glacial meltwater at the right time",
+                "No confirmed impact crater of the right age exists"
+              ],
+              "weaknesses": [
+                "The precise trigger and timing details are still being researched"
+              ]
+            },
+            {
+              "name": "Impact hypothesis (minority)",
+              "claim": "A cosmic impact or airburst caused the cooling and the extinctions.",
+              "support": [
+                "Proponents report a 'boundary layer' with excess platinum, microspherules, and (claimed) nanodiamonds at sites on several continents"
+              ],
+              "weaknesses": [
+                "Independent labs often cannot reproduce the nanodiamond and spherule claims",
+                "A 2025 study found the platinum spike came decades after the cooling began and matches Icelandic volcanism, not an impact",
+                "No crater; most impact specialists are unconvinced"
+              ]
+            }
+          ],
+          "whereItStands": "Treat the Younger Dryas cooling as settled. The impact *cause* is a minority hypothesis that has lost ground as key pieces of evidence failed to replicate — though a committed group still defends it. It's a textbook example of how reproducibility decides scientific arguments.",
+          "confidence": "contested"
+        },
+        {
+          "type": "evidence",
+          "heading": "Why this is a great test case",
+          "body": [
+            "It cleanly separates a **solid fact** (the climate event, recorded independently in ice and sediment) from a **contested explanation** (an impact cause).",
+            "And it shows the rule that settles such fights: claims other labs can't reproduce tend to fade, no matter how exciting."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "text",
+          "heading": "A note on pop culture",
+          "body": [
+            "The Younger Dryas often appears in 'lost advanced civilization' stories. Keep the layers separate: the climate event is **real**; the impact cause is **contested**; the jump to a destroyed high-tech civilization is a *further* claim carrying its own (much heavier, and so far unmet) burden of proof.",
+            "Stay open to bold ideas; stay strict about evidence. Evaluate each layer on its own."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e1yd-event",
+              "stem": "Is the Younger Dryas cooling itself disputed?",
+              "type": "single",
+              "choices": [
+                "Yes, it may not have happened",
+                "No — it's well established in ice cores and sediments",
+                "Only Romans recorded it",
+                "It happened last century"
+              ],
+              "answer": 1,
+              "explanation": "The cooling is solidly established. What's debated is its cause, not whether it occurred.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e1yd-mainstream",
+              "stem": "What is the mainstream explanation for the Younger Dryas?",
+              "type": "single",
+              "choices": [
+                "A cosmic impact",
+                "Glacial meltwater disrupting Atlantic ocean circulation",
+                "A supervolcano in Italy",
+                "Human activity"
+              ],
+              "answer": 1,
+              "explanation": "The mainstream view is that meltwater disrupted North Atlantic circulation, cooling the region.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1yd-status",
+              "stem": "What's the status of the impact hypothesis?",
+              "type": "single",
+              "choices": [
+                "Proven",
+                "A minority view whose key evidence has often failed to replicate",
+                "Universally accepted",
+                "Never tested"
+              ],
+              "answer": 1,
+              "explanation": "It's a contested minority hypothesis; central claims (nanodiamonds, the platinum spike) have struggled to replicate.",
+              "difficulty": "hard"
+            },
+            {
+              "id": "q-e1yd-decides",
+              "stem": "In disputes like this, what most decides the outcome?",
+              "type": "single",
+              "choices": [
+                "Who is most famous",
+                "Reproducibility — whether independent labs confirm the evidence",
+                "Public votes",
+                "The oldest theory wins"
+              ],
+              "answer": 1,
+              "explanation": "Reproducibility is decisive: claims that other labs can't confirm lose support over time.",
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can separate the established Younger Dryas climate event from its contested impact-cause, and explain why reproducibility settles such debates.",
+        "teaser": "Next: the Americas enter the human story — earlier than anyone thought."
+      }
+    },
+    {
+      "id": "e1-peopling-americas",
+      "eraId": "before-cities",
+      "order": 7,
+      "title": "Peopling of the Americas",
+      "subtitle": "How 'Clovis-first' was overturned",
+      "estMinutes": 8,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": "The Americas",
+      "tags": [
+        "americas",
+        "mystery",
+        "methods"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "The last continents",
+          "body": [
+            "The Americas were the last great landmasses humans reached, entering from northeast Asia via **Beringia** — the land and coastline exposed when Ice Age seas were low.",
+            "The question that gripped archaeology for decades was simple: **when** did they arrive?"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "The Clovis-first consensus",
+          "body": [
+            "For a long time the answer was the **Clovis** culture, about **13,000 years ago**, known for distinctive fluted stone spear points found across North America.",
+            "'Clovis-first' hardened into near-dogma: claimed older sites were routinely rejected, and careers suffered for challenging it."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "The dam breaks",
+          "body": [
+            "Then came sites that wouldn't fit. **Monte Verde** in Chile (~14,500 years) was widely accepted after a famous 1997 site visit. Others followed — Paisley Caves (Oregon), Cooper's Ferry (Idaho), Page-Ladson (Florida).",
+            "Most striking, **White Sands**, New Mexico preserved human **footprints** dated to roughly **21,000-23,000 years ago** — deep in the Ice Age."
+          ]
+        },
+        {
+          "type": "debate",
+          "heading": "How old, and how sure?",
+          "intro": "The fall of Clovis-first is itself a model of how a scientific consensus changes.",
+          "positions": [
+            {
+              "name": "Pre-Clovis is real (~15,000+ years)",
+              "claim": "Several solid sites predate Clovis by 1,000+ years; people likely came partly by a Pacific coastal route.",
+              "support": [
+                "Monte Verde and others are independently dated and broadly accepted",
+                "Genetic evidence fits an earlier entry"
+              ],
+              "weaknesses": [
+                "Each old site must clear a very high bar for both dating and clear human association"
+              ]
+            },
+            {
+              "name": "Very early (~20,000+ years), e.g. White Sands",
+              "claim": "Footprints place people in North America ~21,000-23,000 years ago, during the Ice Age peak.",
+              "support": [
+                "Footprints sit in dated sediment layers",
+                "Follow-up dating on different materials (pollen, quartz grains) supported the original ages"
+              ],
+              "weaknesses": [
+                "Early critics questioned whether the seeds first used for dating carried 'old carbon'",
+                "Extraordinary dates invite extra scrutiny — though independent methods have so far backed them up"
+              ]
+            }
+          ],
+          "whereItStands": "'Clovis-first' is dead: a pre-Clovis presence is now mainstream. The *earliest* dates, like White Sands' ~22,000 years, are debated exactly as frontier findings should be — challenged, re-tested, and so far holding up. This is consensus changing the right way: by evidence, not authority.",
+          "confidence": "contested"
+        },
+        {
+          "type": "evidence",
+          "heading": "How you date a footprint",
+          "body": [
+            "You can't radiocarbon a footprint directly, so you date the material in the layers around it: seeds and pollen by radiocarbon, and quartz grains by **optically-stimulated luminescence** (which times when a grain last saw sunlight).",
+            "It was the **agreement of these independent methods** that built confidence in the White Sands ages."
+          ],
+          "confidence": "contested"
+        },
+        {
+          "type": "text",
+          "heading": "Why it matters",
+          "body": [
+            "It puts the Americas where they belong — near the start of the global human story — and it's a live lesson in epistemics: even a decades-old consensus must yield when the evidence demands.",
+            "That's the whole ethic of this course, watched in real time."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e1pa-old",
+              "stem": "What was the old 'Clovis-first' consensus?",
+              "type": "single",
+              "choices": [
+                "Humans reached the Americas ~13,000 years ago and not before",
+                "Humans never reached the Americas",
+                "The Americas were settled from Europe",
+                "Clovis points are Roman"
+              ],
+              "answer": 0,
+              "explanation": "Clovis-first held that the Clovis culture (~13,000 years ago) was the first human presence — and nothing older was accepted.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e1pa-overturn",
+              "stem": "What overturned Clovis-first?",
+              "type": "single",
+              "choices": [
+                "A single myth",
+                "Accepted older sites like Monte Verde (~14,500 years)",
+                "A government decree",
+                "Nothing — it still stands"
+              ],
+              "answer": 1,
+              "explanation": "Independently dated, widely accepted pre-Clovis sites (Monte Verde and others) broke the consensus.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1pa-whitesands",
+              "stem": "What makes White Sands notable?",
+              "type": "single",
+              "choices": [
+                "Pyramids",
+                "Human footprints dated to ~21,000-23,000 years ago",
+                "A written archive",
+                "Bronze tools"
+              ],
+              "answer": 1,
+              "explanation": "Its fossil human footprints date to ~21,000-23,000 years ago — far earlier than Clovis.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e1pa-howknow",
+              "stem": "How were the White Sands footprints dated?",
+              "type": "single",
+              "choices": [
+                "By carbon-dating the footprints themselves",
+                "By dating surrounding layers with multiple independent methods",
+                "By guessing",
+                "By tree rings in the desert"
+              ],
+              "answer": 1,
+              "explanation": "By dating material in the surrounding layers — seeds and pollen (radiocarbon) and quartz grains (OSL) — with independent methods agreeing.",
+              "difficulty": "hard"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can tell the story of how 'Clovis-first' fell, weigh the earliest American dates fairly, and explain how layered sites and footprints are dated.",
+        "teaser": "That completes Era 1. Next era: the first cities — starting with Mesopotamia, Egypt, and Caral."
+      }
+    },
+    {
+      "id": "e2-meso-uruk",
+      "eraId": "bronze-age",
+      "order": 1,
+      "title": "Mesopotamia: Uruk & the First Writing",
+      "subtitle": "The world's first cities and the birth of writing",
+      "estMinutes": 8,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": "Mesopotamia",
+      "tags": [
+        "mesopotamia",
+        "writing",
+        "methods"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "The land between the rivers",
+          "body": [
+            "**Mesopotamia** means 'between the rivers' — the Tigris and Euphrates, in what is now Iraq. Irrigation turned a dry plain into rich farmland, and surplus food let people pack together as never before.",
+            "Crowds became the world's first true cities, and the **Sumerians** of the south led the way."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Uruk: humanity's first metropolis",
+          "body": [
+            "During the **Uruk period** (~4000-3100 BCE), the city of **Uruk** swelled to perhaps the largest settlement on Earth — tens of thousands of people, monumental temples, and a powerful temple-and-palace economy.",
+            "Managing a city that size created a brand-new problem: how do you keep track of everything and everyone?"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Writing is born — from accounting",
+          "body": [
+            "The answer was **proto-cuneiform**: marks pressed into clay tablets, appearing around **3300 BCE**. And here's the surprise — the earliest tablets aren't myths or prayers. They're **receipts**: counts of grain, beer, sheep, and labor.",
+            "Writing began as **bookkeeping**. Poetry and epic came many centuries later."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How we know what the tablets say",
+          "body": [
+            "Thousands of clay tablets survive — clay bakes hard and lasts for millennia. The earliest signs are pictographic, paired with numbers, so the *administrative* content can be read from the commodity signs and numerals.",
+            "Later Sumerian and bilingual texts let scholars trace how the signs evolved into full cuneiform, anchoring the decipherment."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "figure",
+          "id": "fig-cuneiform",
+          "intent": "Show an early accounting tablet.",
+          "spec": "A small rectangular clay tablet with impressed proto-cuneiform: a numeral cluster beside a simple grain-ear sign and an animal-head sign, divided into boxes. A caption tag points to it: 'a receipt: so many measures of barley, so many sheep'. Theme-aware, phone-legible.",
+          "caption": "The world's first writing was accounting: tablets recording grain, livestock, and labor.",
+          "alt": "An early clay tablet with numbers and commodity signs, labeled as an administrative receipt."
+        },
+        {
+          "type": "text",
+          "heading": "Why it changed everything",
+          "body": [
+            "Writing let a society store memory **outside the human head** — accounts, contracts, laws, and eventually literature like the *Epic of Gilgamesh*.",
+            "Remember the prehistory/history line from the Foundations? Uruk is where it is first crossed. From here on, people can speak to us in their own words."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e2uruk-where",
+              "stem": "Uruk, one of the world's first great cities, was in…",
+              "type": "single",
+              "choices": [
+                "Egypt",
+                "Sumer (southern Mesopotamia)",
+                "the Indus Valley",
+                "Peru"
+              ],
+              "answer": 1,
+              "explanation": "Uruk was a Sumerian city in southern Mesopotamia, between the Tigris and Euphrates.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e2uruk-when",
+              "stem": "About when does the earliest writing (proto-cuneiform) appear?",
+              "type": "single",
+              "choices": [
+                "~3300 BCE",
+                "~1200 BCE",
+                "~500 CE",
+                "~9600 BCE"
+              ],
+              "answer": 0,
+              "explanation": "Proto-cuneiform appears around 3300 BCE in the Uruk period.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e2uruk-purpose",
+              "stem": "What were the earliest written tablets mostly about?",
+              "type": "single",
+              "choices": [
+                "Myths and prayers",
+                "Love poetry",
+                "Accounting — counts of goods and labor",
+                "Royal biographies"
+              ],
+              "answer": 2,
+              "explanation": "The first tablets are administrative records — receipts of grain, livestock, and labor. Literature came much later.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e2uruk-survive",
+              "stem": "Why have so many early Mesopotamian records survived?",
+              "type": "single",
+              "choices": [
+                "They were carved in gold",
+                "Clay tablets bake hard and last for millennia",
+                "They were printed on paper",
+                "They were stored in the cloud"
+              ],
+              "answer": 1,
+              "explanation": "Clay is durable — especially when baked — so huge numbers of tablets survive.",
+              "difficulty": "easy"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can explain how irrigation built the first cities, why writing began as accounting at Uruk (~3300 BCE), and how those tablets are read.",
+        "teaser": "Meanwhile, along the Nile…"
+      }
+    },
+    {
+      "id": "e2-egypt-unification",
+      "eraId": "bronze-age",
+      "order": 2,
+      "title": "Egypt: Unification of the Two Lands",
+      "subtitle": "From farming villages to the first kingdom",
+      "estMinutes": 7,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": "Egypt",
+      "tags": [
+        "egypt",
+        "methods"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "The gift of the Nile",
+          "body": [
+            "Egypt is a thin ribbon of green threading through desert. Each year the Nile **flooded** on a dependable schedule, laying down fresh fertile silt. That reliability made surplus, and surplus made a state possible.",
+            "Geographers split it into **Upper Egypt** (the south, *upriver*) and **Lower Egypt** (the north, the delta) — confusing until you remember the river flows north."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Two lands become one",
+          "body": [
+            "Out of the Predynastic **Naqada** cultures, around **3100 BCE**, the south brought the north under one rule. Tradition credits a king named **Narmer** (often linked to the legendary Menes) with uniting Upper and Lower Egypt — the start of the **First Dynasty**.",
+            "It was almost certainly more gradual than a single heroic conquest — but a real consolidation happened around then."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How we know: the Narmer Palette",
+          "body": [
+            "A carved ceremonial stone, the **Narmer Palette**, shows one king wearing the **white crown** of Upper Egypt on one side and the **red crown** of Lower Egypt on the other — a unification told in pictures, with some of the earliest hieroglyphs spelling his name.",
+            "It's read together with later king-lists and excavated royal tombs at Abydos. A caution: the palette is **symbolic**, so 'one battle that united Egypt' is a simplification of a longer process."
+          ],
+          "confidence": "contested"
+        },
+        {
+          "type": "figure",
+          "id": "fig-narmer",
+          "intent": "Show the dual-crown symbolism of unification.",
+          "spec": "A schematic of the Narmer Palette's two faces side by side: left face, a large king figure wearing the tall 'white crown' (Upper Egypt) raising a mace; right face, the same king wearing the bowl-shaped 'red crown' (Lower Egypt). Label each crown. Theme-aware, phone-legible.",
+          "caption": "The Narmer Palette depicts one king in both crowns — a picture of the Two Lands becoming one.",
+          "alt": "A schematic of the two-sided Narmer Palette showing a king in the white crown and the red crown."
+        },
+        {
+          "type": "text",
+          "heading": "How Egypt's dates are built",
+          "body": [
+            "Egyptian chronology comes from **king-lists** (and the later historian Manetho's scheme of dynasties), giving relative order. That order is pinned to the calendar using a few **astronomical** records and **radiocarbon** dates.",
+            "It's remarkably good — but the early periods still carry real uncertainty, which is why you'll see ranges, not single years."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e2egy-nile",
+              "stem": "What made Egyptian farming so dependable?",
+              "type": "single",
+              "choices": [
+                "Frequent rain",
+                "The Nile's annual flood depositing fresh silt",
+                "Irrigation from the sea",
+                "Mountain snowmelt"
+              ],
+              "answer": 1,
+              "explanation": "The Nile's predictable yearly flood renewed the soil, creating reliable surpluses.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e2egy-unify",
+              "stem": "Who is traditionally credited with uniting Upper and Lower Egypt around 3100 BCE?",
+              "type": "single",
+              "choices": [
+                "Khufu",
+                "Narmer (linked to Menes)",
+                "Cleopatra",
+                "Sargon"
+              ],
+              "answer": 1,
+              "explanation": "Tradition credits Narmer (often identified with Menes) with unifying the Two Lands, founding Dynasty 1.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e2egy-palette",
+              "stem": "What does the Narmer Palette famously depict?",
+              "type": "single",
+              "choices": [
+                "A map of the Nile",
+                "One king wearing both the white and red crowns",
+                "A pyramid blueprint",
+                "A trade contract"
+              ],
+              "answer": 1,
+              "explanation": "It shows a single king in the crowns of both Upper and Lower Egypt — symbolizing unification.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e2egy-dating",
+              "stem": "Egyptian chronology is built mainly from…",
+              "type": "single",
+              "choices": [
+                "Tree rings",
+                "King-lists pinned down with astronomy and radiocarbon",
+                "Bristlecone pines",
+                "Ice cores"
+              ],
+              "answer": 1,
+              "explanation": "King-lists give the order; astronomical records and radiocarbon anchor it to calendar years (with early-period uncertainty).",
+              "difficulty": "hard"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can explain how the Nile underwrote a unified Egyptian state, the tradition of Narmer's unification, and how Egyptian dates are built and caveated.",
+        "teaser": "Now cross an ocean — to a city almost nobody expected."
+      }
+    },
+    {
+      "id": "e2-caral-rise",
+      "eraId": "bronze-age",
+      "order": 3,
+      "title": "Caral: A City as Old as the Pyramids",
+      "subtitle": "Monumental Peru — without pottery or writing",
+      "estMinutes": 8,
+      "status": "available",
+      "kind": "core",
+      "extends": null,
+      "track": "The Americas",
+      "tags": [
+        "americas",
+        "methods",
+        "mystery"
+      ],
+      "screens": [
+        {
+          "type": "text",
+          "heading": "Meanwhile, in Peru",
+          "body": [
+            "While Uruk wrote its receipts and Egypt raised its first kings, a city was rising on the desert coast of South America: **Caral**, in the Supe Valley — the showpiece of the **Norte Chico** culture.",
+            "For a long time, nobody imagined the Americas had cities this early. They did."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "As old as the pyramids",
+          "body": [
+            "Radiocarbon places Caral's monumental phase around **2600 BCE** — contemporary with Egypt's pyramid age and Sumer's great cities. It had large platform **mounds**, sunken **circular plazas**, and planned architecture for thousands of people.",
+            "This was a genuine urban society, on the same clock as the famous civilizations of the Old World."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "The twist: no pottery, no writing",
+          "body": [
+            "Caral was **preceramic** — essentially no pottery — and left no writing we can read (though a possible knotted-cord *quipu* hints at record-keeping).",
+            "By the Old-World checklist for 'civilization', Caral 'shouldn't' qualify. It was obviously complex anyway — exactly the problem the Foundations deep dive flagged: the checklist travels badly."
+          ]
+        },
+        {
+          "type": "evidence",
+          "heading": "How we know its age — and how it lived",
+          "body": [
+            "The dates come from radiocarbon on **shicras** — woven reed bags filled with stones, used as construction fill and sealed into the monuments. Ruth Shady's team dated this organic material directly.",
+            "Diet evidence (lots of **sardines and anchovies**, plus **cotton** for fishing nets) supports the idea that **maritime** resources, alongside farming, helped fund the monuments."
+          ],
+          "confidence": "established"
+        },
+        {
+          "type": "figure",
+          "id": "fig-caral",
+          "intent": "Show Caral's monuments and maritime economy.",
+          "spec": "A platform mound (stepped pyramid) beside a sunken circular plaza, with a coastal strip and a fishing net / small fish motif to one side, and a tag 'shicra reed bags = datable fill'. Theme-aware, phone-legible.",
+          "caption": "Caral raised platform mounds and sunken plazas ~2600 BCE — funded partly by the sea, dated by reed-bag fill.",
+          "alt": "A stepped platform mound and circular sunken plaza beside a coastal fishing motif."
+        },
+        {
+          "type": "text",
+          "heading": "Why Caral matters here",
+          "body": [
+            "It shows the Americas building cities on the **same timeline** as the Old World, by a different recipe — and it's a clean case of letting **evidence**, not a checklist, define what counts as complex.",
+            "That habit — follow the evidence, question the category — is exactly what this whole course is training."
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Quick check",
+          "questions": [
+            {
+              "id": "q-e2caral-when",
+              "stem": "About when did Caral's monumental phase flourish?",
+              "type": "single",
+              "choices": [
+                "~2600 BCE",
+                "~1200 CE",
+                "~9600 BCE",
+                "~500 BCE"
+              ],
+              "answer": 0,
+              "explanation": "Radiocarbon dates Caral's monuments to around 2600 BCE — contemporary with the Egyptian pyramids and Sumerian cities.",
+              "difficulty": "easy"
+            },
+            {
+              "id": "q-e2caral-lacked",
+              "stem": "What did Caral notably lack?",
+              "type": "single",
+              "choices": [
+                "People",
+                "Pottery and readable writing",
+                "Stone",
+                "Food"
+              ],
+              "answer": 1,
+              "explanation": "Caral was preceramic (no pottery) and left no readable writing — yet was clearly a complex urban society.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e2caral-dating",
+              "stem": "How was Caral dated?",
+              "type": "single",
+              "choices": [
+                "Tree rings",
+                "Radiocarbon on shicra reed bags used as building fill",
+                "Egyptian king-lists",
+                "Coins"
+              ],
+              "answer": 1,
+              "explanation": "Radiocarbon on organic shicra bags sealed into the architecture gave secure dates.",
+              "difficulty": "medium"
+            },
+            {
+              "id": "q-e2caral-lesson",
+              "stem": "What broader lesson does Caral teach?",
+              "type": "single",
+              "choices": [
+                "Writing is required for complexity",
+                "Let evidence, not an Old-World checklist, define what counts as a complex society",
+                "The Americas had no cities",
+                "Pottery causes civilization"
+              ],
+              "answer": 1,
+              "explanation": "Caral shows a complex society without the usual checklist items — so we should follow evidence, not impose categories.",
+              "difficulty": "hard"
+            }
+          ]
+        }
+      ],
+      "completion": {
+        "takeaway": "You can place Caral alongside Sumer and Egypt at ~2600 BCE, explain what it lacked, how it was dated, and why it challenges the 'civilization' checklist.",
+        "teaser": "That closes Bronze Round 1. Next round: the pyramids rise, the Indus blooms, and Minoan Crete stirs."
+      }
     }
   ]
 }
