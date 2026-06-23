@@ -96,14 +96,14 @@
     </g>
   </g>
 
-  <!-- person climbing the ladder -->
+  <!-- person climbing the ladder (centred on the rungs) -->
   <g class="climber" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" fill="none">
-    <circle cx="306" cy="150" r="3.4" fill="var(--ink)" stroke="none" />
-    <line x1="306" y1="153" x2="303" y2="162" />
-    <line x1="305" y1="156" x2="294" y2="151" />
-    <line x1="304" y1="158" x2="296" y2="162" />
-    <line x1="303" y1="162" x2="293" y2="160" />
-    <line x1="303" y1="162" x2="298" y2="171" />
+    <circle cx="288" cy="139" r="3.4" fill="var(--ink)" stroke="none" />
+    <line x1="288" y1="142" x2="288" y2="153" />
+    <line x1="288" y1="145" x2="282" y2="150" />
+    <line x1="288" y1="145" x2="294" y2="150" />
+    <line x1="288" y1="153" x2="283" y2="162" />
+    <line x1="288" y1="153" x2="293" y2="162" />
   </g>
 
   <!-- ===== CUTAWAY INTERIOR OF HOUSE D: floor line + burial beneath ===== -->
@@ -143,7 +143,7 @@
   <!-- caption: no streets between houses -->
   <text class="cap" x="24" y="223"
     fill="var(--ink-faint)" font-family="var(--font-sans)"
-    font-size="10" font-style="italic" text-anchor="start">no streets — shared walls</text>
+    font-size="10" font-style="italic" text-anchor="start">no streets: shared walls</text>
 
   <style>
     .houses, .holes, .people, .ladder, .climber, .cut, .lbl, .cap {

@@ -31,11 +31,11 @@
 
   <!-- low-relief carvings on the shaft face -->
   <g class="gk-fade gk-d3" fill="none" stroke="var(--ink-soft)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <!-- FOX (upper carving): body, head, tail, legs -->
-    <path d="M75 78 q9 -6 18 -2 q5 1 8 4"/>
-    <path d="M101 80 l6 -5 l-1 6 z" fill="var(--ink-soft)"/>
-    <path d="M75 78 q-4 4 -6 9"/>
-    <path d="M82 84 l0 7 M92 84 l0 7"/>
+    <!-- FOX (upper carving): profile animal with snout, ear, bushy tail, legs -->
+    <path d="M74 84 q3 -8 12 -7 q5 0 8 3 l5 -3 q1 3 -2 5"/>
+    <path d="M90 79 l1 -5 l4 3 z" fill="var(--ink-soft)"/>
+    <path d="M74 84 q-5 -1 -7 -7 q2 5 4 8"/>
+    <path d="M80 87 l0 6 M88 87 l0 6"/>
     <!-- SNAKE (lower carving): wavy serpent -->
     <path d="M73 118 q6 -7 12 0 t12 0 t12 0"/>
     <path d="M73 118 l-2 -3 l3 1 z" fill="var(--ink-soft)"/>
