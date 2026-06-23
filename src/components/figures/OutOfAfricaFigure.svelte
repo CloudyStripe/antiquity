@@ -29,9 +29,6 @@
     }
   </style>
 
-  <!-- title -->
-  <text x="180" y="16" text-anchor="middle" fill="var(--ink)" font-family="var(--font-sans)" font-size="13" font-weight="600">Out of Africa</text>
-
   <!-- ============ LANDMASSES (schematic blobs) ============ -->
   <!-- Americas -->
   <path class="oa-land oa-d1" d="M50 60 C40 70 44 86 54 92 C48 104 58 120 66 132 C60 150 70 168 82 176 C90 162 78 150 84 138 C92 130 86 116 92 104 C84 92 88 78 78 70 C72 60 60 54 50 60 Z"
@@ -91,7 +88,7 @@
   <text class="oa-arrow oa-a1" x="152" y="182" text-anchor="middle" fill="var(--ink-soft)" font-family="var(--font-sans)" font-size="9" font-weight="600">~300,000 yrs</text>
 
   <!-- out of africa timing -->
-  <text class="oa-arrow oa-a1" x="208" y="118" text-anchor="start" fill="var(--accent-ink)" font-family="var(--font-sans)" font-size="9.5" font-weight="600">~60–70k years ago</text>
+  <text class="oa-arrow oa-a1" x="246" y="124" text-anchor="middle" fill="var(--accent-ink)" font-family="var(--font-sans)" font-size="9.5" font-weight="600">~60–70k years ago</text>
 
   <!-- Europe -->
   <text class="oa-land oa-d2" x="168" y="58" text-anchor="middle" fill="var(--ink-faint)" font-family="var(--font-sans)" font-size="9" font-weight="600">Europe</text>
@@ -104,9 +101,9 @@
 
   <!-- Australia + ~50k branch label -->
   <text class="oa-arrow oa-a3" x="296" y="186" text-anchor="middle" fill="var(--ink-faint)" font-family="var(--font-sans)" font-size="9" font-weight="600">Australia</text>
-  <text class="oa-arrow oa-a3" x="300" y="118" text-anchor="middle" fill="var(--accent-ink)" font-family="var(--font-sans)" font-size="9.5" font-weight="600">~50k</text>
+  <text class="oa-arrow oa-a3" x="298" y="144" text-anchor="middle" fill="var(--accent-ink)" font-family="var(--font-sans)" font-size="9.5" font-weight="600">~50k</text>
 
   <!-- Americas (faint, last) -->
   <text class="oa-land oa-d1" x="66" y="46" text-anchor="middle" fill="var(--ink-faint)" font-family="var(--font-sans)" font-size="9" font-weight="600">Americas</text>
-  <text class="oa-arrow oa-a4" x="120" y="208" text-anchor="middle" fill="var(--ink-faint)" font-family="var(--font-sans)" font-size="9" font-weight="600" font-style="italic">later · reached last</text>
+  <text class="oa-arrow oa-a4" x="66" y="192" text-anchor="middle" fill="var(--ink-faint)" font-family="var(--font-sans)" font-size="9" font-weight="600" font-style="italic">later · reached last</text>
 </svg>
