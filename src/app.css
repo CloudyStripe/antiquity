@@ -57,15 +57,15 @@
 :root,
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg: #f4ecdd;
-  --bg-tint: #efe5d2;
-  --surface: #fbf6ec;
-  --surface-2: #f1e7d6;
+  --bg: #ece1ca; /* deeper page, so cards read as raised */
+  --bg-tint: #e6dabf; /* a step under --bg */
+  --surface: #fffdf7; /* near-white card, clear lift off the page */
+  --surface-2: #f4ecdd; /* the old page cream, now the "sunk" tone for wells/tracks/insets */
   --ink: #2a2320;
   --ink-soft: #5a4f45;
   --ink-faint: #897c6d;
-  --border: #e0d4bc;
-  --border-strong: #cbb999;
+  --border: #e6dac1; /* sits against the new surfaces */
+  --border-strong: #d3c2a1;
 
   --accent: #2e5a88; /* lapis — button backgrounds */
   --accent-strong: #234a72;

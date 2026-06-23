@@ -147,6 +147,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
   }
   .row__text {
     display: flex;
@@ -206,6 +207,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
     color: var(--ink);
     cursor: pointer;
     font-size: var(--fs-base);

@@ -112,6 +112,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
     text-align: center;
   }
   .tile__icon {
@@ -147,6 +148,7 @@
     border: 1px solid var(--border);
     border-radius: var(--r-md);
     background: var(--surface);
+    box-shadow: var(--shadow-sm);
     opacity: 0.6;
   }
   .badge.got {

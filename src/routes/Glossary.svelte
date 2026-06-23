@@ -56,7 +56,7 @@
     align-items: center;
     gap: var(--sp-2);
     padding: 0 var(--sp-4);
-    background: var(--surface);
+    background: var(--surface-2);
     border: 1px solid var(--border-strong);
     border-radius: var(--r-pill);
     color: var(--ink-faint);
