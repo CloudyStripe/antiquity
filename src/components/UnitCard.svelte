@@ -113,9 +113,10 @@
   }
 
   /* ---- Timeline context: the spine node carries the state, so the card sheds
-     its left-accent pill and only the current (in-progress) card is emphasised. */
+     its left-accent pill; cards still lift off the deeper page with a soft shadow,
+     and only the current (in-progress) card is emphasised. */
   .card.tl {
-    box-shadow: none;
+    box-shadow: var(--shadow-sm);
   }
   .card.tl.completed,
   .card.tl.available {
@@ -123,13 +124,14 @@
   }
   .card.tl.locked {
     border: 1px dashed var(--border-strong);
+    box-shadow: none;
   }
   .card.tl.in-progress {
     border: 2px solid var(--accent);
     box-shadow: var(--shadow-md);
   }
   .card.tl.clickable:hover {
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
   }
 
   .card__main {

@@ -173,6 +173,7 @@
   .era__title {
     font-size: var(--fs-2xl);
     margin: 0;
+    color: var(--accent-ink);
   }
   .era__sub {
     margin: 2px 0 0;

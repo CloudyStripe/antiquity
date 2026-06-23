@@ -300,6 +300,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
     padding: var(--sp-3) var(--sp-4);
     margin-bottom: var(--sp-3);
   }
