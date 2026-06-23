@@ -186,6 +186,18 @@
           ]
         },
         {
+          "type": "image",
+          "id": "img-bronze-sword",
+          "src": "/images/bronze-sword.webp",
+          "alt": "A cast bronze sword.",
+          "caption": "Bronze tools gave the middle age its name.",
+          "credit": "Photo: Völkerwanderer",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bronze_Age_Sword_900-700_BC_River_Thames.JPG",
+          "width": 1600,
+          "height": 423
+        },
+        {
           "type": "text",
           "heading": "Why it actually worked",
           "body": [
@@ -301,6 +313,18 @@
           ]
         },
         {
+          "type": "image",
+          "id": "img-handaxe",
+          "src": "/images/hand-axe.webp",
+          "alt": "A teardrop-shaped chipped-stone hand axe.",
+          "caption": "A Palaeolithic hand axe: chipped stone, not ground.",
+          "credit": "Photo: Didier Descouens",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biface_de_St_Acheul_Mus%C3%A9um_de_Toulouse.jpg",
+          "width": 1600,
+          "height": 1600
+        },
+        {
           "type": "text",
           "heading": "What actually changed",
           "body": [
@@ -414,6 +438,18 @@
             "Long before any laboratory method existed, archaeologists could still put events in order. The trick is not the object itself — it is *where in the ground* the object sits.",
             "Sites build up in **layers** (strata): floors, rubbish, collapse, wind-blown dust, new building. Each layer is a slice of time, stacked in sequence."
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-strata",
+          "src": "/images/excavation-strata.webp",
+          "alt": "A trench wall showing stacked bands of soil.",
+          "caption": "Stratified layers in an excavation: deeper is older.",
+          "credit": "Photo: Bullenwächter",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ausgrabung_Harburger-Schlo%C3%9Fstra%C3%9Fe_Profil.jpg",
+          "width": 1600,
+          "height": 1200
         },
         {
           "type": "text",
@@ -532,6 +568,18 @@
             "Living things constantly take in carbon, including a tiny amount of a radioactive form, **carbon-14**. When an organism dies, intake stops and its carbon-14 slowly decays at a steady, known rate.",
             "So the amount of carbon-14 left in a once-living sample is a clock: less carbon-14 means more time has passed since death. Willard Libby developed the method in the late 1940s and won the 1960 Nobel Prize for it."
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-treerings",
+          "src": "/images/tree-rings.webp",
+          "alt": "A tree-trunk cross-section with concentric annual rings.",
+          "caption": "Annual tree rings: the backbone of radiocarbon calibration.",
+          "credit": "Photo: Arnoldius",
+          "license": "CC BY-SA 2.5",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tree_rings.jpg",
+          "width": 1600,
+          "height": 1200
         },
         {
           "type": "text",
@@ -666,6 +714,18 @@
             "Real inquiry is full of disagreement — but disagreements come in very different weights, and lumping them together is how people get fooled (in either direction).",
             "Three useful categories: an **open question** is genuinely unsettled, with specialists divided. A **minority view** is a position a few qualified people hold against a strong consensus. A **fringe claim** is one most specialists reject for evidential reasons. All three can be discussed honestly — but they don't carry equal weight, and pretending they do is its own kind of error."
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-sphinx",
+          "src": "/images/sphinx.webp",
+          "alt": "The Great Sphinx of Giza, carved from limestone bedrock.",
+          "caption": "The Great Sphinx: its weathering is the heart of the dating debate.",
+          "credit": "Photo: Daniel Mayer",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giza_Plateau_-_Great_Sphinx_-_front_view.JPG",
+          "width": 1600,
+          "height": 1255
         },
         {
           "type": "text",
@@ -809,6 +869,18 @@
           ]
         },
         {
+          "type": "image",
+          "id": "img-caral-dd",
+          "src": "/images/caral.webp",
+          "alt": "The stone platform mounds and circular sunken plaza of Caral.",
+          "caption": "Caral, Peru: monumental architecture from ~2600 BCE.",
+          "credit": "Photo: Håkan Svensson (Xauxa)",
+          "license": "CC BY 2.5",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PeruCaral19.jpg",
+          "width": 1600,
+          "height": 1200
+        },
+        {
           "type": "text",
           "heading": "There is no 'Bronze Age' here",
           "body": [
@@ -908,6 +980,18 @@
             "Radiocarbon gives 'radiocarbon years', which drift from true calendar years because atmospheric carbon-14 has wobbled. To correct that drift, we need an **independent** record that counts real years one at a time.",
             "Trees keep exactly that record."
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-treerings-dd",
+          "src": "/images/tree-rings.webp",
+          "alt": "A close view of tree rings.",
+          "caption": "Matching ring patterns build a year-by-year calendar.",
+          "credit": "Photo: Arnoldius",
+          "license": "CC BY-SA 2.5",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tree_rings.jpg",
+          "width": 1600,
+          "height": 1200
         },
         {
           "type": "text",
@@ -1018,6 +1102,18 @@
             "The Great Sphinx at Giza — a lion's body with a human head, carved directly from the limestone bedrock. The mainstream date is the reign of pharaoh **Khafre**, around **2500 BCE** (Egypt's 4th Dynasty).",
             "The question this case file weighs: is it possible the **core body** is significantly older than that?"
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-sphinx-cf",
+          "src": "/images/sphinx.webp",
+          "alt": "The Great Sphinx of Giza, carved from limestone bedrock.",
+          "caption": "The Great Sphinx: its weathering is the heart of the dating debate.",
+          "credit": "Photo: Daniel Mayer",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giza_Plateau_-_Great_Sphinx_-_front_view.JPG",
+          "width": 1600,
+          "height": 1255
         },
         {
           "type": "text",
@@ -1346,6 +1442,18 @@
           ]
         },
         {
+          "type": "image",
+          "id": "img-sapiens-skull",
+          "src": "/images/sapiens-skull.webp",
+          "alt": "An early Homo sapiens skull.",
+          "caption": "Our species is ~300,000 years old.",
+          "credit": "Photo: Wikimedia Commons user 120",
+          "license": "CC BY 2.5",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cro-Magnon.jpg",
+          "width": 1000,
+          "height": 1178
+        },
+        {
           "type": "text",
           "heading": "The great dispersal",
           "body": [
@@ -1470,6 +1578,18 @@
           ]
         },
         {
+          "type": "image",
+          "id": "img-cave-art",
+          "src": "/images/cave-art.webp",
+          "alt": "Prehistoric painted animals on a cave wall.",
+          "caption": "Ice Age cave art: evidence of minds like ours.",
+          "credit": "Photo: Museo de Altamira y D. Rodríguez",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:9_Bisonte_Magdaleniense_pol%C3%ADcromo.jpg",
+          "width": 1181,
+          "height": 789
+        },
+        {
           "type": "text",
           "heading": "Older than you'd think — and not only in Europe",
           "body": [
@@ -1592,6 +1712,18 @@
             "In southeastern Turkey stands Gobekli Tepe: rings of massive **T-shaped limestone pillars**, many carved with foxes, snakes, vultures, and boars. The largest pillars weigh many tons.",
             "Radiocarbon places the earliest building at about **9600 BCE** — roughly 6,000 years before Stonehenge or the Egyptian pyramids."
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-gobekli",
+          "src": "/images/gobekli-tepe.webp",
+          "alt": "Carved T-shaped stone pillars at Göbekli Tepe.",
+          "caption": "Göbekli Tepe's T-pillars: raised by foragers ~9600 BCE.",
+          "credit": "Photo: Teomancimit",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:G%C3%B6bekli_Tepe,_Urfa.jpg",
+          "width": 1400,
+          "height": 930
         },
         {
           "type": "text",
@@ -1749,6 +1881,18 @@
           ]
         },
         {
+          "type": "image",
+          "id": "img-catalhoyuk",
+          "src": "/images/catalhoyuk.webp",
+          "alt": "Excavated mud-brick houses packed together at Çatalhöyük.",
+          "caption": "Çatalhöyük: a town of packed houses with no streets.",
+          "credit": "Photo: Ziggurat (Wikimedia Commons)",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CatalHoyukSouthArea.JPG",
+          "width": 1544,
+          "height": 1024
+        },
+        {
           "type": "text",
           "heading": "Catalhoyuk: a town with no streets",
           "body": [
@@ -1856,6 +2000,18 @@
             "Across Atlantic Europe, Neolithic communities raised **megaliths** — huge stones set up as tombs, rows, and circles. The most famous is **Stonehenge**, on Salisbury Plain in England.",
             "These were enormous communal projects by farming societies — moved and raised without metal tools or the wheel as we know it."
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-stonehenge",
+          "src": "/images/stonehenge.webp",
+          "alt": "The standing sarsen stones and lintels of Stonehenge.",
+          "caption": "Stonehenge: built in phases from ~3000 BCE.",
+          "credit": "Photo: garethwiscombe",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stonehenge2007_07_30.jpg",
+          "width": 1600,
+          "height": 1200
         },
         {
           "type": "text",
@@ -1980,6 +2136,18 @@
             "Around **10,900 BCE**, the warming after the last Ice Age abruptly reversed. Across the Northern Hemisphere, temperatures plunged back toward glacial cold for over a thousand years. This is the **Younger Dryas**.",
             "It is well established in ice cores and lake sediments. It struck just as humans were spreading widely and, soon after, beginning to farm — so it's a real character in the human story."
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-clovis",
+          "src": "/images/clovis-point.webp",
+          "alt": "A fluted Clovis stone projectile point.",
+          "caption": "A Clovis point: long tied to the culture that declined after the Younger Dryas.",
+          "credit": "Photo: Daderot",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clovis_point,_11500-9000_BC,_Sevier_County,_Utah,_chert_-_Natural_History_Museum_of_Utah_-_DSC07376.JPG",
+          "width": 1200,
+          "height": 1600
         },
         {
           "type": "text",
@@ -2131,6 +2299,18 @@
             "The Americas were the last great landmasses humans reached, entering from northeast Asia via **Beringia** — the land and coastline exposed when Ice Age seas were low.",
             "The question that gripped archaeology for decades was simple: **when** did they arrive?"
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-footprints",
+          "src": "/images/white-sands-footprint.webp",
+          "alt": "A fossilized human footprint in pale sediment.",
+          "caption": "Human footprints at White Sands: dated ~21,000–23,000 years ago.",
+          "credit": "Photo: U.S. Geological Survey",
+          "license": "Public domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Human_fossil_tracks_at_White_Sands_New_Mexico.jpg",
+          "width": 1200,
+          "height": 900
         },
         {
           "type": "text",
@@ -2316,6 +2496,18 @@
           "confidence": "established"
         },
         {
+          "type": "image",
+          "id": "img-cuneiform",
+          "src": "/images/cuneiform-tablet.webp",
+          "alt": "A clay tablet covered in wedge-shaped cuneiform signs.",
+          "caption": "An early cuneiform tablet: writing born from accounting.",
+          "credit": "Photo: The Metropolitan Museum of Art",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cuneiform_tablet-_private_letter_MET_DP110638.jpg",
+          "width": 1600,
+          "height": 1600
+        },
+        {
           "type": "figure",
           "id": "fig-cuneiform",
           "intent": "Show an early accounting tablet.",
@@ -2441,6 +2633,18 @@
           "confidence": "contested"
         },
         {
+          "type": "image",
+          "id": "img-narmer",
+          "src": "/images/narmer-palette.webp",
+          "alt": "The carved Narmer Palette showing a king in a tall crown smiting an enemy.",
+          "caption": "The Narmer Palette: one king in the crowns of both Egypts.",
+          "credit": "Photo: Wikimedia Commons (public domain)",
+          "license": "Public domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narmer_Palette.jpg",
+          "width": 1400,
+          "height": 987
+        },
+        {
           "type": "figure",
           "id": "fig-narmer",
           "intent": "Show the dual-crown symbolism of unification.",
@@ -2548,6 +2752,18 @@
             "While Uruk wrote its receipts and Egypt raised its first kings, a city was rising on the desert coast of South America: **Caral**, in the Supe Valley — the showpiece of the **Norte Chico** culture.",
             "For a long time, nobody imagined the Americas had cities this early. They did."
           ]
+        },
+        {
+          "type": "image",
+          "id": "img-caral",
+          "src": "/images/caral.webp",
+          "alt": "The stone platform mounds and circular sunken plaza of Caral.",
+          "caption": "Caral, Peru: monumental architecture from ~2600 BCE.",
+          "credit": "Photo: Håkan Svensson (Xauxa)",
+          "license": "CC BY 2.5",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PeruCaral19.jpg",
+          "width": 1600,
+          "height": 1200
         },
         {
           "type": "text",

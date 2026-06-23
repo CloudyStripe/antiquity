@@ -13,6 +13,7 @@ export type {
   DebatePosition,
   DebateBlock,
   FigureBlock,
+  ImageBlock,
   QuizBlock,
   Block,
   BlockType,

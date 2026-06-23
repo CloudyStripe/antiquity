@@ -8,7 +8,7 @@ import { dirname, resolve } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FILE = resolve(__dirname, '../content/curriculum.json');
 
-const BLOCK_TYPES = ['text', 'term', 'evidence', 'debate', 'figure', 'quiz'];
+const BLOCK_TYPES = ['text', 'term', 'evidence', 'debate', 'figure', 'image', 'quiz'];
 const CONFIDENCE = ['established', 'contested', 'open'];
 const DIFFICULTY = ['easy', 'medium', 'hard'];
 const QTYPE = ['single', 'truefalse'];

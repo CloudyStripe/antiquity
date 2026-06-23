@@ -6,7 +6,7 @@
  */
 import rawCurriculum from '../../../content/curriculum.json';
 import { CurriculumSchema, type Curriculum, type Unit, type Era } from './schema';
-import type { Question, TermBlock } from './types';
+import type { Question, TermBlock, ImageBlock } from './types';
 
 function prettyZodError(error: unknown): string {
   if (error && typeof error === 'object' && 'issues' in error) {
@@ -134,4 +134,26 @@ export function allTermBlocks(): GlossaryEntry[] {
     }
   }
   return entries.sort((a, b) => a.block.term.localeCompare(b.block.term));
+}
+
+export interface ImageEntry {
+  block: ImageBlock;
+  unitId: string;
+  unitTitle: string;
+}
+
+/** Every distinct bundled photo across the curriculum (deduped by src). */
+export function allImageBlocks(): ImageEntry[] {
+  const out: ImageEntry[] = [];
+  const seen = new Set<string>();
+  for (const u of curriculum.units) {
+    for (const s of u.screens) {
+      if (s.type === 'image') {
+        if (seen.has(s.src)) continue;
+        seen.add(s.src);
+        out.push({ block: s, unitId: u.id, unitTitle: u.title });
+      }
+    }
+  }
+  return out;
 }

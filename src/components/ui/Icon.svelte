@@ -42,6 +42,7 @@
   import CircleX from '@lucide/svelte/icons/circle-x';
   import Lightbulb from '@lucide/svelte/icons/lightbulb';
   import House from '@lucide/svelte/icons/house';
+  import ImageIcon from '@lucide/svelte/icons/image';
   import Play from '@lucide/svelte/icons/play';
   import Target from '@lucide/svelte/icons/target';
   import type { Component } from 'svelte';
@@ -90,6 +91,7 @@
     'circle-x': CircleX,
     lightbulb: Lightbulb,
     house: House,
+    image: ImageIcon,
     play: Play,
     target: Target,
   };

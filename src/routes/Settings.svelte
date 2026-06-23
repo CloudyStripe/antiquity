@@ -3,7 +3,7 @@
   import Toggle from '$components/ui/Toggle.svelte';
   import Icon from '$components/ui/Icon.svelte';
   import { settings, updateSetting } from '$lib/stores/settings';
-  import { toPrimer } from '$lib/stores/router';
+  import { toPrimer, toCredits } from '$lib/stores/router';
   import { sfx, unlockAudio } from '$lib/fx/audio';
 
   const themes = [
@@ -121,6 +121,11 @@
   <button class="link-row" onclick={toPrimer}>
     <Icon name="info" size={18} />
     <span>Dating conventions primer (BCE / CE / “c.”)</span>
+    <Icon name="chevron-right" size={18} />
+  </button>
+  <button class="link-row" onclick={toCredits}>
+    <Icon name="image" size={18} />
+    <span>Image credits &amp; licenses</span>
     <Icon name="chevron-right" size={18} />
   </button>
 
