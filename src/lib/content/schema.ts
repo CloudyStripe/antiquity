@@ -76,6 +76,19 @@ export const FigureBlockSchema = z.object({
   alt: z.string().min(1),
 });
 
+export const ImageBlockSchema = z.object({
+  type: z.literal('image'),
+  id: z.string().min(1),
+  src: z.string().min(1), // bundled path, e.g. "/images/sphinx.webp"
+  alt: z.string().min(1),
+  caption: z.string().optional(),
+  credit: z.string().optional(), // e.g. "Photo: Jane Doe"
+  license: z.string().optional(), // e.g. "CC BY-SA 4.0"
+  sourceUrl: z.string().optional(), // Commons / museum file page
+  width: z.number().int().positive().optional(),
+  height: z.number().int().positive().optional(),
+});
+
 export const QuizBlockSchema = z.object({
   type: z.literal('quiz'),
   prompt: z.string().optional(),
@@ -88,6 +101,7 @@ export const BlockSchema = z.discriminatedUnion('type', [
   EvidenceBlockSchema,
   DebateBlockSchema,
   FigureBlockSchema,
+  ImageBlockSchema,
   QuizBlockSchema,
 ]);
 
@@ -155,6 +169,7 @@ export type EvidenceBlock = z.infer<typeof EvidenceBlockSchema>;
 export type DebatePosition = z.infer<typeof DebatePositionSchema>;
 export type DebateBlock = z.infer<typeof DebateBlockSchema>;
 export type FigureBlock = z.infer<typeof FigureBlockSchema>;
+export type ImageBlock = z.infer<typeof ImageBlockSchema>;
 export type QuizBlock = z.infer<typeof QuizBlockSchema>;
 export type Block = z.infer<typeof BlockSchema>;
 export type BlockType = Block['type'];

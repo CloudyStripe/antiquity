@@ -10,6 +10,7 @@
   import Settings from './routes/Settings.svelte';
   import Glossary from './routes/Glossary.svelte';
   import DatingPrimer from './routes/DatingPrimer.svelte';
+  import Credits from './routes/Credits.svelte';
 
   // One-time dating-conventions primer on first run.
   onMount(() => {
@@ -39,4 +40,6 @@
   <Glossary />
 {:else if $route.name === 'primer'}
   <DatingPrimer />
+{:else if $route.name === 'credits'}
+  <Credits />
 {/if}

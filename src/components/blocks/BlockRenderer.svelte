@@ -5,6 +5,7 @@
   import EvidenceBlock from './EvidenceBlock.svelte';
   import DebateBlock from './DebateBlock.svelte';
   import FigureBlock from './FigureBlock.svelte';
+  import ImageBlock from './ImageBlock.svelte';
   import QuizBlock from './QuizBlock.svelte';
 
   interface Props {
@@ -26,6 +27,8 @@
   <DebateBlock {block} />
 {:else if block.type === 'figure'}
   <FigureBlock {block} />
+{:else if block.type === 'image'}
+  <ImageBlock {block} />
 {:else if block.type === 'quiz'}
   <QuizBlock {block} {unitId} onState={onQuizState} onAnswer={onQuizAnswer} />
 {/if}
