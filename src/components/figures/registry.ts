@@ -10,6 +10,15 @@ import PaleoMesoNeoFigure from './PaleoMesoNeoFigure.svelte';
 import StrataFigure from './StrataFigure.svelte';
 import C14DecayFigure from './C14DecayFigure.svelte';
 import DendroOverlapFigure from './DendroOverlapFigure.svelte';
+// Era 1 (Before Cities) + Bronze Age Round 1
+import OutOfAfricaFigure from './OutOfAfricaFigure.svelte';
+import CaveArtTimelineFigure from './CaveArtTimelineFigure.svelte';
+import GobekliFigure from './GobekliFigure.svelte';
+import CatalhoyukFigure from './CatalhoyukFigure.svelte';
+import StonehengePhasesFigure from './StonehengePhasesFigure.svelte';
+import CuneiformFigure from './CuneiformFigure.svelte';
+import NarmerFigure from './NarmerFigure.svelte';
+import CaralFigure from './CaralFigure.svelte';
 import MissingFigure from './MissingFigure.svelte';
 
 export const FIGURES: Record<string, Component<{ class?: string }>> = {
@@ -19,6 +28,14 @@ export const FIGURES: Record<string, Component<{ class?: string }>> = {
   'fig-strata': StrataFigure,
   'fig-c14-decay': C14DecayFigure,
   'fig-dendro-overlap': DendroOverlapFigure,
+  'fig-out-of-africa': OutOfAfricaFigure,
+  'fig-cave-art-timeline': CaveArtTimelineFigure,
+  'fig-gobekli': GobekliFigure,
+  'fig-catalhoyuk': CatalhoyukFigure,
+  'fig-stonehenge-phases': StonehengePhasesFigure,
+  'fig-cuneiform': CuneiformFigure,
+  'fig-narmer': NarmerFigure,
+  'fig-caral': CaralFigure,
 };
 
 export function getFigure(id: string): Component<{ class?: string }> | null {
