@@ -243,16 +243,10 @@ svg {
   background: var(--bg);
 }
 .boot-splash__mark {
-  font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 3rem;
-  color: var(--accent-ink);
   width: 84px;
   height: 84px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--r-lg);
-  background: var(--surface);
+  /* Match the ~22% corner of the clipped tile so the shadow hugs the icon. */
+  border-radius: 22%;
   box-shadow: var(--shadow-md);
 }
 

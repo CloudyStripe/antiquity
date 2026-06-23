@@ -1,11 +1,12 @@
 <script lang="ts">
   import Icon from '$components/ui/Icon.svelte';
+  import BrandMark from '$components/BrandMark.svelte';
   import { toSettings } from '$lib/stores/router';
 </script>
 
 <header class="hdr">
   <a class="brand" href="#/" aria-label="Antiquity home">
-    <span class="brand__mark">A</span>
+    <BrandMark size={34} />
     <span class="brand__name">Antiquity</span>
   </a>
   <button class="gear" aria-label="Settings" onclick={toSettings}>
@@ -33,19 +34,6 @@
     gap: var(--sp-2);
     text-decoration: none;
     color: var(--ink);
-  }
-  .brand__mark {
-    display: grid;
-    place-items: center;
-    width: 34px;
-    height: 34px;
-    border-radius: var(--r-sm);
-    background: var(--surface);
-    color: var(--accent-ink);
-    font-family: var(--font-serif);
-    font-weight: 600;
-    font-size: 1.3rem;
-    box-shadow: var(--shadow-sm);
   }
   .brand__name {
     font-family: var(--font-serif);
