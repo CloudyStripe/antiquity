@@ -11,6 +11,7 @@
   import { sfx, unlockAudio } from '$lib/fx/audio';
   import { haptics } from '$lib/fx/haptics';
   import SubHeader from '$components/SubHeader.svelte';
+  import BottomNav from '$components/BottomNav.svelte';
   import QuestionCard from '$components/QuestionCard.svelte';
   import ComboMeter from '$components/ComboMeter.svelte';
   import MarkdownText from '$components/MarkdownText.svelte';
@@ -92,7 +93,7 @@
 
 <SubHeader title="Challenge" />
 
-<main class="app-main challenge">
+<main class="app-main challenge with-bottomnav">
   {#if phase === 'intro'}
     {#if poolSize === 0}
       <div class="locked">
@@ -182,6 +183,8 @@
     </div>
   {/if}
 </main>
+
+<BottomNav />
 
 <style>
   .challenge {

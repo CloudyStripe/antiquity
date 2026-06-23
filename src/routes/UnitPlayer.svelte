@@ -8,7 +8,6 @@
   import { reducedMotionActive } from '$lib/stores/settings';
   import { slideFade } from '$lib/fx/motion';
   import BlockRenderer from '$components/blocks/BlockRenderer.svelte';
-  import ProgressBar from '$components/ui/ProgressBar.svelte';
   import Button from '$components/ui/Button.svelte';
   import Icon from '$components/ui/Icon.svelte';
 
@@ -101,8 +100,17 @@
       <button class="iconbtn" aria-label="Back to map" onclick={toMap}>
         <Icon name="x" size={22} />
       </button>
-      <div class="player__progress">
-        <ProgressBar value={(index + 1) / screens.length} label="Unit progress" height={6} />
+      <div
+        class="segs"
+        role="progressbar"
+        aria-valuemin={1}
+        aria-valuemax={screens.length}
+        aria-valuenow={index + 1}
+        aria-label="Unit progress"
+      >
+        {#each screens as _, i}
+          <span class="seg" class:done={i < index} class:current={i === index}></span>
+        {/each}
       </div>
       <span class="player__count">{index + 1}/{screens.length}</span>
     </header>
@@ -130,15 +138,35 @@
       {/key}
     </section>
 
-    <footer class="player__controls">
-      <Button variant="ghost" onclick={prev}>
-        <Icon name="chevron-left" size={18} />
-        {atFirst ? 'Map' : 'Back'}
-      </Button>
-      <Button variant="primary" disabled={!canNext} onclick={next}>
-        {atLast ? 'Finish' : 'Next'}
-        <Icon name={atLast ? 'check' : 'chevron-right'} size={18} />
-      </Button>
+    <footer class="player__controls" class:quiz={isQuiz}>
+      {#if isQuiz}
+        <button
+          class="backmini"
+          aria-label={atFirst ? 'Back to map' : 'Previous screen'}
+          onclick={prev}
+        >
+          <Icon name="chevron-left" size={20} />
+        </button>
+        <div class="grow">
+          <Button variant="primary" full disabled={!quizAnswered} onclick={next}>
+            {#if !quizAnswered}
+              Pick an answer
+            {:else}
+              {atLast ? 'Finish' : 'Continue'}
+              <Icon name={atLast ? 'check' : 'arrow-right'} size={18} />
+            {/if}
+          </Button>
+        </div>
+      {:else}
+        <Button variant="ghost" onclick={prev}>
+          <Icon name="chevron-left" size={18} />
+          {atFirst ? 'Map' : 'Back'}
+        </Button>
+        <Button variant="primary" onclick={next}>
+          {atLast ? 'Finish' : 'Next'}
+          <Icon name={atLast ? 'check' : 'chevron-right'} size={18} />
+        </Button>
+      {/if}
     </footer>
   </div>
 {/if}
@@ -175,8 +203,24 @@
   .iconbtn:hover {
     background: var(--surface-2);
   }
-  .player__progress {
+  .segs {
     flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .seg {
+    flex: 1;
+    height: 6px;
+    border-radius: var(--r-pill);
+    background: var(--surface-2);
+    transition: background var(--dur-base) var(--ease-standard);
+  }
+  .seg.done {
+    background: color-mix(in srgb, var(--accent) 45%, var(--surface-2));
+  }
+  .seg.current {
+    background: var(--accent);
   }
   .player__count {
     flex: none;
@@ -207,5 +251,27 @@
     background: var(--bg);
     position: sticky;
     bottom: 0;
+  }
+  .player__controls.quiz {
+    justify-content: flex-start;
+  }
+  .player__controls.quiz .grow {
+    flex: 1;
+  }
+  .backmini {
+    display: grid;
+    place-items: center;
+    width: var(--tap);
+    height: var(--tap);
+    flex: none;
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--ink-soft);
+    border-radius: var(--r-pill);
+    cursor: pointer;
+    transition: background var(--dur-fast) var(--ease-standard);
+  }
+  .backmini:hover {
+    background: var(--surface-2);
   }
 </style>

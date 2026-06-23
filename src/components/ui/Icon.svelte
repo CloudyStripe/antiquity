@@ -43,6 +43,8 @@
   import Lightbulb from '@lucide/svelte/icons/lightbulb';
   import House from '@lucide/svelte/icons/house';
   import ImageIcon from '@lucide/svelte/icons/image';
+  import Play from '@lucide/svelte/icons/play';
+  import Target from '@lucide/svelte/icons/target';
   import type { Component } from 'svelte';
 
   export const ICONS: Record<string, Component> = {
@@ -90,6 +92,8 @@
     lightbulb: Lightbulb,
     house: House,
     image: ImageIcon,
+    play: Play,
+    target: Target,
   };
 </script>
 

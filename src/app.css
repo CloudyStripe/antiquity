@@ -264,6 +264,11 @@ svg {
   padding: var(--sp-4) var(--sp-4) var(--sp-8);
 }
 
+/* Extra bottom clearance on screens that show the fixed bottom tab bar. */
+.app-main.with-bottomnav {
+  padding-bottom: calc(76px + env(safe-area-inset-bottom));
+}
+
 .stack > * + * {
   margin-top: var(--sp-4);
 }
