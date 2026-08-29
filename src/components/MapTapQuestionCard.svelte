@@ -57,9 +57,8 @@
     </div>
   {/if}
 
-  <p class="stem"><MarkdownText text={question.stem} /></p>
-
   {#if useMap}
+    <p class="stem"><MarkdownText text={question.stem} /></p>
     <p class="hint" id="maptap-hint-{question.id}">
       <Icon name="map-pin" size={14} /> Tap the map where it belongs.
     </p>

@@ -92,6 +92,11 @@
     width: 100%;
     height: 100%;
   }
+  /* Once answered, the map is disabled; dim its base so the revealed pins stand out.
+     (No transition: Chrome will not animate `filter` from `none`, so it is applied instantly.) */
+  .map.disabled .map__svg {
+    filter: brightness(0.95) saturate(0.82);
+  }
   .ocean {
     fill: color-mix(in srgb, var(--accent) 10%, var(--surface-2));
   }

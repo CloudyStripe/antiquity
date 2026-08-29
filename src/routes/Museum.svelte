@@ -4,10 +4,9 @@
   import Icon from '$components/ui/Icon.svelte';
   import { unitsWithArtifact, getEra } from '$lib/content/load';
   import { progress } from '$lib/stores/persist';
+  import { assetUrl } from '$lib/assets';
 
   const cases = unitsWithArtifact();
-  const base = import.meta.env.BASE_URL;
-  const srcOf = (p: string) => base + p.replace(/^\//, '');
 
   const recovered = $derived(cases.filter((u) => $progress[u.id]?.completed).length);
 </script>
@@ -27,7 +26,7 @@
       {#if earned && u.artifact}
         <figure class="case earned">
           <div class="frame">
-            <img src={srcOf(u.artifact.image)} alt={u.artifact.title} loading="lazy" decoding="async" />
+            <img src={assetUrl(u.artifact.image)} alt={u.artifact.title} loading="lazy" decoding="async" />
           </div>
           <figcaption>
             <h2 class="title">{u.artifact.title}</h2>
@@ -38,7 +37,7 @@
       {:else if u.artifact}
         <figure class="case locked">
           <div class="frame">
-            <img class="silhouette" src={srcOf(u.artifact.image)} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+            <img class="silhouette" src={assetUrl(u.artifact.image)} alt="" aria-hidden="true" loading="lazy" decoding="async" />
             <span class="lock"><Icon name="lock" size={18} /></span>
           </div>
           <figcaption>

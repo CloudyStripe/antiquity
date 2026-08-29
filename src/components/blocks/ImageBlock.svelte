@@ -1,13 +1,12 @@
 <script lang="ts">
   import type { ImageBlock } from '$lib/content/types';
+  import { assetUrl } from '$lib/assets';
   interface Props {
     block: ImageBlock;
   }
   let { block }: Props = $props();
 
-  // Resolve against the PWA base path (e.g. "/antiquity/") so it works on Pages.
-  const base = import.meta.env.BASE_URL;
-  const src = $derived(base + block.src.replace(/^\//, ''));
+  const src = $derived(assetUrl(block.src));
 </script>
 
 <figure class="image">

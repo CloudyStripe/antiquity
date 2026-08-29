@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { get } from 'svelte/store';
   import { getUnit, allUnits, deepDivesOf } from '$lib/content/load';
+  import { assetUrl } from '$lib/assets';
   import { progress, streak } from '$lib/stores/persist';
   import { lastCompletion } from '$lib/stores/progress';
   import { nextCoreUnit } from '$lib/engine/unlock';
@@ -27,7 +28,7 @@
   const dives = unit ? deepDivesOf(unitId) : [];
   const streakNow = get(streak).current;
   const artifact = matched && unit?.artifact ? unit.artifact : null;
-  const artifactSrc = artifact ? import.meta.env.BASE_URL + artifact.image.replace(/^\//, '') : '';
+  const artifactSrc = artifact ? assetUrl(artifact.image) : '';
 
   onMount(() => {
     if (!unit) {

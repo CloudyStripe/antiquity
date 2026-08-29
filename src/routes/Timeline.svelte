@@ -2,15 +2,31 @@
   import SubHeader from '$components/SubHeader.svelte';
   import BottomNav from '$components/BottomNav.svelte';
   import Icon from '$components/ui/Icon.svelte';
-  import { unitsWithTimeAnchor } from '$lib/content/load';
+  import { unitsWithTimeAnchor, getUnit } from '$lib/content/load';
   import { unitStates } from '$lib/stores/derived';
   import { toUnit } from '$lib/stores/router';
   import { haptics } from '$lib/fx/haptics';
-  import { yearToFraction, TICKS, BANDS } from '$lib/engine/timescale';
+  import { yearToFraction, TICKS, BANDS, TODAY } from '$lib/engine/timescale';
   import type { Unit } from '$lib/content/types';
   import type { UnitState } from '$lib/content/types';
 
   const anchored = unitsWithTimeAnchor();
+
+  // The "you are here" scale comparison, derived from the anchors themselves so
+  // it can never drift from the data: how long our species existed before
+  // Göbekli Tepe, versus the span from Göbekli Tepe to today.
+  const scaleNote = (() => {
+    const oaStart = getUnit('e1-out-of-africa')?.timeAnchor?.start;
+    const gtStart = getUnit('e1-gobekli-tepe')?.timeAnchor?.start;
+    if (oaStart == null || gtStart == null) return null;
+    const gtToToday = TODAY - gtStart;
+    const before = TODAY - oaStart - gtToToday;
+    if (gtToToday <= 0 || before <= 0) return null;
+    return {
+      before: (Math.round(before / 1000) * 1000).toLocaleString('en-US'),
+      ratio: Math.round(before / gtToToday),
+    };
+  })();
 
   // Geometry (pixel space; the SVG viewBox matches its rendered size 1:1).
   const H = 1500;
@@ -178,7 +194,7 @@
         <strong class="pop__title">{active.unit.title}</strong>
         <span class="pop__when">{active.unit.timeAnchor?.label}</span>
         {#if navigable(active.state)}
-          <button class="pop__go" onclick={() => open(active)}>
+          <button class="pop__go" tabindex="-1" onclick={() => open(active)}>
             Open unit <Icon name="arrow-right" size={15} />
           </button>
         {/if}
@@ -188,10 +204,12 @@
     <span class="today-label" style="top:{yOf(1)}px">Today</span>
   </div>
 
-  <p class="scale-note">
-    Our species existed for roughly 288,000 years before Göbekli Tepe was built. That gap is about
-    25 times the span from Göbekli Tepe to today.
-  </p>
+  {#if scaleNote}
+    <p class="scale-note">
+      Our species existed for roughly {scaleNote.before} years before Göbekli Tepe was built. That
+      gap is about {scaleNote.ratio} times the span from Göbekli Tepe to today.
+    </p>
+  {/if}
 
   <!-- Accessible source of truth. -->
   <h2 class="list-head">The anchors in order</h2>
