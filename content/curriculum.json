@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Antiquity",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "datingConventionNote": "Dates use BCE/CE. 'c.' (circa) means approximate. Years BCE count down toward the year 1, and there is no year zero."
   },
   "eras": [
