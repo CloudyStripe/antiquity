@@ -86,6 +86,13 @@ async function main() {
       fail(`${where}: deepdive must extend an existing core unit (got "${u.extends}")`);
     if (u.status === 'available' && (!Array.isArray(u.screens) || u.screens.length === 0))
       fail(`${where}: available unit has no screens`);
+    if (u.timeAnchor !== undefined) {
+      const t = u.timeAnchor;
+      if (typeof t?.start !== 'number') fail(`${where}: timeAnchor.start must be a number`);
+      if (t?.end !== undefined && typeof t.end !== 'number')
+        fail(`${where}: timeAnchor.end must be a number when present`);
+      if (typeof t?.label !== 'string' || !t.label) fail(`${where}: timeAnchor.label must be a non-empty string`);
+    }
 
     for (const b of u.screens ?? []) {
       checkBlock(b, where);

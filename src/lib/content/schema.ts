@@ -124,6 +124,18 @@ export const BlockSchema = z.discriminatedUnion('type', [
 export const UnitStatus = z.enum(['available', 'planned']);
 export const UnitKind = z.enum(['core', 'deepdive']);
 
+/**
+ * Where a unit sits on the Deep Time Line. `start`/`end` are astronomical years
+ * (negative = BCE; a "X years ago" date is treated as -X). `end` is omitted for
+ * point events. `label` is the display string, shown verbatim (the UI never
+ * formats BCE math). Optional: method/epistemics units carry no anchor.
+ */
+export const TimeAnchorSchema = z.object({
+  start: z.number(),
+  end: z.number().optional(),
+  label: z.string().min(1),
+});
+
 export const UnitSchema = z
   .object({
     id: z.string().min(1),
@@ -141,6 +153,7 @@ export const UnitSchema = z
     completion: z
       .object({ takeaway: z.string(), teaser: z.string() })
       .optional(),
+    timeAnchor: TimeAnchorSchema.optional(),
   })
   .refine((u) => u.kind !== 'deepdive' || typeof u.extends === 'string', {
     message: 'a deepdive unit must set `extends` to its parent core unit id',
@@ -191,6 +204,7 @@ export type BlockType = Block['type'];
 export type UnitStatus = z.infer<typeof UnitStatus>;
 export type UnitKind = z.infer<typeof UnitKind>;
 export type Unit = z.infer<typeof UnitSchema>;
+export type TimeAnchor = z.infer<typeof TimeAnchorSchema>;
 export type Era = z.infer<typeof EraSchema>;
 export type Meta = z.infer<typeof MetaSchema>;
 export type Curriculum = z.infer<typeof CurriculumSchema>;

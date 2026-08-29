@@ -14,7 +14,8 @@ export type Route =
   | { name: 'settings' }
   | { name: 'glossary' }
   | { name: 'primer' }
-  | { name: 'credits' };
+  | { name: 'credits' }
+  | { name: 'timeline' };
 
 export function parseHash(hash: string): Route {
   const path = hash.replace(/^#/, '');
@@ -37,6 +38,8 @@ export function parseHash(hash: string): Route {
       return { name: 'primer' };
     case 'credits':
       return { name: 'credits' };
+    case 'timeline':
+      return { name: 'timeline' };
     default:
       return { name: 'map' };
   }
@@ -73,3 +76,4 @@ export const toSettings = () => navigate('/settings');
 export const toGlossary = () => navigate('/glossary');
 export const toPrimer = () => navigate('/primer');
 export const toCredits = () => navigate('/credits');
+export const toTimeline = () => navigate('/timeline');

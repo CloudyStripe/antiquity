@@ -116,6 +116,13 @@ export function questionsForUnit(unitId: string): Question[] {
   return out;
 }
 
+/** Available units that carry a Deep Time Line anchor, oldest first. */
+export function unitsWithTimeAnchor(): Unit[] {
+  return curriculum.units
+    .filter((u) => u.status === 'available' && u.timeAnchor != null)
+    .sort((a, b) => a.timeAnchor!.start - b.timeAnchor!.start);
+}
+
 export interface GlossaryEntry {
   block: TermBlock;
   unitId: string;

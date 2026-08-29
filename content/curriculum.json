@@ -1446,6 +1446,7 @@
     },
     {
       "id": "e1-out-of-africa",
+      "timeAnchor": { "start": -300000, "end": -60000, "label": "c. 300,000 to 60,000 years ago" },
       "eraId": "before-cities",
       "order": 1,
       "title": "Out of Africa",
@@ -1581,6 +1582,7 @@
     },
     {
       "id": "e1-cave-art",
+      "timeAnchor": { "start": -45500, "end": -17000, "label": "c. 45,500 to 17,000 years ago" },
       "eraId": "before-cities",
       "order": 2,
       "title": "The Symbolic Mind",
@@ -1732,6 +1734,7 @@
     },
     {
       "id": "e1-gobekli-tepe",
+      "timeAnchor": { "start": -9600, "end": -8200, "label": "c. 9600 to 8200 BCE" },
       "eraId": "before-cities",
       "order": 3,
       "title": "Gobekli Tepe",
@@ -1900,6 +1903,7 @@
     },
     {
       "id": "e1-neolithic-towns",
+      "timeAnchor": { "start": -7100, "label": "c. 7100 BCE" },
       "eraId": "before-cities",
       "order": 4,
       "title": "The First Towns",
@@ -2021,6 +2025,7 @@
     },
     {
       "id": "e1-megaliths",
+      "timeAnchor": { "start": -3000, "end": -2500, "label": "c. 3000 to 2500 BCE" },
       "eraId": "before-cities",
       "order": 5,
       "title": "Megaliths of Stone-Age Europe",
@@ -2156,6 +2161,7 @@
     },
     {
       "id": "e1-younger-dryas",
+      "timeAnchor": { "start": -10900, "label": "c. 10,900 BCE" },
       "eraId": "before-cities",
       "order": 6,
       "title": "The Younger Dryas & the Impact Hypothesis",
@@ -2319,6 +2325,7 @@
     },
     {
       "id": "e1-peopling-americas",
+      "timeAnchor": { "start": -23000, "end": -13000, "label": "c. 23,000 to 13,000 years ago" },
       "eraId": "before-cities",
       "order": 7,
       "title": "Peopling of the Americas",
@@ -2489,6 +2496,7 @@
     },
     {
       "id": "e2-meso-uruk",
+      "timeAnchor": { "start": -4000, "end": -3100, "label": "c. 4000 to 3100 BCE" },
       "eraId": "bronze-age",
       "order": 1,
       "title": "Mesopotamia: Uruk & the First Writing",
@@ -2635,6 +2643,7 @@
     },
     {
       "id": "e2-egypt-unification",
+      "timeAnchor": { "start": -3100, "label": "c. 3100 BCE" },
       "eraId": "bronze-age",
       "order": 2,
       "title": "Egypt: Unification of the Two Lands",
@@ -2772,6 +2781,7 @@
     },
     {
       "id": "e2-caral-rise",
+      "timeAnchor": { "start": -2600, "label": "c. 2600 BCE" },
       "eraId": "bronze-age",
       "order": 3,
       "title": "Caral: A City as Old as the Pyramids",

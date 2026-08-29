@@ -21,6 +21,7 @@ export type {
   UnitStatus,
   UnitKind,
   Unit,
+  TimeAnchor,
   Era,
   Meta,
   Curriculum,

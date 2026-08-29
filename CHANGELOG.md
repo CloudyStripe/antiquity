@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.0] — unreleased
+
+### Added
+- **The `order` (chronology) question type**: arrange items into the correct sequence,
+  presentation shuffled at render time; keyboard-operable, with the shared explain panel.
+- **The Deep Time Line** (`#timeline`, a new bottom-nav tab): a global interactive vertical
+  timeline on a piecewise-compressed scale, so a 300,000-year span and the first cities share
+  one screen. Anchored units render as points or range bars colored by their state; tapping a
+  node shows a popover before navigating. A clustered band alternates onto two lanes with leader
+  ticks, and a plain ordered list below is the accessible source of truth.
+
 ## [0.1.0] — 2026-06-22
 
 First playable release: the **Foundations** era, fully built around the existing
