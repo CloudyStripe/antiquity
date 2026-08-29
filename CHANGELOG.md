@@ -10,6 +10,12 @@
   one screen. Anchored units render as points or range bars colored by their state; tapping a
   node shows a popover before navigating. A clustered band alternates onto two lanes with leader
   ticks, and a plain ordered list below is the accessible source of truth.
+- **The Museum** (`#museum`, linked from the map footer and Stats): a collection of artifacts, one
+  recovered per completed unit. Earned cases show the object, a serif title, and a museum-label
+  caption; locked cases are a dimmed silhouette with only the era name, a tease rather than a
+  spoiler. Completing a unit that defines an artifact plays an "Artifact recovered" moment on the
+  finish screen. A new `curator` badge is earned at ten artifacts. Adds an optional `artifact` field
+  to the unit schema.
 
 ## [0.1.0] — 2026-06-22
 

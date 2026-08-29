@@ -7,6 +7,7 @@
   import { badges } from '$lib/stores/persist';
   import { BADGES } from '$lib/engine/gamification';
   import { downloadProgress, importProgressFromText } from '$lib/stores/persist';
+  import { toMuseum } from '$lib/stores/router';
 
   let importMsg = $state('');
   let fileInput: HTMLInputElement;
@@ -87,11 +88,38 @@
     />
   </div>
   {#if importMsg}<p class="import-msg">{importMsg}</p>{/if}
+
+  <footer class="museum-foot">
+    <button class="link" onclick={toMuseum}>
+      <Icon name="landmark" size={15} /> Museum of recovered artifacts
+    </button>
+  </footer>
 </main>
 
 <BottomNav />
 
 <style>
+  .museum-foot {
+    margin-top: var(--sp-6);
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--border);
+    display: flex;
+  }
+  .link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    padding: var(--sp-2);
+  }
+  .link:hover {
+    color: var(--accent-ink);
+  }
   .tiles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

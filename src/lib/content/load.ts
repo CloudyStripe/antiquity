@@ -123,6 +123,11 @@ export function unitsWithTimeAnchor(): Unit[] {
     .sort((a, b) => a.timeAnchor!.start - b.timeAnchor!.start);
 }
 
+/** Available units that award a museum artifact, in curriculum order. */
+export function unitsWithArtifact(): Unit[] {
+  return curriculum.units.filter((u) => u.status === 'available' && u.artifact != null);
+}
+
 export interface GlossaryEntry {
   block: TermBlock;
   unitId: string;

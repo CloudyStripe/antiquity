@@ -163,6 +163,7 @@
     },
     {
       "id": "intro-02-three-age-system",
+      "artifact": { "image": "/images/bronze-sword.webp", "title": "Bronze sword", "caption": "A cast bronze blade, the metal that named the middle age of the three-age system.", "credit": "Photo: Völkerwanderer" },
       "eraId": "foundations",
       "order": 2,
       "title": "The Three-Age System: Stone, Bronze, Iron",
@@ -303,6 +304,7 @@
     },
     {
       "id": "intro-03-paleo-meso-neolithic",
+      "artifact": { "image": "/images/hand-axe.webp", "title": "Acheulean hand axe", "caption": "A teardrop of chipped stone, made to the same shape for a thousand generations.", "credit": "Photo: Didier Descouens" },
       "eraId": "foundations",
       "order": 3,
       "title": "Stone Age Lifeways: Paleo / Meso / Neolithic",
@@ -430,6 +432,7 @@
     },
     {
       "id": "intro-04-stratigraphy",
+      "artifact": { "image": "/images/excavation-strata.webp", "title": "Excavated strata", "caption": "A trench wall of stacked soil layers, where deeper almost always means older.", "credit": "Photo: Bullenwächter" },
       "eraId": "foundations",
       "order": 4,
       "title": "How We Know I — Stratigraphy & Relative Dating",
@@ -986,6 +989,7 @@
     },
     {
       "id": "dd-tree-ring-clock",
+      "artifact": { "image": "/images/tree-rings.webp", "title": "Tree-ring cross-section", "caption": "Annual rings matched trunk to trunk into a year-by-year calendar.", "credit": "Photo: Arnoldius" },
       "eraId": "foundations",
       "order": 2,
       "title": "The Tree-Ring Clock: How Calibration Works",
@@ -1107,6 +1111,7 @@
     },
     {
       "id": "dd-sphinx-case-file",
+      "artifact": { "image": "/images/sphinx.webp", "title": "The Great Sphinx", "caption": "Limestone carved into a lion-bodied guardian, its weathering still debated.", "credit": "Photo: Daniel Mayer" },
       "eraId": "foundations",
       "order": 3,
       "title": "Case File: The Age of the Sphinx",
@@ -1447,6 +1452,7 @@
     {
       "id": "e1-out-of-africa",
       "timeAnchor": { "start": -300000, "end": -60000, "label": "c. 300,000 to 60,000 years ago" },
+      "artifact": { "image": "/images/sapiens-skull.webp", "title": "Early Homo sapiens skull", "caption": "A skull of our own species, which first appears in Africa around 300,000 years ago.", "credit": "Photo: Wikimedia Commons user 120" },
       "eraId": "before-cities",
       "order": 1,
       "title": "Out of Africa",
@@ -1583,6 +1589,7 @@
     {
       "id": "e1-cave-art",
       "timeAnchor": { "start": -45500, "end": -17000, "label": "c. 45,500 to 17,000 years ago" },
+      "artifact": { "image": "/images/cave-art.webp", "title": "Ice Age cave painting", "caption": "Animals painted on stone deep in the Ice Age, evidence of minds like ours.", "credit": "Photo: Museo de Altamira y D. Rodríguez" },
       "eraId": "before-cities",
       "order": 2,
       "title": "The Symbolic Mind",
@@ -1735,6 +1742,7 @@
     {
       "id": "e1-gobekli-tepe",
       "timeAnchor": { "start": -9600, "end": -8200, "label": "c. 9600 to 8200 BCE" },
+      "artifact": { "image": "/images/gobekli-tepe.webp", "title": "Göbekli Tepe T-pillar", "caption": "A carved T-shaped pillar raised by foragers around 9600 BCE, before farming or pottery.", "credit": "Photo: Teomancimit" },
       "eraId": "before-cities",
       "order": 3,
       "title": "Gobekli Tepe",
@@ -1904,6 +1912,7 @@
     {
       "id": "e1-neolithic-towns",
       "timeAnchor": { "start": -7100, "label": "c. 7100 BCE" },
+      "artifact": { "image": "/images/catalhoyuk.webp", "title": "Çatalhöyük houses", "caption": "Mud-brick homes packed wall to wall, a town of thousands with no streets.", "credit": "Photo: Ziggurat (Wikimedia Commons)" },
       "eraId": "before-cities",
       "order": 4,
       "title": "The First Towns",
@@ -2026,6 +2035,7 @@
     {
       "id": "e1-megaliths",
       "timeAnchor": { "start": -3000, "end": -2500, "label": "c. 3000 to 2500 BCE" },
+      "artifact": { "image": "/images/stonehenge.webp", "title": "Stonehenge", "caption": "Sarsen uprights and lintels raised in phases from around 3000 BCE.", "credit": "Photo: garethwiscombe" },
       "eraId": "before-cities",
       "order": 5,
       "title": "Megaliths of Stone-Age Europe",
@@ -2162,6 +2172,7 @@
     {
       "id": "e1-younger-dryas",
       "timeAnchor": { "start": -10900, "label": "c. 10,900 BCE" },
+      "artifact": { "image": "/images/clovis-point.webp", "title": "Clovis point", "caption": "A fluted stone spearpoint from the culture that thinned as the Younger Dryas set in.", "credit": "Photo: Daderot" },
       "eraId": "before-cities",
       "order": 6,
       "title": "The Younger Dryas & the Impact Hypothesis",
@@ -2326,6 +2337,7 @@
     {
       "id": "e1-peopling-americas",
       "timeAnchor": { "start": -23000, "end": -13000, "label": "c. 23,000 to 13,000 years ago" },
+      "artifact": { "image": "/images/white-sands-footprint.webp", "title": "White Sands footprint", "caption": "A fossil human footprint dated to roughly 21,000 to 23,000 years ago.", "credit": "Photo: U.S. Geological Survey" },
       "eraId": "before-cities",
       "order": 7,
       "title": "Peopling of the Americas",
@@ -2497,6 +2509,7 @@
     {
       "id": "e2-meso-uruk",
       "timeAnchor": { "start": -4000, "end": -3100, "label": "c. 4000 to 3100 BCE" },
+      "artifact": { "image": "/images/cuneiform-tablet.webp", "title": "Cuneiform tablet", "caption": "Wedge-pressed clay from Uruk, where writing began as accounting.", "credit": "Photo: The Metropolitan Museum of Art" },
       "eraId": "bronze-age",
       "order": 1,
       "title": "Mesopotamia: Uruk & the First Writing",
@@ -2644,6 +2657,7 @@
     {
       "id": "e2-egypt-unification",
       "timeAnchor": { "start": -3100, "label": "c. 3100 BCE" },
+      "artifact": { "image": "/images/narmer-palette.webp", "title": "The Narmer Palette", "caption": "Carved slate showing one king in the crowns of both Upper and Lower Egypt.", "credit": "Photo: Wikimedia Commons (public domain)" },
       "eraId": "bronze-age",
       "order": 2,
       "title": "Egypt: Unification of the Two Lands",
@@ -2782,6 +2796,7 @@
     {
       "id": "e2-caral-rise",
       "timeAnchor": { "start": -2600, "label": "c. 2600 BCE" },
+      "artifact": { "image": "/images/caral.webp", "title": "Caral", "caption": "Platform mounds and a sunken plaza in Peru, monumental building from around 2600 BCE.", "credit": "Photo: Håkan Svensson (Xauxa)" },
       "eraId": "bronze-age",
       "order": 3,
       "title": "Caral: A City as Old as the Pyramids",

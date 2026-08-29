@@ -12,6 +12,7 @@
   import DatingPrimer from './routes/DatingPrimer.svelte';
   import Credits from './routes/Credits.svelte';
   import Timeline from './routes/Timeline.svelte';
+  import Museum from './routes/Museum.svelte';
 
   // One-time dating-conventions primer on first run.
   onMount(() => {
@@ -45,4 +46,6 @@
   <Credits />
 {:else if $route.name === 'timeline'}
   <Timeline />
+{:else if $route.name === 'museum'}
+  <Museum />
 {/if}

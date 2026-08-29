@@ -136,6 +136,19 @@ export const TimeAnchorSchema = z.object({
   label: z.string().min(1),
 });
 
+/**
+ * A museum artifact a unit awards on completion. `image` is a bundled path like
+ * "/images/hand-axe.webp"; `caption` is one line of museum-label copy. Optional:
+ * a unit with no fitting object awards nothing, and the Museum only shows units
+ * that define one.
+ */
+export const ArtifactSchema = z.object({
+  image: z.string().min(1),
+  title: z.string().min(1),
+  caption: z.string().min(1),
+  credit: z.string().optional(),
+});
+
 export const UnitSchema = z
   .object({
     id: z.string().min(1),
@@ -154,6 +167,7 @@ export const UnitSchema = z
       .object({ takeaway: z.string(), teaser: z.string() })
       .optional(),
     timeAnchor: TimeAnchorSchema.optional(),
+    artifact: ArtifactSchema.optional(),
   })
   .refine((u) => u.kind !== 'deepdive' || typeof u.extends === 'string', {
     message: 'a deepdive unit must set `extends` to its parent core unit id',
@@ -205,6 +219,7 @@ export type UnitStatus = z.infer<typeof UnitStatus>;
 export type UnitKind = z.infer<typeof UnitKind>;
 export type Unit = z.infer<typeof UnitSchema>;
 export type TimeAnchor = z.infer<typeof TimeAnchorSchema>;
+export type Artifact = z.infer<typeof ArtifactSchema>;
 export type Era = z.infer<typeof EraSchema>;
 export type Meta = z.infer<typeof MetaSchema>;
 export type Curriculum = z.infer<typeof CurriculumSchema>;

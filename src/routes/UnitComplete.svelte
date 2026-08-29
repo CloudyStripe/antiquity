@@ -6,7 +6,7 @@
   import { lastCompletion } from '$lib/stores/progress';
   import { nextCoreUnit } from '$lib/engine/unlock';
   import { toMap, toUnit } from '$lib/stores/router';
-  import { celebrate } from '$lib/fx/confetti';
+  import { celebrate, burst } from '$lib/fx/confetti';
   import { sfx, unlockAudio } from '$lib/fx/audio';
   import { haptics } from '$lib/fx/haptics';
   import Button from '$components/ui/Button.svelte';
@@ -26,6 +26,8 @@
   const next = unit ? nextCoreUnit(unit, allUnits(), get(progress)) : undefined;
   const dives = unit ? deepDivesOf(unitId) : [];
   const streakNow = get(streak).current;
+  const artifact = matched && unit?.artifact ? unit.artifact : null;
+  const artifactSrc = artifact ? import.meta.env.BASE_URL + artifact.image.replace(/^\//, '') : '';
 
   onMount(() => {
     if (!unit) {
@@ -36,6 +38,7 @@
     celebrate();
     sfx.complete();
     haptics.celebrate();
+    if (artifact) burst(0.5, 0.42);
   });
 </script>
 
@@ -65,6 +68,17 @@
               <BadgeStamp id={b} delay={i * 120} />
             {/each}
           </div>
+        </div>
+      {/if}
+
+      {#if artifact}
+        <div class="artifact">
+          <p class="artifact__kicker"><Icon name="landmark" size={15} /> Artifact recovered</p>
+          <div class="artifact__frame">
+            <img src={artifactSrc} alt={artifact.title} loading="lazy" decoding="async" />
+          </div>
+          <p class="artifact__title">{artifact.title}</p>
+          <p class="artifact__caption">{artifact.caption}</p>
         </div>
       {/if}
 
@@ -166,6 +180,60 @@
     justify-content: center;
     gap: var(--sp-3);
     margin-bottom: var(--sp-4);
+  }
+  .artifact {
+    margin: 0 0 var(--sp-4);
+    padding: var(--sp-3);
+    background: var(--surface-2);
+    border-radius: var(--r-lg);
+    text-align: left;
+    animation: artifact-in var(--dur-slow) var(--ease-spring) both;
+  }
+  .artifact__kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 var(--sp-2);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-ink);
+  }
+  .artifact__frame {
+    border-radius: var(--r-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    line-height: 0;
+    box-shadow: var(--shadow-sm);
+  }
+  .artifact__frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .artifact__title {
+    margin: var(--sp-2) 0 2px;
+    font-family: var(--font-serif);
+    font-size: var(--fs-lg);
+    color: var(--ink);
+  }
+  .artifact__caption {
+    margin: 0;
+    font-size: var(--fs-sm);
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+  @keyframes artifact-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
   .takeaway {
     display: flex;
