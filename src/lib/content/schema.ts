@@ -7,8 +7,14 @@ import { z } from 'zod';
 
 export const Confidence = z.enum(['established', 'contested', 'open']);
 export const Difficulty = z.enum(['easy', 'medium', 'hard']);
-export const QuestionType = z.enum(['single', 'truefalse']);
+export const QuestionType = z.enum(['single', 'truefalse', 'order']);
 
+/**
+ * For `single`/`truefalse`, `choices` are options and `answer` is the correct
+ * index. For `order` (a chronology question), `choices` are the items listed in
+ * the CORRECT order (oldest first) — presentation is shuffled at render time —
+ * and `answer` must be 0 (unused, kept for shape compatibility).
+ */
 export const QuestionSchema = z
   .object({
     id: z.string().min(1),
@@ -26,6 +32,14 @@ export const QuestionSchema = z
   .refine((q) => q.type !== 'truefalse' || q.choices.length === 2, {
     message: 'a truefalse question must have exactly 2 choices',
     path: ['choices'],
+  })
+  .refine((q) => q.type !== 'order' || q.choices.length >= 3, {
+    message: 'an order question needs at least 3 items to sequence',
+    path: ['choices'],
+  })
+  .refine((q) => q.type !== 'order' || q.answer === 0, {
+    message: 'an order question must set answer to 0 (choices are in correct order)',
+    path: ['answer'],
   });
 
 // --- Block types (one per screen) -----------------------------------------

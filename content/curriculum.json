@@ -279,6 +279,19 @@
               "answer": 1,
               "explanation": "False. Many regions (much of sub-Saharan Africa, and the Americas) don't fit the scheme — it's a framework, not a universal law.",
               "difficulty": "medium"
+            },
+            {
+              "id": "intro-02-q4-order",
+              "type": "order",
+              "difficulty": "easy",
+              "stem": "Arrange Thomsen's three ages as they unfold in the Old World, earliest first.",
+              "choices": [
+                "Stone Age",
+                "Bronze Age",
+                "Iron Age"
+              ],
+              "answer": 0,
+              "explanation": "Thomsen's museum-sorting insight: stone tools dominate first, then copper-tin alloys (bronze), and finally iron — though the transitions happen at different times in different places, which is exactly why the system breaks down outside Eurasia."
             }
           ]
         }
@@ -536,6 +549,20 @@
               "answer": 1,
               "explanation": "They establish relative order — this before that — not absolute calendar years.",
               "difficulty": "medium"
+            },
+            {
+              "id": "intro-04-q4-order",
+              "type": "order",
+              "difficulty": "medium",
+              "stem": "An undisturbed trench has four finds. Using the law of superposition, order them from **oldest** (deepest) to youngest.",
+              "choices": [
+                "A hand axe in the bottom clay layer",
+                "A hearth of charcoal above the clay",
+                "Potsherds in the silt above the hearth",
+                "A coin just below the topsoil"
+              ],
+              "answer": 0,
+              "explanation": "In undisturbed strata, deeper = older. That single rule — superposition — lets archaeologists build a relative timeline before any lab dating happens. (Pits, burrows, and floods are what make real trenches trickier.)"
             }
           ]
         }
@@ -1679,6 +1706,21 @@
               "answer": 1,
               "explanation": "False. We can date and describe the art, but its purpose is interpretation, not established fact.",
               "difficulty": "medium"
+            },
+            {
+              "id": "e1-cave-q5-order",
+              "type": "order",
+              "difficulty": "hard",
+              "stem": "Put these landmarks of the deep past in chronological order, earliest first.",
+              "choices": [
+                "Chauvet cave paintings (c. 34,000 BCE)",
+                "Gobekli Tepe's first enclosures (c. 9500 BCE)",
+                "Catalhoyuk at its height (c. 7000 BCE)",
+                "Earliest cuneiform tablets at Uruk (c. 3300 BCE)",
+                "The Great Pyramid at Giza (c. 2560 BCE)"
+              ],
+              "answer": 0,
+              "explanation": "The gaps are the point: more time separates Chauvet from Gobekli Tepe (~25,000 years) than separates the Great Pyramid from your phone (~4,600 years). Deep time is mostly *before* anything we'd call history."
             }
           ]
         }

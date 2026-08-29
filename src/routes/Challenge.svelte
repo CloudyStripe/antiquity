@@ -13,6 +13,7 @@
   import SubHeader from '$components/SubHeader.svelte';
   import BottomNav from '$components/BottomNav.svelte';
   import QuestionCard from '$components/QuestionCard.svelte';
+  import OrderQuestionCard from '$components/OrderQuestionCard.svelte';
   import ComboMeter from '$components/ComboMeter.svelte';
   import MarkdownText from '$components/MarkdownText.svelte';
   import ProgressBar from '$components/ui/ProgressBar.svelte';
@@ -129,7 +130,11 @@
     <div class="play__combo"><ComboMeter count={combo} /></div>
 
     {#key index}
-      <QuestionCard question={current} {onAnswered} />
+      {#if current.type === 'order'}
+        <OrderQuestionCard question={current} {onAnswered} />
+      {:else}
+        <QuestionCard question={current} {onAnswered} />
+      {/if}
     {/key}
 
     {#if answered}
@@ -162,7 +167,7 @@
             <div class="miss">
               <p class="miss__stem"><MarkdownText text={q.stem} /></p>
               <p class="miss__ans">
-                <Icon name="check" size={14} /> {q.choices[q.answer]}
+                <Icon name="check" size={14} /> {q.type === 'order' ? q.choices.join(' \u2192 ') : q.choices[q.answer]}
               </p>
               <p class="miss__exp"><MarkdownText text={q.explanation} /></p>
             </div>

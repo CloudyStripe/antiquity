@@ -23,8 +23,13 @@ export interface ShuffledQuestion extends Question {
   originalAnswer: number;
 }
 
-/** Shuffle a question's choices and remap the correct-answer index. */
+/**
+ * Shuffle a question's choices and remap the correct-answer index.
+ * `order` questions pass through untouched: their `choices` array IS the answer
+ * key (correct chronological order) and the card shuffles its own presentation.
+ */
 export function shuffleQuestion(q: Question, rng: Rng = Math.random): ShuffledQuestion {
+  if (q.type === 'order') return { ...q, originalAnswer: q.answer };
   const indices = shuffle(
     q.choices.map((_, i) => i),
     rng,

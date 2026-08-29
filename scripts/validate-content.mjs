@@ -11,7 +11,7 @@ const FILE = resolve(__dirname, '../content/curriculum.json');
 const BLOCK_TYPES = ['text', 'term', 'evidence', 'debate', 'figure', 'image', 'quiz'];
 const CONFIDENCE = ['established', 'contested', 'open'];
 const DIFFICULTY = ['easy', 'medium', 'hard'];
-const QTYPE = ['single', 'truefalse'];
+const QTYPE = ['single', 'truefalse', 'order'];
 
 const problems = [];
 const fail = (msg) => problems.push(msg);
@@ -26,6 +26,10 @@ function checkQuestion(q, where) {
     fail(`${where} (${q.id}): answer index out of range`);
   if (q.type === 'truefalse' && q.choices?.length !== 2)
     fail(`${where} (${q.id}): truefalse needs exactly 2 choices`);
+  if (q.type === 'order' && (q.choices?.length ?? 0) < 3)
+    fail(`${where} (${q.id}): order needs at least 3 items`);
+  if (q.type === 'order' && q.answer !== 0)
+    fail(`${where} (${q.id}): order must set answer to 0 (choices listed in correct order)`);
   if (!q.explanation) fail(`${where} (${q.id}): missing explanation`);
   if (!DIFFICULTY.includes(q.difficulty)) fail(`${where} (${q.id}): bad difficulty`);
 }
