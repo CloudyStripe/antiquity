@@ -34,6 +34,8 @@
   import Telescope from '@lucide/svelte/icons/telescope';
   import GraduationCap from '@lucide/svelte/icons/graduation-cap';
   import ChartColumn from '@lucide/svelte/icons/chart-no-axes-column';
+  import ChartGantt from '@lucide/svelte/icons/chart-no-axes-gantt';
+  import MapPin from '@lucide/svelte/icons/map-pin';
   import Ruler from '@lucide/svelte/icons/ruler';
   import TreePine from '@lucide/svelte/icons/tree-pine';
   import Landmark from '@lucide/svelte/icons/landmark';
@@ -83,6 +85,8 @@
     telescope: Telescope,
     'graduation-cap': GraduationCap,
     chart: ChartColumn,
+    'chart-no-axes-gantt': ChartGantt,
+    'map-pin': MapPin,
     ruler: Ruler,
     'tree-pine': TreePine,
     landmark: Landmark,

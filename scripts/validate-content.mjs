@@ -11,7 +11,7 @@ const FILE = resolve(__dirname, '../content/curriculum.json');
 const BLOCK_TYPES = ['text', 'term', 'evidence', 'debate', 'figure', 'image', 'quiz'];
 const CONFIDENCE = ['established', 'contested', 'open'];
 const DIFFICULTY = ['easy', 'medium', 'hard'];
-const QTYPE = ['single', 'truefalse'];
+const QTYPE = ['single', 'truefalse', 'order', 'maptap'];
 
 const problems = [];
 const fail = (msg) => problems.push(msg);
@@ -26,6 +26,20 @@ function checkQuestion(q, where) {
     fail(`${where} (${q.id}): answer index out of range`);
   if (q.type === 'truefalse' && q.choices?.length !== 2)
     fail(`${where} (${q.id}): truefalse needs exactly 2 choices`);
+  if (q.type === 'order' && (q.choices?.length ?? 0) < 3)
+    fail(`${where} (${q.id}): order needs at least 3 items`);
+  if (q.type === 'order' && q.answer !== 0)
+    fail(`${where} (${q.id}): order must set answer to 0 (choices listed in correct order)`);
+  if (q.type === 'maptap') {
+    const t = q.target;
+    if (
+      !t ||
+      typeof t.x !== 'number' ||
+      typeof t.y !== 'number' ||
+      typeof t.tolerance !== 'number'
+    )
+      fail(`${where} (${q.id}): maptap needs a target with numeric x, y, tolerance`);
+  }
   if (!q.explanation) fail(`${where} (${q.id}): missing explanation`);
   if (!DIFFICULTY.includes(q.difficulty)) fail(`${where} (${q.id}): bad difficulty`);
 }
@@ -82,6 +96,13 @@ async function main() {
       fail(`${where}: deepdive must extend an existing core unit (got "${u.extends}")`);
     if (u.status === 'available' && (!Array.isArray(u.screens) || u.screens.length === 0))
       fail(`${where}: available unit has no screens`);
+    if (u.timeAnchor !== undefined) {
+      const t = u.timeAnchor;
+      if (typeof t?.start !== 'number') fail(`${where}: timeAnchor.start must be a number`);
+      if (t?.end !== undefined && typeof t.end !== 'number')
+        fail(`${where}: timeAnchor.end must be a number when present`);
+      if (typeof t?.label !== 'string' || !t.label) fail(`${where}: timeAnchor.label must be a non-empty string`);
+    }
 
     for (const b of u.screens ?? []) {
       checkBlock(b, where);

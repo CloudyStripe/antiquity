@@ -2,6 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { get } from 'svelte/store';
 import { progress } from '../src/lib/stores/persist';
 import { challengePool } from '../src/lib/stores/derived';
+import { shuffleQuestion } from '../src/lib/engine/quiz';
 import type { UnitProgress } from '../src/lib/stores/persist';
 
 function done(): UnitProgress {
@@ -35,5 +36,23 @@ describe('cumulative Challenge pool', () => {
     expect(new Set(ids).size).toBe(ids.length);
     // nothing from an uncompleted unit
     expect(ids).not.toContain('q-intro03-change');
+  });
+});
+
+describe('order questions in the challenge sampler', () => {
+  it('shuffleQuestion leaves an order question untouched', () => {
+    const q = {
+      id: 'q-order',
+      stem: 'Order these.',
+      type: 'order' as const,
+      choices: ['first', 'second', 'third', 'fourth'],
+      answer: 0,
+      explanation: 'e',
+      difficulty: 'hard' as const,
+    };
+    const s = shuffleQuestion(q, () => 0.99);
+    expect(s.choices).toEqual(['first', 'second', 'third', 'fourth']);
+    expect(s.answer).toBe(0);
+    expect(s.originalAnswer).toBe(0);
   });
 });

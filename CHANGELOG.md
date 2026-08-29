@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.2.0] — 2026-08-28
+
+### Added
+- **The `order` (chronology) question type**: arrange items into the correct sequence,
+  presentation shuffled at render time; keyboard-operable, with the shared explain panel.
+- **The Deep Time Line** (`#timeline`, a new bottom-nav tab): a global interactive vertical
+  timeline on a piecewise-compressed scale, so a 300,000-year span and the first cities share
+  one screen. Anchored units render as points or range bars colored by their state; tapping a
+  node shows a popover before navigating. A clustered band alternates onto two lanes with leader
+  ticks, and a plain ordered list below is the accessible source of truth.
+- **The Museum** (`#museum`, linked from the map footer and Stats): a collection of artifacts, one
+  recovered per completed unit. Earned cases show the object, a serif title, and a museum-label
+  caption; locked cases are a dimmed silhouette with only the era name, a tease rather than a
+  spoiler. Completing a unit that defines an artifact plays an "Artifact recovered" moment on the
+  finish screen. A new `curator` badge is earned at ten artifacts. Adds an optional `artifact` field
+  to the unit schema.
+- **The `maptap` question type**: tap a location on a shared, simplified world map; a pin drops and
+  distance to the target within a tolerance decides correct, then the true location is revealed. A
+  "Can't use the map?" toggle swaps in the standard multiple-choice card, so keyboard and
+  screen-reader users answer the same question; both paths report one binary result. Authored for
+  Göbekli Tepe, Caral, and the origin of Homo sapiens. Adds an optional `target` to the question
+  schema; `choices`/`answer` stay required as the accessible fallback.
+
 ## [0.1.0] — 2026-06-22
 
 First playable release: the **Foundations** era, fully built around the existing

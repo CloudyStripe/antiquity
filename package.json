@@ -1,6 +1,6 @@
 {
   "name": "antiquity",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Antiquity — a modular, offline-capable ancient-history learning PWA.",
   "private": true,
   "type": "module",

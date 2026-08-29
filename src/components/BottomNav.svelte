@@ -1,11 +1,12 @@
 <script lang="ts">
   import Icon from '$components/ui/Icon.svelte';
-  import { route, toMap, toChallenge, toGlossary, toStats } from '$lib/stores/router';
+  import { route, toMap, toChallenge, toGlossary, toStats, toTimeline } from '$lib/stores/router';
   import { haptics } from '$lib/fx/haptics';
 
   const tabs = [
     { name: 'map', label: 'Learn', icon: 'compass', go: toMap },
     { name: 'challenge', label: 'Challenge', icon: 'trophy', go: toChallenge },
+    { name: 'timeline', label: 'Timeline', icon: 'chart-no-axes-gantt', go: toTimeline },
     { name: 'glossary', label: 'Glossary', icon: 'book-open', go: toGlossary },
     { name: 'stats', label: 'Stats', icon: 'chart', go: toStats },
   ] as const;

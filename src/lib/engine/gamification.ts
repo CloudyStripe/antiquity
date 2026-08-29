@@ -70,6 +70,7 @@ export const BADGES: BadgeMeta[] = [
   { id: 'streak-7', title: 'Week-Long Streak', description: 'Learn seven days in a row.', icon: 'flame' },
   { id: 'streak-30', title: 'Month-Long Streak', description: 'Learn thirty days in a row.', icon: 'flame' },
   { id: 'deep-diver-5', title: 'Deep Diver', description: 'Finish five optional deep-dive modules.', icon: 'compass' },
+  { id: 'curator', title: 'Curator', description: 'Recover ten artifacts.', icon: 'landmark' },
   { id: 'challenge-100', title: 'Challenge Master', description: 'Score 100% in a Challenge round.', icon: 'trophy' },
 ];
 
@@ -113,6 +114,11 @@ export function computeEarnedBadges(ctx: BadgeContext): string[] {
     (u) => u.kind === 'deepdive' && completed(u.id),
   ).length;
   if (deepDiveDone >= 5) earned.add('deep-diver-5');
+
+  const artifactsRecovered = ctx.units.filter(
+    (u) => completed(u.id) && u.artifact != null,
+  ).length;
+  if (artifactsRecovered >= 10) earned.add('curator');
 
   if (ctx.challengePerfectEver) earned.add('challenge-100');
 

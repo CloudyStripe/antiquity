@@ -7,8 +7,24 @@ import { z } from 'zod';
 
 export const Confidence = z.enum(['established', 'contested', 'open']);
 export const Difficulty = z.enum(['easy', 'medium', 'hard']);
-export const QuestionType = z.enum(['single', 'truefalse']);
+export const QuestionType = z.enum(['single', 'truefalse', 'order', 'maptap']);
 
+/**
+ * A target on the shared equirectangular world map: `x`/`y` are percentages of
+ * the map's width/height, `tolerance` a percentage radius counted as correct.
+ */
+export const MapTargetSchema = z.object({
+  x: z.number(),
+  y: z.number(),
+  tolerance: z.number(),
+});
+
+/**
+ * For `single`/`truefalse`, `choices` are options and `answer` is the correct
+ * index. For `order` (a chronology question), `choices` are the items listed in
+ * the CORRECT order (oldest first) — presentation is shuffled at render time —
+ * and `answer` must be 0 (unused, kept for shape compatibility).
+ */
 export const QuestionSchema = z
   .object({
     id: z.string().min(1),
@@ -18,6 +34,9 @@ export const QuestionSchema = z
     answer: z.number().int().min(0),
     explanation: z.string().min(1),
     difficulty: Difficulty,
+    // maptap only: where on the world map the answer is. `choices`/`answer`
+    // remain the accessible keyboard fallback for every question type.
+    target: MapTargetSchema.optional(),
   })
   .refine((q) => q.answer < q.choices.length, {
     message: 'answer index is out of range for choices',
@@ -26,6 +45,18 @@ export const QuestionSchema = z
   .refine((q) => q.type !== 'truefalse' || q.choices.length === 2, {
     message: 'a truefalse question must have exactly 2 choices',
     path: ['choices'],
+  })
+  .refine((q) => q.type !== 'order' || q.choices.length >= 3, {
+    message: 'an order question needs at least 3 items to sequence',
+    path: ['choices'],
+  })
+  .refine((q) => q.type !== 'order' || q.answer === 0, {
+    message: 'an order question must set answer to 0 (choices are in correct order)',
+    path: ['answer'],
+  })
+  .refine((q) => q.type !== 'maptap' || q.target != null, {
+    message: 'a maptap question needs a map target',
+    path: ['target'],
   });
 
 // --- Block types (one per screen) -----------------------------------------
@@ -110,6 +141,31 @@ export const BlockSchema = z.discriminatedUnion('type', [
 export const UnitStatus = z.enum(['available', 'planned']);
 export const UnitKind = z.enum(['core', 'deepdive']);
 
+/**
+ * Where a unit sits on the Deep Time Line. `start`/`end` are astronomical years
+ * (negative = BCE; a "X years ago" date is treated as -X). `end` is omitted for
+ * point events. `label` is the display string, shown verbatim (the UI never
+ * formats BCE math). Optional: method/epistemics units carry no anchor.
+ */
+export const TimeAnchorSchema = z.object({
+  start: z.number(),
+  end: z.number().optional(),
+  label: z.string().min(1),
+});
+
+/**
+ * A museum artifact a unit awards on completion. `image` is a bundled path like
+ * "/images/hand-axe.webp"; `caption` is one line of museum-label copy. Optional:
+ * a unit with no fitting object awards nothing, and the Museum only shows units
+ * that define one.
+ */
+export const ArtifactSchema = z.object({
+  image: z.string().min(1),
+  title: z.string().min(1),
+  caption: z.string().min(1),
+  credit: z.string().optional(),
+});
+
 export const UnitSchema = z
   .object({
     id: z.string().min(1),
@@ -127,6 +183,8 @@ export const UnitSchema = z
     completion: z
       .object({ takeaway: z.string(), teaser: z.string() })
       .optional(),
+    timeAnchor: TimeAnchorSchema.optional(),
+    artifact: ArtifactSchema.optional(),
   })
   .refine((u) => u.kind !== 'deepdive' || typeof u.extends === 'string', {
     message: 'a deepdive unit must set `extends` to its parent core unit id',
@@ -161,6 +219,7 @@ export const CurriculumSchema = z.object({
 export type Confidence = z.infer<typeof Confidence>;
 export type Difficulty = z.infer<typeof Difficulty>;
 export type QuestionType = z.infer<typeof QuestionType>;
+export type MapTarget = z.infer<typeof MapTargetSchema>;
 export type Question = z.infer<typeof QuestionSchema>;
 
 export type TextBlock = z.infer<typeof TextBlockSchema>;
@@ -177,6 +236,8 @@ export type BlockType = Block['type'];
 export type UnitStatus = z.infer<typeof UnitStatus>;
 export type UnitKind = z.infer<typeof UnitKind>;
 export type Unit = z.infer<typeof UnitSchema>;
+export type TimeAnchor = z.infer<typeof TimeAnchorSchema>;
+export type Artifact = z.infer<typeof ArtifactSchema>;
 export type Era = z.infer<typeof EraSchema>;
 export type Meta = z.infer<typeof MetaSchema>;
 export type Curriculum = z.infer<typeof CurriculumSchema>;

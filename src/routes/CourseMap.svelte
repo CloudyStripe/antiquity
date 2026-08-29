@@ -9,7 +9,7 @@
   import { erasInOrder, coreUnitsOfEra, deepDivesOf } from '$lib/content/load';
   import { unitStates, continueUnitId } from '$lib/stores/derived';
   import { progress } from '$lib/stores/persist';
-  import { toPrimer } from '$lib/stores/router';
+  import { toPrimer, toMuseum } from '$lib/stores/router';
   import type { UnitState } from '$lib/content/types';
 
   // Per-era "follow one civilization" filter (default: all = interleaved order).
@@ -146,6 +146,9 @@
   {/each}
 
   <footer class="map-foot">
+    <button class="link" onclick={toMuseum}>
+      <Icon name="landmark" size={15} /> Museum of recovered artifacts
+    </button>
     <button class="link" onclick={toPrimer}>
       <Icon name="info" size={15} /> Dating conventions (BCE / CE / “c.”)
     </button>
@@ -387,6 +390,9 @@
     margin-top: var(--sp-6);
     padding-top: var(--sp-4);
     border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .link {
     display: inline-flex;

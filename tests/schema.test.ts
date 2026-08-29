@@ -72,3 +72,29 @@ describe('content schema', () => {
     expect(r.success).toBe(false);
   });
 });
+
+describe('order questions', () => {
+  const base = {
+    id: 'q-order',
+    stem: 'Order these, earliest first.',
+    type: 'order',
+    choices: ['first', 'second', 'third'],
+    answer: 0,
+    explanation: 'because chronology',
+    difficulty: 'medium',
+  };
+
+  it('accepts a valid order question', () => {
+    expect(QuestionSchema.safeParse(base).success).toBe(true);
+  });
+
+  it('rejects an order question with fewer than 3 items', () => {
+    expect(
+      QuestionSchema.safeParse({ ...base, choices: ['a', 'b'] }).success,
+    ).toBe(false);
+  });
+
+  it('rejects an order question whose answer is not 0', () => {
+    expect(QuestionSchema.safeParse({ ...base, answer: 1 }).success).toBe(false);
+  });
+});
