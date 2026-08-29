@@ -11,7 +11,7 @@ const FILE = resolve(__dirname, '../content/curriculum.json');
 const BLOCK_TYPES = ['text', 'term', 'evidence', 'debate', 'figure', 'image', 'quiz'];
 const CONFIDENCE = ['established', 'contested', 'open'];
 const DIFFICULTY = ['easy', 'medium', 'hard'];
-const QTYPE = ['single', 'truefalse', 'order'];
+const QTYPE = ['single', 'truefalse', 'order', 'maptap'];
 
 const problems = [];
 const fail = (msg) => problems.push(msg);
@@ -30,6 +30,16 @@ function checkQuestion(q, where) {
     fail(`${where} (${q.id}): order needs at least 3 items`);
   if (q.type === 'order' && q.answer !== 0)
     fail(`${where} (${q.id}): order must set answer to 0 (choices listed in correct order)`);
+  if (q.type === 'maptap') {
+    const t = q.target;
+    if (
+      !t ||
+      typeof t.x !== 'number' ||
+      typeof t.y !== 'number' ||
+      typeof t.tolerance !== 'number'
+    )
+      fail(`${where} (${q.id}): maptap needs a target with numeric x, y, tolerance`);
+  }
   if (!q.explanation) fail(`${where} (${q.id}): missing explanation`);
   if (!DIFFICULTY.includes(q.difficulty)) fail(`${where} (${q.id}): bad difficulty`);
 }

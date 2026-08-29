@@ -2,6 +2,7 @@
   import type { QuizBlock } from '$lib/content/types';
   import QuestionCard from '../QuestionCard.svelte';
   import OrderQuestionCard from '../OrderQuestionCard.svelte';
+  import MapTapQuestionCard from '../MapTapQuestionCard.svelte';
   import ComboMeter from '../ComboMeter.svelte';
   import { answerInline } from '$lib/stores/progress';
   import { sfx } from '$lib/fx/audio';
@@ -53,7 +54,8 @@
   </div>
 
   {#each block.questions as q, i}
-    {@const Card = q.type === 'order' ? OrderQuestionCard : QuestionCard}
+    {@const Card =
+      q.type === 'order' ? OrderQuestionCard : q.type === 'maptap' ? MapTapQuestionCard : QuestionCard}
     <Card
       question={q}
       prompt={i === 0 ? block.prompt : undefined}

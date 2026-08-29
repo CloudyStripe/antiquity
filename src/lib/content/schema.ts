@@ -7,7 +7,17 @@ import { z } from 'zod';
 
 export const Confidence = z.enum(['established', 'contested', 'open']);
 export const Difficulty = z.enum(['easy', 'medium', 'hard']);
-export const QuestionType = z.enum(['single', 'truefalse', 'order']);
+export const QuestionType = z.enum(['single', 'truefalse', 'order', 'maptap']);
+
+/**
+ * A target on the shared equirectangular world map: `x`/`y` are percentages of
+ * the map's width/height, `tolerance` a percentage radius counted as correct.
+ */
+export const MapTargetSchema = z.object({
+  x: z.number(),
+  y: z.number(),
+  tolerance: z.number(),
+});
 
 /**
  * For `single`/`truefalse`, `choices` are options and `answer` is the correct
@@ -24,6 +34,9 @@ export const QuestionSchema = z
     answer: z.number().int().min(0),
     explanation: z.string().min(1),
     difficulty: Difficulty,
+    // maptap only: where on the world map the answer is. `choices`/`answer`
+    // remain the accessible keyboard fallback for every question type.
+    target: MapTargetSchema.optional(),
   })
   .refine((q) => q.answer < q.choices.length, {
     message: 'answer index is out of range for choices',
@@ -40,6 +53,10 @@ export const QuestionSchema = z
   .refine((q) => q.type !== 'order' || q.answer === 0, {
     message: 'an order question must set answer to 0 (choices are in correct order)',
     path: ['answer'],
+  })
+  .refine((q) => q.type !== 'maptap' || q.target != null, {
+    message: 'a maptap question needs a map target',
+    path: ['target'],
   });
 
 // --- Block types (one per screen) -----------------------------------------
@@ -202,6 +219,7 @@ export const CurriculumSchema = z.object({
 export type Confidence = z.infer<typeof Confidence>;
 export type Difficulty = z.infer<typeof Difficulty>;
 export type QuestionType = z.infer<typeof QuestionType>;
+export type MapTarget = z.infer<typeof MapTargetSchema>;
 export type Question = z.infer<typeof QuestionSchema>;
 
 export type TextBlock = z.infer<typeof TextBlockSchema>;

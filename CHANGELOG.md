@@ -16,6 +16,12 @@
   spoiler. Completing a unit that defines an artifact plays an "Artifact recovered" moment on the
   finish screen. A new `curator` badge is earned at ten artifacts. Adds an optional `artifact` field
   to the unit schema.
+- **The `maptap` question type**: tap a location on a shared, simplified world map; a pin drops and
+  distance to the target within a tolerance decides correct, then the true location is revealed. A
+  "Can't use the map?" toggle swaps in the standard multiple-choice card, so keyboard and
+  screen-reader users answer the same question; both paths report one binary result. Authored for
+  Göbekli Tepe, Caral, and the origin of Homo sapiens. Adds an optional `target` to the question
+  schema; `choices`/`answer` stay required as the accessible fallback.
 
 ## [0.1.0] — 2026-06-22
 

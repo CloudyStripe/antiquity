@@ -1525,6 +1525,16 @@
           "prompt": "Quick check",
           "questions": [
             {
+              "id": "q-e1ooa-map",
+              "stem": "Tap where Homo sapiens arose.",
+              "type": "maptap",
+              "choices": ["Western Europe", "East Africa", "Central Asia"],
+              "answer": 1,
+              "target": { "x": 60, "y": 47, "tolerance": 12 },
+              "explanation": "Our species arose in Africa. The earliest known fossils span the continent, with famous finds in East and North Africa.",
+              "difficulty": "easy"
+            },
+            {
               "id": "q-e1ooa-origin",
               "stem": "Where did *Homo sapiens* originate?",
               "type": "single",
@@ -1847,6 +1857,16 @@
           "type": "quiz",
           "prompt": "Quick check",
           "questions": [
+            {
+              "id": "q-e1gt-map",
+              "stem": "Tap where Göbekli Tepe was built.",
+              "type": "maptap",
+              "choices": ["Anatolia (modern Türkiye)", "The Nile Valley", "The Andes"],
+              "answer": 0,
+              "target": { "x": 61, "y": 29, "tolerance": 5 },
+              "explanation": "Göbekli Tepe sits in the hills of southeastern Anatolia, in modern Türkiye, near Şanlıurfa.",
+              "difficulty": "medium"
+            },
             {
               "id": "q-e1gt-when",
               "stem": "Roughly when was Gobekli Tepe first built?",
@@ -2877,6 +2897,16 @@
           "type": "quiz",
           "prompt": "Quick check",
           "questions": [
+            {
+              "id": "q-e2caral-map",
+              "stem": "Tap where Caral was built.",
+              "type": "maptap",
+              "choices": ["Mesopotamia", "The Peruvian coast", "The Indus Valley"],
+              "answer": 1,
+              "target": { "x": 28, "y": 56, "tolerance": 8 },
+              "explanation": "Caral lies in the Supe Valley on the desert coast of central Peru, in South America.",
+              "difficulty": "medium"
+            },
             {
               "id": "q-e2caral-when",
               "stem": "About when did Caral's monumental phase flourish?",

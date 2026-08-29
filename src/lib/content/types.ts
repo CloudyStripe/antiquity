@@ -6,6 +6,7 @@ export type {
   Confidence,
   Difficulty,
   QuestionType,
+  MapTarget,
   Question,
   TextBlock,
   TermBlock,

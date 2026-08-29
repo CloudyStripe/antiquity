@@ -14,6 +14,7 @@
   import BottomNav from '$components/BottomNav.svelte';
   import QuestionCard from '$components/QuestionCard.svelte';
   import OrderQuestionCard from '$components/OrderQuestionCard.svelte';
+  import MapTapQuestionCard from '$components/MapTapQuestionCard.svelte';
   import ComboMeter from '$components/ComboMeter.svelte';
   import MarkdownText from '$components/MarkdownText.svelte';
   import ProgressBar from '$components/ui/ProgressBar.svelte';
@@ -132,6 +133,8 @@
     {#key index}
       {#if current.type === 'order'}
         <OrderQuestionCard question={current} {onAnswered} />
+      {:else if current.type === 'maptap'}
+        <MapTapQuestionCard question={current} {onAnswered} />
       {:else}
         <QuestionCard question={current} {onAnswered} />
       {/if}
